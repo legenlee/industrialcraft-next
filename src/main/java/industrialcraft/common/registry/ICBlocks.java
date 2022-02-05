@@ -1,4 +1,4 @@
-package industrialcraft.common.registries;
+package industrialcraft.common.registry;
 
 import industrialcraft.IndustrialCraft;
 import industrialcraft.common.block.RubberLogBlock;
@@ -31,8 +31,14 @@ public class ICBlocks {
     protected static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS,
             IndustrialCraft.MOD_ID);
 
-    public static void setup(IEventBus bus) {
+    public static void setup(final IEventBus bus) {
         BLOCKS.register(bus);
+    }
+
+    public static void setupPots() {
+        final FlowerPotBlock POT = (FlowerPotBlock) Blocks.FLOWER_POT;
+
+        POT.addPlant(RUBBER_SAPLING.get().getRegistryName(), () -> POTTED_RUBBER_SAPLING.get());
     }
 
     public static final RegistryObject<Block> TIN_ORE = BLOCKS.register("tin_ore",
@@ -72,6 +78,12 @@ public class ICBlocks {
             () -> new Block(Block.Properties.copy(Blocks.RAW_IRON_BLOCK)));
 
     public static final RegistryObject<Block> ALUMINIUM_BLOCK = BLOCKS.register("aluminium_block",
+            () -> new Block(Block.Properties.of(Material.METAL).strength(5, 5)));
+
+    public static final RegistryObject<Block> BRONZE_BLOCK = BLOCKS.register("bronze_block",
+            () -> new Block(Block.Properties.of(Material.METAL).strength(5, 5)));
+
+    public static final RegistryObject<Block> STEEL_BLOCK = BLOCKS.register("steel_block",
             () -> new Block(Block.Properties.of(Material.METAL).strength(5, 5)));
 
     public static final RegistryObject<Block> RUBBER_LOG = BLOCKS.register("rubber_log",
