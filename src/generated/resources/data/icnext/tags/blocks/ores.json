@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "icnext:tin_ore",
+    "icnext:deepslate_tin_ore",
+    "icnext:lead_ore",
+    "icnext:deepslate_lead_ore",
+    "icnext:bauxite_ore",
+    "icnext:deepslate_bauxite_ore"
+  ]
+}
