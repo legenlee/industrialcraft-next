@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "icnext:block/rubber/rubber_slab"
+    },
+    "type=double": {
+      "model": "icnext:block/rubber/rubber_planks"
+    },
+    "type=top": {
+      "model": "icnext:block/rubber/rubber_slab_top"
+    }
+  }
+}

@@ -33,6 +33,8 @@
     "block.icnext.rubber_button": "고무나무 버튼",
     "block.icnext.rubber_sign": "고무나무 표지판",
 
+    "block.icnext.tapping_bowl": "수액 채취 그릇",
+
     // Items
     "item.icnext.treetap": "수액 채취기",
     "item.icnext.raw_tin": "주석 원석",
