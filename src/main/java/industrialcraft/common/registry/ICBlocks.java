@@ -22,6 +22,7 @@ import net.minecraft.world.level.block.StandingSignBlock;
 import net.minecraft.world.level.block.TrapDoorBlock;
 import net.minecraft.world.level.block.WallSignBlock;
 import net.minecraft.world.level.block.WoodButtonBlock;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -86,6 +87,8 @@ public class ICBlocks {
 
     public static final RegistryObject<Block> STEEL_BLOCK = BLOCKS.register("steel_block",
             () -> new Block(Block.Properties.of(Material.METAL).strength(5, 5)));
+
+    public static final WoodType RUBBER = WoodType.create(IndustrialCraft.getResourceLocation("rubber").toString());
 
     public static final RegistryObject<Block> RUBBER_LOG = BLOCKS.register("rubber_log",
             () -> new RubberLogBlock(Block.Properties.copy(Blocks.OAK_LOG)));
