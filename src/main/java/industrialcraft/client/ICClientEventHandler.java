@@ -10,6 +10,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 public class ICClientEventHandler {
     @SubscribeEvent
     public void clientSetup(final FMLClientSetupEvent event) {
-        RenderLayer.setup();
+        BlockRenderHandler.setup();
     }
 }

@@ -4,7 +4,7 @@ import industrialcraft.common.registry.ICBlocks;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 
-public class RenderLayer {
+public class BlockRenderHandler {
     public static void setup() {
         final RenderType CUTOUT = RenderType.cutout();
         final RenderType CUTOUT_MIPPED = RenderType.cutoutMipped();
