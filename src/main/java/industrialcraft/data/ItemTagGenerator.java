@@ -13,6 +13,8 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 
 public class ItemTagGenerator extends ItemTagsProvider {
     public static final Tag.Named<Item> IC_ORES = ItemTags.bind(IndustrialCraft.getResourceLocation("ores").toString());
+    public static final Tag.Named<Item> RUBBER_LOGS = ItemTags
+            .bind(IndustrialCraft.getResourceLocation("rubber_logs").toString());
 
     public static final Tag.Named<Item> TIN_ORES = ItemTags.bind("forge:ores/tin");
     public static final Tag.Named<Item> LEAD_ORES = ItemTags.bind("forge:ores/lead");
@@ -36,6 +38,7 @@ public class ItemTagGenerator extends ItemTagsProvider {
 
     @Override
     protected void addTags() {
+        this.copy(BlockTagGenerator.RUBBER_LOGS, RUBBER_LOGS);
         this.copy(BlockTagGenerator.IC_ORES, IC_ORES);
 
         this.copy(Tags.Blocks.ORES, Tags.Items.ORES);

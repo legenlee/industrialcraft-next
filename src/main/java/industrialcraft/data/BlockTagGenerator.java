@@ -23,6 +23,12 @@ public class BlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags() {
+        tag(RUBBER_LOGS)
+                .add(ICBlocks.RUBBER_LOG.get())
+                .add(ICBlocks.STRIPPED_RUBBER_LOG.get())
+                .add(ICBlocks.RUBBER_WOOD.get())
+                .add(ICBlocks.STRIPPED_RUBBER_WOOD.get());
+
         tag(IC_ORES)
                 .add(ICBlocks.TIN_ORE.get())
                 .add(ICBlocks.DEEPSLATE_TIN_ORE.get())
@@ -31,10 +37,10 @@ public class BlockTagGenerator extends BlockTagsProvider {
                 .add(ICBlocks.BAUXITE_ORE.get())
                 .add(ICBlocks.DEEPSLATE_BAUXITE_ORE.get());
 
-        tag(Tags.Blocks.ORES).addTag(IC_ORES);
+        tag(BlockTags.LOGS).addTag(RUBBER_LOGS);
+        tag(BlockTags.LOGS_THAT_BURN).addTag(RUBBER_LOGS);
 
-        tag(BlockTags.LOGS).add(ICBlocks.RUBBER_LOG.get());
-        tag(BlockTags.LOGS_THAT_BURN).add(ICBlocks.RUBBER_LOG.get());
+        tag(Tags.Blocks.ORES).addTag(IC_ORES);
 
         tag(BlockTags.SAPLINGS).add(ICBlocks.RUBBER_SAPLING.get());
         tag(BlockTags.LEAVES).add(ICBlocks.RUBBER_LEAVES.get());
