@@ -1,9 +1,12 @@
 package industrialcraft.common.registry;
 
 import industrialcraft.IndustrialCraft;
-import industrialcraft.common.item.tier.ICToolTier;
+import industrialcraft.common.item.tier.ToolTier;
+import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -77,52 +80,32 @@ public class ICItems {
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
     public static final RegistryObject<Item> BRONZE_SWORD = ITEMS.register("bronze_sword",
-            () -> new SwordItem(ICToolTier.BRONZE, 3, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+            () -> new SwordItem(ToolTier.BRONZE, 3, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
     public static final RegistryObject<Item> BRONZE_SHOVEL = ITEMS.register("bronze_shovel",
-            () -> new ShovelItem(ICToolTier.BRONZE, 1.5f, -3, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+            () -> new ShovelItem(ToolTier.BRONZE, 1.5f, -3, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
     public static final RegistryObject<Item> BRONZE_PICKAXE = ITEMS.register("bronze_pickaxe",
-            () -> new ShovelItem(ICToolTier.BRONZE, 1, -2.8f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+            () -> new PickaxeItem(ToolTier.BRONZE, 1, -2.8f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
     public static final RegistryObject<Item> BRONZE_AXE = ITEMS.register("bronze_axe",
-            () -> new ShovelItem(ICToolTier.BRONZE, 6, -3.1f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+            () -> new AxeItem(ToolTier.BRONZE, 6, -3.1f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
     public static final RegistryObject<Item> BRONZE_HOE = ITEMS.register("bronze_hoe",
-            () -> new ShovelItem(ICToolTier.BRONZE, -2, -1, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+            () -> new HoeItem(ToolTier.BRONZE, -2, -1, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
     public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword",
-            () -> new SwordItem(ICToolTier.STEEL, 3, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+            () -> new SwordItem(ToolTier.STEEL, 3, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
     public static final RegistryObject<Item> STEEL_SHOVEL = ITEMS.register("steel_shovel",
-            () -> new ShovelItem(ICToolTier.STEEL, 1.5f, -3, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+            () -> new ShovelItem(ToolTier.STEEL, 1.5f, -3, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
     public static final RegistryObject<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe",
-            () -> new ShovelItem(ICToolTier.STEEL, 1, -2.8f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+            () -> new PickaxeItem(ToolTier.STEEL, 1, -2.8f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
     public static final RegistryObject<Item> STEEL_AXE = ITEMS.register("steel_axe",
-            () -> new ShovelItem(ICToolTier.STEEL, 6, -3.1f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+            () -> new AxeItem(ToolTier.STEEL, 6, -3.1f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
     public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe",
-            () -> new ShovelItem(ICToolTier.STEEL, -2, -1, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
-
-    public static final RegistryObject<Item> REINFORCED_STEEL_SWORD = ITEMS.register("reinforced_steel_sword",
-            () -> new SwordItem(ICToolTier.REINFORCED_STEEL, 3, -2.4f,
-                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
-
-    public static final RegistryObject<Item> REINFORCED_STEEL_SHOVEL = ITEMS.register("reinforced_steel_shovel",
-            () -> new ShovelItem(ICToolTier.REINFORCED_STEEL, 1.5f, -3,
-                    new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
-
-    public static final RegistryObject<Item> REINFORCED_STEEL_PICKAXE = ITEMS.register("reinforced_steel_pickaxe",
-            () -> new ShovelItem(ICToolTier.REINFORCED_STEEL, 1, -2.8f,
-                    new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
-
-    public static final RegistryObject<Item> REINFORCED_STEEL_AXE = ITEMS.register("reinforced_steel_axe",
-            () -> new ShovelItem(ICToolTier.REINFORCED_STEEL, 6, -3.1f,
-                    new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
-
-    public static final RegistryObject<Item> REINFORCED_STEEL_HOE = ITEMS.register("reinforced_steel_hoe",
-            () -> new ShovelItem(ICToolTier.REINFORCED_STEEL, -2, -1,
-                    new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+            () -> new HoeItem(ToolTier.STEEL, -2, -1, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 }

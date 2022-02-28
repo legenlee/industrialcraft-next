@@ -23,14 +23,4 @@ public class ToolTier {
                     BlockTags.createOptional(IndustrialCraft.getResourceLocation("needs_steel_tool")),
                     () -> Ingredient.of(ICItems.STEEL_INGOT.get())),
             IndustrialCraft.getResourceLocation("steel"), List.of(Tiers.DIAMOND), List.of(Tiers.NETHERITE));
-
-    public static final Tier REINFORCED_STEEL = TierSortingRegistry
-            .registerTier(
-                    new ForgeTier(4, 2485, 9.0f, 4.0f, 17,
-                            BlockTags
-                                    .createOptional(IndustrialCraft.getResourceLocation("needs_reinforced_steel_tool")),
-                            () -> Ingredient.of(Items.NETHERITE_INGOT)),
-                    IndustrialCraft.getResourceLocation("reinforced_steel"), List.of(Tiers.DIAMOND),
-                    List.of(Tiers.NETHERITE));
-
 }
