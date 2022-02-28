@@ -2,7 +2,7 @@ package industrialcraft.common.registry;
 
 import industrialcraft.IndustrialCraft;
 import industrialcraft.common.block.RubberLogBlock;
-import industrialcraft.common.block.grower.RubberTreeGrower;
+import industrialcraft.common.world.grower.RubberTreeGrower;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DoorBlock;
