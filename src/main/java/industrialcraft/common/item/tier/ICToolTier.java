@@ -5,14 +5,13 @@ import java.util.List;
 import industrialcraft.IndustrialCraft;
 import industrialcraft.common.registry.ICItems;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.common.TierSortingRegistry;
 
-public class ICToolTier {
+public class ToolTier {
     public static final Tier BRONZE = TierSortingRegistry.registerTier(
             new ForgeTier(2, 224, 6.0f, 2.5f, 12,
                     BlockTags.createOptional(IndustrialCraft.getResourceLocation("needs_bronze_tool")),
