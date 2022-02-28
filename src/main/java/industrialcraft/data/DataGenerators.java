@@ -12,12 +12,12 @@ import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 public class DataGenerators {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
-        final DataGenerator GENERATOR = event.getGenerator();
-        final ExistingFileHelper HELPER = event.getExistingFileHelper();
+        final DataGenerator generator = event.getGenerator();
+        final ExistingFileHelper helper = event.getExistingFileHelper();
 
-        final BlockTagsProvider BLOCK_TAGS = new BlockTagGenerator(GENERATOR, HELPER);
+        final BlockTagsProvider BLOCK_TAGS = new BlockTagGenerator(generator, helper);
 
-        GENERATOR.addProvider(BLOCK_TAGS);
-        GENERATOR.addProvider(new ItemTagGenerator(GENERATOR, BLOCK_TAGS, HELPER));
+        generator.addProvider(BLOCK_TAGS);
+        generator.addProvider(new ItemTagGenerator(generator, BLOCK_TAGS, helper));
     }
 }
