@@ -1,7 +1,6 @@
 package industrialcraft.common;
 
 import industrialcraft.IndustrialCraft;
-import industrialcraft.common.registry.ICBlocks;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraft.world.level.block.state.properties.WoodType;

@@ -1,4 +1,4 @@
-package industrialcraft.data;
+package industrialcraft.datagen;
 
 import industrialcraft.IndustrialCraft;
 import net.minecraft.data.DataGenerator;
@@ -14,10 +14,9 @@ public class DataGenerators {
     public static void gatherData(GatherDataEvent event) {
         final DataGenerator generator = event.getGenerator();
         final ExistingFileHelper helper = event.getExistingFileHelper();
+        final BlockTagsProvider blockTags = new BlockTagGenerator(generator, helper);
 
-        final BlockTagsProvider BLOCK_TAGS = new BlockTagGenerator(generator, helper);
-
-        generator.addProvider(BLOCK_TAGS);
-        generator.addProvider(new ItemTagGenerator(generator, BLOCK_TAGS, helper));
+        generator.addProvider(blockTags);
+        generator.addProvider(new ItemTagGenerator(generator, blockTags, helper));
     }
 }

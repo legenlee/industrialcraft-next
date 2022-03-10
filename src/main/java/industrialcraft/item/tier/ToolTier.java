@@ -1,9 +1,9 @@
-package industrialcraft.common.item.tier;
+package industrialcraft.item.tier;
 
 import java.util.List;
 
 import industrialcraft.IndustrialCraft;
-import industrialcraft.common.registry.ICItems;
+import industrialcraft.common.ICItems;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Tiers;

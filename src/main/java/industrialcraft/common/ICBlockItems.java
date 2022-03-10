@@ -1,4 +1,4 @@
-package industrialcraft.common.registry;
+package industrialcraft.common;
 
 import industrialcraft.IndustrialCraft;
 import net.minecraft.world.item.BlockItem;

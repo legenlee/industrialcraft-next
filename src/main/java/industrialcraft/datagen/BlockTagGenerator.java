@@ -1,7 +1,7 @@
-package industrialcraft.data;
+package industrialcraft.datagen;
 
 import industrialcraft.IndustrialCraft;
-import industrialcraft.common.registry.ICBlocks;
+import industrialcraft.common.ICBlocks;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.tags.BlockTags;

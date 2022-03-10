@@ -1,4 +1,4 @@
-package industrialcraft.common.world.grower;
+package industrialcraft.grower;
 
 import java.util.Random;
 

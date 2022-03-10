@@ -1,7 +1,7 @@
-package industrialcraft.common.registry;
+package industrialcraft.common;
 
 import industrialcraft.IndustrialCraft;
-import industrialcraft.common.item.tier.ToolTier;
+import industrialcraft.item.tier.ToolTier;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.HoeItem;

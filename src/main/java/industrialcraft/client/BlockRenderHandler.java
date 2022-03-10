@@ -1,18 +1,18 @@
 package industrialcraft.client;
 
-import industrialcraft.common.registry.ICBlocks;
+import industrialcraft.common.ICBlocks;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 
 public class BlockRenderHandler {
     public static void setup() {
-        final RenderType CUTOUT = RenderType.cutout();
-        final RenderType CUTOUT_MIPPED = RenderType.cutoutMipped();
-        final RenderType TRANSLUCENT = RenderType.translucent();
+        final RenderType cutout = RenderType.cutout();
+        final RenderType cutoutMipped = RenderType.cutoutMipped();
+        final RenderType translucent = RenderType.translucent();
 
-        ItemBlockRenderTypes.setRenderLayer(ICBlocks.RUBBER_LEAVES.get(), CUTOUT_MIPPED);
-        ItemBlockRenderTypes.setRenderLayer(ICBlocks.RUBBER_SAPLING.get(), CUTOUT);
-        ItemBlockRenderTypes.setRenderLayer(ICBlocks.RUBBER_DOOR.get(), CUTOUT);
-        ItemBlockRenderTypes.setRenderLayer(ICBlocks.RUBBER_TRAPDOOR.get(), CUTOUT);
+        ItemBlockRenderTypes.setRenderLayer(ICBlocks.RUBBER_LEAVES.get(), cutoutMipped);
+        ItemBlockRenderTypes.setRenderLayer(ICBlocks.RUBBER_SAPLING.get(), cutout);
+        ItemBlockRenderTypes.setRenderLayer(ICBlocks.RUBBER_DOOR.get(), cutout);
+        ItemBlockRenderTypes.setRenderLayer(ICBlocks.RUBBER_TRAPDOOR.get(), cutout);
     }
 }

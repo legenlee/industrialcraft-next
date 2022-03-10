@@ -1,4 +1,4 @@
-package industrialcraft.data;
+package industrialcraft.datagen;
 
 import industrialcraft.IndustrialCraft;
 import net.minecraft.data.DataGenerator;
@@ -6,7 +6,6 @@ import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.tags.Tag;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.Tags;
