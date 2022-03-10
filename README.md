@@ -1,6 +1,6 @@
 # IndustrialCraft-Next
 
-This is unofficial port of IndustrialCraft to Modern Minecraft Forge above 1.17.
+This is unofficial port of IndustrialCraft to Modern Minecraft Forge above 1.18.
 
 ## Credits
 
