@@ -1,6 +1,6 @@
 package industrialcraft.client;
 
-public class EntityRenderHandler {
+public class ICEntityRenderHandler {
     public static void setup() {
 
     }
