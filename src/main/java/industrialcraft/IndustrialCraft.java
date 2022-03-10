@@ -24,11 +24,15 @@ public class IndustrialCraft {
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    public static ResourceLocation getResourceLocation(String name) {
+    public static ResourceLocation modPrefix(String name) {
         return new ResourceLocation(IndustrialCraft.MOD_ID, name);
     }
 
-    public static ResourceLocation getResourceLocation(String base, String name) {
-        return new ResourceLocation(base, name);
+    public static ResourceLocation forgePrefix(String name) {
+        return new ResourceLocation("forge", name);
+    }
+
+    public static ResourceLocation mcPrefix(String name) {
+        return new ResourceLocation("minecraft", name);
     }
 }

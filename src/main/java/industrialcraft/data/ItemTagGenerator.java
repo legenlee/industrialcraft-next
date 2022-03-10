@@ -7,30 +7,36 @@ import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.Tag;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 public class ItemTagGenerator extends ItemTagsProvider {
-    public static final Tag.Named<Item> IC_ORES = ItemTags.bind(IndustrialCraft.getResourceLocation("ores").toString());
-    public static final Tag.Named<Item> RUBBER_LOGS = ItemTags
-            .bind(IndustrialCraft.getResourceLocation("rubber_logs").toString());
+    public static final TagKey<Item> IC_ORES = ItemTags.create(IndustrialCraft.modPrefix("ores"));
+    public static final TagKey<Item> RUBBER_LOGS = ItemTags.create(IndustrialCraft.modPrefix("rubber_logs"));
 
-    public static final Tag.Named<Item> TIN_ORES = ItemTags.bind("forge:ores/tin");
-    public static final Tag.Named<Item> LEAD_ORES = ItemTags.bind("forge:ores/lead");
-    public static final Tag.Named<Item> ALUMINIUM_ORES = ItemTags.bind("forge:ores/aluminium");
+    public static final TagKey<Item> TIN_ORES = ItemTags.create(IndustrialCraft.forgePrefix("ores/tin"));
+    public static final TagKey<Item> LEAD_ORES = ItemTags.create(IndustrialCraft.forgePrefix("ores/lead"));
+    public static final TagKey<Item> ALUMINIUM_ORES = ItemTags.create(IndustrialCraft.forgePrefix("ores/aluminium"));
 
-    public static final Tag.Named<Item> TIN_INGOTS = ItemTags.bind("forge:ingots/tin");
-    public static final Tag.Named<Item> LEAD_INGOTS = ItemTags.bind("forge:ingots/lead");
-    public static final Tag.Named<Item> ALUMINIUM_INGOTS = ItemTags.bind("forge:ingots/aluminium");
-    public static final Tag.Named<Item> BRONZE_INGOTS = ItemTags.bind("forge:ingots/bronze");
-    public static final Tag.Named<Item> STEEL_INGOTS = ItemTags.bind("forge:ingots/steel");
+    public static final TagKey<Item> TIN_INGOTS = ItemTags.create(IndustrialCraft.forgePrefix("ingots/tin"));
+    public static final TagKey<Item> LEAD_INGOTS = ItemTags.create(IndustrialCraft.forgePrefix("ingots/lead"));
+    public static final TagKey<Item> ALUMINIUM_INGOTS = ItemTags
+            .create(IndustrialCraft.forgePrefix("ingots/aluminium"));
+    public static final TagKey<Item> BRONZE_INGOTS = ItemTags.create(IndustrialCraft.forgePrefix("ingots/bronze"));
+    public static final TagKey<Item> STEEL_INGOTS = ItemTags.create(IndustrialCraft.forgePrefix("ingots/steel"));
 
-    public static final Tag.Named<Item> TIN_STORAGE_BLOCKS = ItemTags.bind("forge:storage_blocks/tin");
-    public static final Tag.Named<Item> LEAD_STORAGE_BLOCKS = ItemTags.bind("forge:storage_blocks/lead");
-    public static final Tag.Named<Item> ALUMINIUM_STORAGE_BLOCKS = ItemTags.bind("forge:storage_blocks/aluminium");
-    public static final Tag.Named<Item> BRONZE_STORAGE_BLOCKS = ItemTags.bind("forge:storage_blocks/bronze");
-    public static final Tag.Named<Item> STEEL_STORAGE_BLOCKS = ItemTags.bind("forge:storage_blocks/steel");
+    public static final TagKey<Item> TIN_STORAGE_BLOCKS = ItemTags
+            .create(IndustrialCraft.forgePrefix("storage_blocks/tin"));
+    public static final TagKey<Item> LEAD_STORAGE_BLOCKS = ItemTags
+            .create(IndustrialCraft.forgePrefix("storage_blocks/lead"));
+    public static final TagKey<Item> ALUMINIUM_STORAGE_BLOCKS = ItemTags
+            .create(IndustrialCraft.forgePrefix("storage_blocks/aluminium"));
+    public static final TagKey<Item> BRONZE_STORAGE_BLOCKS = ItemTags
+            .create(IndustrialCraft.forgePrefix("storage_blocks/bronze"));
+    public static final TagKey<Item> STEEL_STORAGE_BLOCKS = ItemTags
+            .create(IndustrialCraft.forgePrefix("storage_blocks/steel"));
 
     public ItemTagGenerator(DataGenerator generator, BlockTagsProvider provider, ExistingFileHelper helper) {
         super(generator, provider, IndustrialCraft.MOD_ID, helper);
