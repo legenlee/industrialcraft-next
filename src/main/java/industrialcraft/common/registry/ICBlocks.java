@@ -43,6 +43,8 @@ public class ICBlocks {
         POT.addPlant(RUBBER_SAPLING.get().getRegistryName(), () -> POTTED_RUBBER_SAPLING.get());
     }
 
+    public static final WoodType RUBBER = WoodType.create(IndustrialCraft.modPrefix("rubber").toString());
+
     public static final RegistryObject<Block> TIN_ORE = BLOCKS.register("tin_ore",
             () -> new OreBlock(Block.Properties.of(Material.STONE).strength(3, 3)));
 
@@ -87,8 +89,6 @@ public class ICBlocks {
 
     public static final RegistryObject<Block> STEEL_BLOCK = BLOCKS.register("steel_block",
             () -> new Block(Block.Properties.of(Material.METAL).strength(5, 5)));
-
-    public static final WoodType RUBBER = WoodType.create(IndustrialCraft.getResourceLocation("rubber").toString());
 
     public static final RegistryObject<Block> RUBBER_LOG = BLOCKS.register("rubber_log",
             () -> new RubberLogBlock(Block.Properties.copy(Blocks.OAK_LOG)));

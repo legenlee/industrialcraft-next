@@ -5,7 +5,7 @@ import industrialcraft.common.registry.ICBlocks;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.Tag;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -15,11 +15,11 @@ public class BlockTagGenerator extends BlockTagsProvider {
         super(generator, IndustrialCraft.MOD_ID, helper);
     }
 
-    public static final Tag.Named<Block> IC_ORES = BlockTags
-            .bind(IndustrialCraft.getResourceLocation("ores").toString());
+    public static final TagKey<Block> IC_ORES = BlockTags
+            .create(IndustrialCraft.modPrefix("ores"));
 
-    public static final Tag.Named<Block> RUBBER_LOGS = BlockTags
-            .bind(IndustrialCraft.getResourceLocation("rubber_logs").toString());
+    public static final TagKey<Block> RUBBER_LOGS = BlockTags
+            .create(IndustrialCraft.modPrefix("rubber_logs"));
 
     @Override
     protected void addTags() {
