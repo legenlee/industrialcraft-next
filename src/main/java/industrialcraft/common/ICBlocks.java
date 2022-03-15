@@ -1,7 +1,7 @@
 package industrialcraft.common;
 
 import industrialcraft.IndustrialCraft;
-import industrialcraft.block.RubberLogBlock;
+import industrialcraft.block.rubber.RubberLogBlock;
 import industrialcraft.grower.RubberTreeGrower;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
