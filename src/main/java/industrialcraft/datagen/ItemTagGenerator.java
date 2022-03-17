@@ -1,41 +1,17 @@
 package industrialcraft.datagen;
 
 import industrialcraft.IndustrialCraft;
+import industrialcraft.tags.ICBlockTags;
+import industrialcraft.tags.ICItemTags;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.tags.TagKey;
-import net.minecraft.world.item.Item;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 public class ItemTagGenerator extends ItemTagsProvider {
-    public static final TagKey<Item> IC_ORES = ItemTags.create(IndustrialCraft.modPrefix("ores"));
-    public static final TagKey<Item> RUBBER_LOGS = ItemTags.create(IndustrialCraft.modPrefix("rubber_logs"));
-
-    public static final TagKey<Item> TIN_ORES = ItemTags.create(IndustrialCraft.forgePrefix("ores/tin"));
-    public static final TagKey<Item> LEAD_ORES = ItemTags.create(IndustrialCraft.forgePrefix("ores/lead"));
-    public static final TagKey<Item> ALUMINIUM_ORES = ItemTags.create(IndustrialCraft.forgePrefix("ores/aluminium"));
-
-    public static final TagKey<Item> TIN_INGOTS = ItemTags.create(IndustrialCraft.forgePrefix("ingots/tin"));
-    public static final TagKey<Item> LEAD_INGOTS = ItemTags.create(IndustrialCraft.forgePrefix("ingots/lead"));
-    public static final TagKey<Item> ALUMINIUM_INGOTS = ItemTags
-            .create(IndustrialCraft.forgePrefix("ingots/aluminium"));
-    public static final TagKey<Item> BRONZE_INGOTS = ItemTags.create(IndustrialCraft.forgePrefix("ingots/bronze"));
-    public static final TagKey<Item> STEEL_INGOTS = ItemTags.create(IndustrialCraft.forgePrefix("ingots/steel"));
-
-    public static final TagKey<Item> TIN_STORAGE_BLOCKS = ItemTags
-            .create(IndustrialCraft.forgePrefix("storage_blocks/tin"));
-    public static final TagKey<Item> LEAD_STORAGE_BLOCKS = ItemTags
-            .create(IndustrialCraft.forgePrefix("storage_blocks/lead"));
-    public static final TagKey<Item> ALUMINIUM_STORAGE_BLOCKS = ItemTags
-            .create(IndustrialCraft.forgePrefix("storage_blocks/aluminium"));
-    public static final TagKey<Item> BRONZE_STORAGE_BLOCKS = ItemTags
-            .create(IndustrialCraft.forgePrefix("storage_blocks/bronze"));
-    public static final TagKey<Item> STEEL_STORAGE_BLOCKS = ItemTags
-            .create(IndustrialCraft.forgePrefix("storage_blocks/steel"));
 
     public ItemTagGenerator(DataGenerator generator, BlockTagsProvider provider, ExistingFileHelper helper) {
         super(generator, provider, IndustrialCraft.MOD_ID, helper);
@@ -43,8 +19,8 @@ public class ItemTagGenerator extends ItemTagsProvider {
 
     @Override
     protected void addTags() {
-        this.copy(BlockTagGenerator.RUBBER_LOGS, RUBBER_LOGS);
-        this.copy(BlockTagGenerator.IC_ORES, IC_ORES);
+        this.copy(ICBlockTags.RUBBER_LOGS, ICItemTags.RUBBER_LOGS);
+        this.copy(ICBlockTags.IC_ORES, ICItemTags.IC_ORES);
 
         this.copy(Tags.Blocks.ORES, Tags.Items.ORES);
 

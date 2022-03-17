@@ -2,11 +2,10 @@ package industrialcraft.datagen;
 
 import industrialcraft.IndustrialCraft;
 import industrialcraft.common.ICBlocks;
+import industrialcraft.tags.ICBlockTags;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.TagKey;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
@@ -15,21 +14,15 @@ public class BlockTagGenerator extends BlockTagsProvider {
         super(generator, IndustrialCraft.MOD_ID, helper);
     }
 
-    public static final TagKey<Block> IC_ORES = BlockTags
-            .create(IndustrialCraft.modPrefix("ores"));
-
-    public static final TagKey<Block> RUBBER_LOGS = BlockTags
-            .create(IndustrialCraft.modPrefix("rubber_logs"));
-
     @Override
     protected void addTags() {
-        tag(RUBBER_LOGS)
+        tag(ICBlockTags.RUBBER_LOGS)
                 .add(ICBlocks.RUBBER_LOG.get())
                 .add(ICBlocks.STRIPPED_RUBBER_LOG.get())
                 .add(ICBlocks.RUBBER_WOOD.get())
                 .add(ICBlocks.STRIPPED_RUBBER_WOOD.get());
 
-        tag(IC_ORES)
+        tag(ICBlockTags.IC_ORES)
                 .add(ICBlocks.TIN_ORE.get())
                 .add(ICBlocks.DEEPSLATE_TIN_ORE.get())
                 .add(ICBlocks.LEAD_ORE.get())
@@ -37,10 +30,10 @@ public class BlockTagGenerator extends BlockTagsProvider {
                 .add(ICBlocks.BAUXITE_ORE.get())
                 .add(ICBlocks.DEEPSLATE_BAUXITE_ORE.get());
 
-        tag(BlockTags.LOGS).addTag(RUBBER_LOGS);
-        tag(BlockTags.LOGS_THAT_BURN).addTag(RUBBER_LOGS);
+        tag(BlockTags.LOGS).addTag(ICBlockTags.RUBBER_LOGS);
+        tag(BlockTags.LOGS_THAT_BURN).addTag(ICBlockTags.RUBBER_LOGS);
 
-        tag(Tags.Blocks.ORES).addTag(IC_ORES);
+        tag(Tags.Blocks.ORES).addTag(ICBlockTags.IC_ORES);
 
         tag(BlockTags.SAPLINGS).add(ICBlocks.RUBBER_SAPLING.get());
         tag(BlockTags.LEAVES).add(ICBlocks.RUBBER_LEAVES.get());
