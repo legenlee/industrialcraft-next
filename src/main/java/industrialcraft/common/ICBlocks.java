@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.FenceGateBlock;
+import net.minecraft.world.level.block.FireBlock;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraft.world.level.block.LeavesBlock;
 import net.minecraft.world.level.block.OreBlock;
@@ -82,9 +83,26 @@ public class ICBlocks {
     }
 
     public static void setupPots() {
-        final FlowerPotBlock POT = (FlowerPotBlock) Blocks.FLOWER_POT;
+        final FlowerPotBlock pot = (FlowerPotBlock) Blocks.FLOWER_POT;
 
-        POT.addPlant(RUBBER_SAPLING.get().getRegistryName(), () -> POTTED_RUBBER_SAPLING.get());
+        pot.addPlant(RUBBER_SAPLING.get().getRegistryName(), () -> POTTED_RUBBER_SAPLING.get());
+    }
+
+    public static void setupFlammables() {
+        final FireBlock fireBlock = (FireBlock) Blocks.FIRE;
+        
+        fireBlock.setFlammable(RUBBER_LOG.get(), 5, 20);
+        fireBlock.setFlammable(RUBBER_WOOD.get(), 5, 20);
+        fireBlock.setFlammable(RUBBER_PLANKS.get(), 5, 20);
+        fireBlock.setFlammable(RUBBER_STAIRS.get(), 5, 20);
+        fireBlock.setFlammable(RUBBER_SLAB.get(), 5, 20);
+        fireBlock.setFlammable(RUBBER_FENCE.get(), 5, 20);
+        fireBlock.setFlammable(RUBBER_FENCE_GATE.get(), 5, 20);
+
+        fireBlock.setFlammable(STRIPPED_RUBBER_LOG.get(), 5, 5);
+        fireBlock.setFlammable(STRIPPED_RUBBER_WOOD.get(), 5, 5);
+
+        fireBlock.setFlammable(RUBBER_LEAVES.get(), 30, 60);
     }
 
     public static void setup(final IEventBus bus) {

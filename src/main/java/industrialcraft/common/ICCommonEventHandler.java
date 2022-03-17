@@ -14,6 +14,7 @@ public class ICCommonEventHandler {
 
         event.enqueueWork(() -> {
             ICBlocks.setupPots();
+            ICBlocks.setupFlammables();
         });
     }
 }
