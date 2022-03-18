@@ -105,7 +105,7 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.18.2-40.0.15'
+    minecraft 'net.minecraftforge:forge:1.18.2-40.0.19'
 
     // For more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
