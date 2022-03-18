@@ -1,12 +1,9 @@
 package industrialcraft.registry;
 
-import java.util.function.Supplier;
-
 import industrialcraft.IndustrialCraft;
 import industrialcraft.item.ICCreativeModeTab;
 import industrialcraft.item.ICToolTier;
 import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PickaxeItem;
