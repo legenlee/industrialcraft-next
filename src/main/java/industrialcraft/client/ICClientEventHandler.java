@@ -8,9 +8,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 @Mod.EventBusSubscriber(value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD, modid = IndustrialCraft.MOD_ID)
 public class ICClientEventHandler {
-
     @SubscribeEvent
-    public void clientSetup(final FMLClientSetupEvent event) {
+    public static void clientSetup(final FMLClientSetupEvent event) {
         ICBlockRenderHandler.setup();
     }
 }

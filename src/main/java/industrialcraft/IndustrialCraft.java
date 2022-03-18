@@ -11,14 +11,12 @@ import org.apache.logging.log4j.Logger;
 import industrialcraft.common.ICRegistries;
 
 @Mod(IndustrialCraft.MOD_ID)
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class IndustrialCraft {
     public static final String MOD_ID = "icnext";
     public static final Logger LOGGER = LogManager.getLogger();
 
     public IndustrialCraft() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
         ICRegistries.init(bus);
 
         MinecraftForge.EVENT_BUS.register(this);

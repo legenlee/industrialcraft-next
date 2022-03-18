@@ -9,7 +9,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, modid = IndustrialCraft.MOD_ID)
 public class ICCommonEventHandler {
     @SubscribeEvent
-    public void commonSetup(final FMLCommonSetupEvent event) {
+    public static void commonSetup(final FMLCommonSetupEvent event) {
         WoodType.register(ICBlocks.RUBBER);
 
         event.enqueueWork(() -> {
