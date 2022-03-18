@@ -2,9 +2,12 @@ package industrialcraft.common;
 
 import java.util.function.Supplier;
 
+import com.google.common.collect.ImmutableMap;
+
 import industrialcraft.IndustrialCraft;
 import industrialcraft.block.rubber.RubberLogBlock;
 import industrialcraft.grower.RubberTreeGrower;
+import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DoorBlock;
@@ -90,7 +93,7 @@ public class ICBlocks {
 
     public static void setupFlammables() {
         final FireBlock fireBlock = (FireBlock) Blocks.FIRE;
-        
+
         fireBlock.setFlammable(RUBBER_LOG.get(), 5, 20);
         fireBlock.setFlammable(RUBBER_WOOD.get(), 5, 20);
         fireBlock.setFlammable(RUBBER_PLANKS.get(), 5, 20);
@@ -103,6 +106,14 @@ public class ICBlocks {
         fireBlock.setFlammable(STRIPPED_RUBBER_WOOD.get(), 5, 5);
 
         fireBlock.setFlammable(RUBBER_LEAVES.get(), 30, 60);
+    }
+
+    public static void setupStrippables() {
+        AxeItem.STRIPPABLES = new ImmutableMap.Builder<Block, Block>()
+                .putAll(AxeItem.STRIPPABLES)
+                .put(RUBBER_LOG.get(), STRIPPED_RUBBER_LOG.get())
+                .put(RUBBER_WOOD.get(), STRIPPED_RUBBER_WOOD.get())
+                .build();
     }
 
     public static void setup(final IEventBus bus) {
