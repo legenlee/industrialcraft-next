@@ -1,6 +1,7 @@
 package industrialcraft.common;
 
 import industrialcraft.IndustrialCraft;
+import industrialcraft.registry.ICBlocks;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;

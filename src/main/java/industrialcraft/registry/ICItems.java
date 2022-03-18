@@ -1,4 +1,4 @@
-package industrialcraft.common;
+package industrialcraft.registry;
 
 import java.util.function.Supplier;
 

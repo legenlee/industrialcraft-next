@@ -3,7 +3,7 @@ package industrialcraft.item;
 import java.util.List;
 
 import industrialcraft.IndustrialCraft;
-import industrialcraft.common.ICItems;
+import industrialcraft.registry.ICItems;
 import industrialcraft.tags.ICBlockTags;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Tiers;

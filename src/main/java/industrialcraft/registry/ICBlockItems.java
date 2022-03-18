@@ -1,4 +1,4 @@
-package industrialcraft.common;
+package industrialcraft.registry;
 
 import industrialcraft.IndustrialCraft;
 import industrialcraft.item.ICCreativeModeTab;

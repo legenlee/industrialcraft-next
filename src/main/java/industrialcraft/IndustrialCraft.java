@@ -8,7 +8,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import industrialcraft.common.ICRegistries;
+import industrialcraft.registry.ICRegistries;
 
 @Mod(IndustrialCraft.MOD_ID)
 public class IndustrialCraft {

@@ -1,6 +1,6 @@
 package industrialcraft.client;
 
-import industrialcraft.common.ICBlocks;
+import industrialcraft.registry.ICBlocks;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 
