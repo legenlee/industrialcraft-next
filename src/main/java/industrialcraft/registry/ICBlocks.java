@@ -6,7 +6,7 @@ import com.google.common.collect.ImmutableMap;
 
 import industrialcraft.IndustrialCraft;
 import industrialcraft.block.rubber.RubberLogBlock;
-import industrialcraft.grower.RubberTreeGrower;
+import industrialcraft.world.feature.grower.RubberTreeGrower;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
