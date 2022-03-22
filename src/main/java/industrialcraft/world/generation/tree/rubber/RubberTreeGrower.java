@@ -1,4 +1,4 @@
-package industrialcraft.world.grower;
+package industrialcraft.world.generation.tree.rubber;
 
 import java.util.Random;
 
