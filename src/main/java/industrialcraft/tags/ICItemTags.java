@@ -27,7 +27,6 @@ public class ICItemTags {
     public static final TagKey<Item> BRONZE_STORAGE_BLOCKS = createItemTag(IndustrialCraft.forgePrefix("storage_blocks/bronze"));
     public static final TagKey<Item> STEEL_STORAGE_BLOCKS = createItemTag(IndustrialCraft.forgePrefix("storage_blocks/steel"));
 
-
     // @formatter:on
     public static final TagKey<Item> createItemTag(ResourceLocation location) {
         final TagKey<Item> tagKey = ItemTags.create(location);
