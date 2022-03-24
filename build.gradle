@@ -14,7 +14,7 @@ plugins {
 }
 apply plugin: 'net.minecraftforge.gradle'
 
-version = '0.1'
+version = '0.1_build-1'
 group = 'industrialcraft' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'IndustrialCraft-Next'
 
@@ -118,7 +118,7 @@ jar {
         attributes([
                 "Specification-Title"     : "IndustrialCraft",
                 "Specification-Vendor"    : "LegenLee",
-                "Specification-Version"   : "1", // We are version 1 of ourselves
+                "Specification-Version"   : project.jar.archiveVersion,
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
                 "Implementation-Vendor"   : "LegenLee",
