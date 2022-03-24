@@ -9,8 +9,8 @@ import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
-public class BlockTagGenerator extends BlockTagsProvider {
-    public BlockTagGenerator(DataGenerator generator, ExistingFileHelper helper) {
+public class ICBlockTagsProvider extends BlockTagsProvider {
+    public ICBlockTagsProvider(DataGenerator generator, ExistingFileHelper helper) {
         super(generator, IndustrialCraft.MOD_ID, helper);
     }
 

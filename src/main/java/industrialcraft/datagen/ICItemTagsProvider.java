@@ -11,9 +11,9 @@ import net.minecraft.tags.ItemTags;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
-public class ItemTagGenerator extends ItemTagsProvider {
+public class ICItemTagsProvider extends ItemTagsProvider {
 
-    public ItemTagGenerator(DataGenerator generator, BlockTagsProvider provider, ExistingFileHelper helper) {
+    public ICItemTagsProvider(DataGenerator generator, BlockTagsProvider provider, ExistingFileHelper helper) {
         super(generator, provider, IndustrialCraft.MOD_ID, helper);
     }
 

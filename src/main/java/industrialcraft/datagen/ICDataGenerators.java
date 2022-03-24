@@ -9,14 +9,14 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 
 @Mod.EventBusSubscriber(modid = IndustrialCraft.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
-public class DataGenerators {
+public class ICDataGenerators {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
         final DataGenerator generator = event.getGenerator();
         final ExistingFileHelper helper = event.getExistingFileHelper();
-        final BlockTagsProvider blockTags = new BlockTagGenerator(generator, helper);
+        final BlockTagsProvider blockTags = new ICBlockTagsProvider(generator, helper);
 
         generator.addProvider(blockTags);
-        generator.addProvider(new ItemTagGenerator(generator, blockTags, helper));
+        generator.addProvider(new ICItemTagsProvider(generator, blockTags, helper));
     }
 }
