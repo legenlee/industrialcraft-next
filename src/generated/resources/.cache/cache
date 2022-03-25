@@ -34,6 +34,8 @@ e5a9a25c2e338fdcf3fc5f516e16c97be093d20a data/minecraft/tags/blocks/logs.json
 e5a9a25c2e338fdcf3fc5f516e16c97be093d20a data/minecraft/tags/blocks/logs_that_burn.json
 f73086158ca0abfeef427f6b20a56626b45344e7 data/minecraft/tags/blocks/mineable/axe.json
 c94df535fe83a369fcb7d9cbc5f4bd2f3a656dd0 data/minecraft/tags/blocks/mineable/pickaxe.json
+ec01a3cef09cd9c89c695d1e64dcc5ceea119f46 data/minecraft/tags/blocks/needs_iron_tool.json
+67d590739bbd6cb10d396e5ce556a5b1478909a4 data/minecraft/tags/blocks/needs_stone_tool.json
 6fe3d2f906e1d2662bc5f964c75646a79e39975f data/minecraft/tags/blocks/planks.json
 451b3c394d70fa223fd79b819060d0bef1fdd8ba data/minecraft/tags/blocks/pressure_plates.json
 311abe9d5d9753aeb0c16ad678f947d85eaed29e data/minecraft/tags/blocks/saplings.json
