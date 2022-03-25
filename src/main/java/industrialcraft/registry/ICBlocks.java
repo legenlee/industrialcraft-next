@@ -52,7 +52,7 @@ public class ICBlocks {
     public static final RegistryObject<Block> LEAD_BLOCK = registerBlock("lead_block", () -> new Block(Block.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> ALUMINIUM_BLOCK = registerBlock("aluminium_block", () -> new Block(Block.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> BRONZE_BLOCK = registerBlock("bronze_block", () -> new Block(Block.Properties.copy(Blocks.IRON_BLOCK)));
-    public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block", () -> new Block(Block.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block", () -> new Block(Block.Properties.copy(Blocks.DIAMOND_BLOCK)));
 
     public static final RegistryObject<Block> RUBBER_LOG = registerBlock("rubber_log", () -> new RubberLogBlock(Block.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_RUBBER_LOG = registerBlock("stripped_rubber_log", () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.STRIPPED_OAK_LOG)));

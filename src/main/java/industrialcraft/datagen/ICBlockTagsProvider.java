@@ -111,5 +111,22 @@ public class ICBlockTagsProvider extends BlockTagsProvider {
                 ICBlocks.BRONZE_BLOCK.get(),
                 ICBlocks.STEEL_BLOCK.get());
 
+        tag(BlockTags.NEEDS_STONE_TOOL).add(
+                ICBlocks.TIN_ORE.get(),
+                ICBlocks.DEEPSLATE_TIN_ORE.get(),
+                ICBlocks.LEAD_ORE.get(),
+                ICBlocks.DEEPSLATE_LEAD_ORE.get(),
+                ICBlocks.BAUXITE_ORE.get(),
+                ICBlocks.DEEPSLATE_BAUXITE_ORE.get(),
+                ICBlocks.RAW_TIN_BLOCK.get(),
+                ICBlocks.RAW_LEAD_BLOCK.get(),
+                ICBlocks.RAW_BAUXITE_BLOCK.get(),
+                ICBlocks.TIN_BLOCK.get(),
+                ICBlocks.LEAD_BLOCK.get(),
+                ICBlocks.ALUMINIUM_BLOCK.get(),
+                ICBlocks.BRONZE_BLOCK.get());
+
+        tag(BlockTags.NEEDS_IRON_TOOL).add(
+                ICBlocks.STEEL_BLOCK.get());
     }
 }
