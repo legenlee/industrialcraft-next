@@ -20,6 +20,10 @@ public class ICItemTags {
     public static final TagKey<Item> INGOTS_BRONZE = create(IndustrialCraft.forgePrefix("ingots/bronze"));
     public static final TagKey<Item> INGOTS_STEEL = create(IndustrialCraft.forgePrefix("ingots/steel"));
 
+    public static final TagKey<Item> STORAGE_BLOCKS_RAW_TIN = create(IndustrialCraft.forgePrefix("storage_blocks/raw_tin"));
+    public static final TagKey<Item> STORAGE_BLOCKS_RAW_LEAD = create(IndustrialCraft.forgePrefix("storage_blocks/raw_lead"));
+    public static final TagKey<Item> STORAGE_BLOCKS_RAW_BAUXITE = create(IndustrialCraft.forgePrefix("storage_blocks/raw_bauxite"));
+
     public static final TagKey<Item> STORAGE_BLOCKS_TIN = create(IndustrialCraft.forgePrefix("storage_blocks/tin"));
     public static final TagKey<Item> STORAGE_BLOCKS_LEAD = create(IndustrialCraft.forgePrefix("storage_blocks/lead"));
     public static final TagKey<Item> STORAGE_BLOCKS_ALUMINIUM = create(IndustrialCraft.forgePrefix("storage_blocks/aluminium"));

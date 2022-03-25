@@ -26,6 +26,10 @@ public class ICItemTagsProvider extends ItemTagsProvider {
         copy(ICBlockTags.ORES_LEAD, ICItemTags.ORES_LEAD);
         copy(ICBlockTags.ORES_BAUXITE, ICItemTags.ORES_BAUXITE);
 
+        copy(ICBlockTags.STORAGE_BLOCKS_RAW_TIN, ICItemTags.STORAGE_BLOCKS_RAW_TIN);
+        copy(ICBlockTags.STORAGE_BLOCKS_RAW_LEAD, ICItemTags.STORAGE_BLOCKS_RAW_LEAD);
+        copy(ICBlockTags.STORAGE_BLOCKS_RAW_BAUXITE, ICItemTags.STORAGE_BLOCKS_RAW_BAUXITE);
+
         copy(ICBlockTags.STORAGE_BLOCKS_TIN, ICItemTags.STORAGE_BLOCKS_TIN);
         copy(ICBlockTags.STORAGE_BLOCKS_LEAD, ICItemTags.STORAGE_BLOCKS_LEAD);
         copy(ICBlockTags.STORAGE_BLOCKS_ALUMINIUM, ICItemTags.STORAGE_BLOCKS_ALUMINIUM);
