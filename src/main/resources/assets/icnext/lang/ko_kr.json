@@ -65,5 +65,9 @@
   "item.icnext.steel_shovel": "강철 삽",
   "item.icnext.steel_pickaxe": "강철 곡괭이",
   "item.icnext.steel_axe": "강철 도끼",
-  "item.icnext.steel_hoe": "강철 괭이"
+  "item.icnext.steel_hoe": "강철 괭이",
+
+  // Discs
+  "item.icnext.music_disc_your_everyday_happycore": "음반",
+  "item.icnext.music_disc_your_everyday_happycore.desc": "NoisySundae - Your Everyday Happycore"
 }

@@ -65,5 +65,9 @@
   "item.icnext.steel_shovel": "Steel Shovel",
   "item.icnext.steel_pickaxe": "Steel Pickaxe",
   "item.icnext.steel_axe": "Steel Axe",
-  "item.icnext.steel_hoe": "Steel Hoe"
+  "item.icnext.steel_hoe": "Steel Hoe",
+
+  // Discs
+  "item.icnext.music_disc_your_everyday_happycore": "Music Disc",
+  "item.icnext.music_disc_your_everyday_happycore.desc": "NoisySundae - Your Everyday Happycore"
 }

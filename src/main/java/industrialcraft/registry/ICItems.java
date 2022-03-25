@@ -6,7 +6,10 @@ import industrialcraft.item.ICToolTier;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.RecordItem;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -55,6 +58,8 @@ public class ICItems {
     public static final RegistryObject<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe", () -> new PickaxeItem(ICToolTier.STEEL, 1, -2.8f, new Item.Properties().tab(ICCreativeModeTab.GENERAL)));
     public static final RegistryObject<Item> STEEL_AXE = ITEMS.register("steel_axe", () -> new AxeItem(ICToolTier.STEEL, 6, -3.1f, new Item.Properties().tab(ICCreativeModeTab.GENERAL)));
     public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe", () -> new HoeItem(ICToolTier.STEEL, -2, -1, new Item.Properties().tab(ICCreativeModeTab.GENERAL)));
+
+    public static final RegistryObject<Item> MUSIC_DISC_YOUR_EVERYDAY_HAPPYCORE = ITEMS.register("music_disc_your_everyday_happycore", () -> new RecordItem(15, () -> ICSoundEvents.YOUR_EVERYDAY_HAPPYCORE.get(), new Item.Properties().stacksTo(1).tab(ICCreativeModeTab.GENERAL).rarity(Rarity.RARE)));
 
     // @formatter:on
     private static final RegistryObject<Item> register(String name) {
