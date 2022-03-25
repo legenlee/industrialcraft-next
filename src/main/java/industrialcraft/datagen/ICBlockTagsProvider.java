@@ -22,18 +22,16 @@ public class ICBlockTagsProvider extends BlockTagsProvider {
                 .add(ICBlocks.RUBBER_WOOD.get())
                 .add(ICBlocks.STRIPPED_RUBBER_WOOD.get());
 
-        tag(ICBlockTags.IC_ORES)
+        tag(BlockTags.LOGS).addTag(ICBlockTags.RUBBER_LOGS);
+        tag(BlockTags.LOGS_THAT_BURN).addTag(ICBlockTags.RUBBER_LOGS);
+
+        tag(Tags.Blocks.ORES)
                 .add(ICBlocks.TIN_ORE.get())
                 .add(ICBlocks.DEEPSLATE_TIN_ORE.get())
                 .add(ICBlocks.LEAD_ORE.get())
                 .add(ICBlocks.DEEPSLATE_LEAD_ORE.get())
                 .add(ICBlocks.BAUXITE_ORE.get())
                 .add(ICBlocks.DEEPSLATE_BAUXITE_ORE.get());
-
-        tag(BlockTags.LOGS).addTag(ICBlockTags.RUBBER_LOGS);
-        tag(BlockTags.LOGS_THAT_BURN).addTag(ICBlockTags.RUBBER_LOGS);
-
-        tag(Tags.Blocks.ORES).addTag(ICBlockTags.IC_ORES);
 
         tag(BlockTags.SAPLINGS).add(ICBlocks.RUBBER_SAPLING.get());
         tag(BlockTags.LEAVES).add(ICBlocks.RUBBER_LEAVES.get());

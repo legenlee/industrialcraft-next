@@ -20,7 +20,6 @@ public class ICItemTagsProvider extends ItemTagsProvider {
     @Override
     protected void addTags() {
         this.copy(ICBlockTags.RUBBER_LOGS, ICItemTags.RUBBER_LOGS);
-        this.copy(ICBlockTags.IC_ORES, ICItemTags.IC_ORES);
 
         this.copy(Tags.Blocks.ORES, Tags.Items.ORES);
 
