@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "#icnext:ores"
+    "#forge:ores/tin",
+    "#forge:ores/tin",
+    "#forge:ores/tin"
   ]
 }

@@ -1,6 +1,8 @@
 package industrialcraft.datagen;
 
 import industrialcraft.IndustrialCraft;
+import industrialcraft.registry.ICBlockItems;
+import industrialcraft.registry.ICItems;
 import industrialcraft.tags.ICBlockTags;
 import industrialcraft.tags.ICItemTags;
 import net.minecraft.data.DataGenerator;
@@ -19,30 +21,51 @@ public class ICItemTagsProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags() {
-        this.copy(ICBlockTags.RUBBER_LOGS, ICItemTags.RUBBER_LOGS);
+        // ICNext
+        copy(ICBlockTags.ORES_TIN, ICItemTags.ORES_TIN);
+        copy(ICBlockTags.ORES_LEAD, ICItemTags.ORES_LEAD);
+        copy(ICBlockTags.ORES_BAUXITE, ICItemTags.ORES_BAUXITE);
 
-        this.copy(Tags.Blocks.ORES, Tags.Items.ORES);
+        copy(ICBlockTags.STORAGE_BLOCKS_TIN, ICItemTags.STORAGE_BLOCKS_TIN);
+        copy(ICBlockTags.STORAGE_BLOCKS_LEAD, ICItemTags.STORAGE_BLOCKS_LEAD);
+        copy(ICBlockTags.STORAGE_BLOCKS_ALUMINIUM, ICItemTags.STORAGE_BLOCKS_ALUMINIUM);
+        copy(ICBlockTags.STORAGE_BLOCKS_BRONZE, ICItemTags.STORAGE_BLOCKS_BRONZE);
+        copy(ICBlockTags.STORAGE_BLOCKS_STEEL, ICItemTags.STORAGE_BLOCKS_STEEL);
 
-        this.copy(BlockTags.LOGS, ItemTags.LOGS);
-        this.copy(BlockTags.LOGS_THAT_BURN, ItemTags.LOGS_THAT_BURN);
+        tag(ICItemTags.INGOTS_TIN).add(ICItems.TIN_INGOT.get());
+        tag(ICItemTags.INGOTS_LEAD).add(ICItems.LEAD_INGOT.get());
+        tag(ICItemTags.INGOTS_ALUMINIUM).add(ICItems.ALUMINIUM_INGOT.get());
+        tag(ICItemTags.INGOTS_BRONZE).add(ICItems.BRONZE_INGOT.get());
+        tag(ICItemTags.INGOTS_STEEL).add(ICItems.STEEL_INGOT.get());
 
-        this.copy(BlockTags.SAPLINGS, ItemTags.SAPLINGS);
-        this.copy(BlockTags.LEAVES, ItemTags.LEAVES);
+        copy(ICBlockTags.RUBBER_LOGS, ICItemTags.RUBBER_LOGS);
 
-        this.copy(BlockTags.PLANKS, ItemTags.PLANKS);
+        // Vanilla
+        tag(ItemTags.LOGS)
+                .add(ICBlockItems.RUBBER_LOG.get())
+                .add(ICBlockItems.STRIPPED_RUBBER_LOG.get())
+                .add(ICBlockItems.RUBBER_WOOD.get())
+                .add(ICBlockItems.STRIPPED_RUBBER_WOOD.get());
 
-        this.copy(BlockTags.STAIRS, ItemTags.STAIRS);
-        this.copy(BlockTags.WOODEN_STAIRS, ItemTags.WOODEN_STAIRS);
+        tag(ItemTags.LOGS_THAT_BURN)
+                .add(ICBlockItems.RUBBER_LOG.get())
+                .add(ICBlockItems.STRIPPED_RUBBER_LOG.get())
+                .add(ICBlockItems.RUBBER_WOOD.get())
+                .add(ICBlockItems.STRIPPED_RUBBER_WOOD.get());
 
-        this.copy(BlockTags.SLABS, ItemTags.SLABS);
-        this.copy(BlockTags.WOODEN_SLABS, ItemTags.WOODEN_SLABS);
+        tag(ItemTags.SAPLINGS).add(ICBlockItems.RUBBER_SAPLING.get());
+        tag(ItemTags.LEAVES).add(ICBlockItems.RUBBER_LEAVES.get());
+        tag(ItemTags.PLANKS).add(ICBlockItems.RUBBER_PLANKS.get());
+        tag(ItemTags.WOODEN_STAIRS).add(ICBlockItems.RUBBER_STAIRS.get());
+        tag(ItemTags.WOODEN_SLABS).add(ICBlockItems.RUBBER_SLAB.get());
+        tag(ItemTags.FENCES).add(ICBlockItems.RUBBER_FENCE.get());
+        tag(ItemTags.WOODEN_FENCES).add(ICBlockItems.RUBBER_FENCE_GATE.get());
+        tag(ItemTags.WOODEN_PRESSURE_PLATES).add(ICBlockItems.RUBBER_PRESSURE_PLATE.get());
 
-        this.copy(BlockTags.FENCES, ItemTags.FENCES);
-        this.copy(BlockTags.WOODEN_FENCES, ItemTags.WOODEN_FENCES);
+        // Forge
+        copy(Tags.Blocks.ORES, Tags.Items.ORES);
+        copy(BlockTags.FENCE_GATES, Tags.Items.FENCE_GATES);
+        copy(Tags.Blocks.FENCE_GATES_WOODEN, Tags.Items.FENCE_GATES_WOODEN);
 
-        this.copy(BlockTags.FENCE_GATES, Tags.Items.FENCE_GATES);
-        this.copy(Tags.Blocks.FENCE_GATES_WOODEN, Tags.Items.FENCE_GATES_WOODEN);
-
-        this.copy(BlockTags.WOODEN_PRESSURE_PLATES, ItemTags.WOODEN_PRESSURE_PLATES);
     }
 }
