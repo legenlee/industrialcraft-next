@@ -1,7 +1,5 @@
 package industrialcraft.registry;
 
-import java.util.List;
-
 import industrialcraft.IndustrialCraft;
 import net.minecraft.core.Holder;
 import net.minecraft.data.BuiltinRegistries;
