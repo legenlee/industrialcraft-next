@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "icnext:block/rubber_tree/strippeed_rubber_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "icnext:block/rubber_tree/stripped_rubber_wood"
+    },
+    "axis=z": {
+      "model": "icnext:block/rubber_tree/stripped_rubber_wood",
+      "x": 90
+    }
+  }
+}

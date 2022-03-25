@@ -1,15 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "model": "icnext:block/rubber/rubber_wood",
+      "model": "icnext:block/rubber_tree/rubber_wood",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "model": "icnext:block/rubber/rubber_wood"
+      "model": "icnext:block/rubber_tree/rubber_wood"
     },
     "axis=z": {
-      "model": "icnext:block/rubber/rubber_wood",
+      "model": "icnext:block/rubber_tree/rubber_wood",
       "x": 90
     }
   }

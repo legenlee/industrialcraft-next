@@ -1,15 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "model": "icnext:block/rubber/rubber_log_horizontal",
+      "model": "icnext:block/rubber_tree/rubber_log_horizontal",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "model": "icnext:block/rubber/rubber_log"
+      "model": "icnext:block/rubber_tree/rubber_log"
     },
     "axis=z": {
-      "model": "icnext:block/rubber/rubber_log_horizontal",
+      "model": "icnext:block/rubber_tree/rubber_log_horizontal",
       "x": 90
     }
   }

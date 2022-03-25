@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "icnext:block/rubber_planks",
-    "top": "icnext:block/rubber_planks",
-    "side": "icnext:block/rubber_planks"
-  }
-}
