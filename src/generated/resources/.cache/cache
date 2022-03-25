@@ -3,9 +3,12 @@
 abf2cb5cf457a755cc489ec168719d03c7251914 data/forge/tags/blocks/ore_rates/singular.json
 abf2cb5cf457a755cc489ec168719d03c7251914 data/forge/tags/blocks/ores.json
 e8a1bcb3cfb5c7ab04c4b23aa7302d78343eb829 data/forge/tags/blocks/ores/tin.json
-1e6ef9c0d94b48846d54de653a32816594abd9af data/forge/tags/blocks/storage_blocks.json
+cdc1222a1fd7311b48d9da9ff6d0c3a0b1dbbbda data/forge/tags/blocks/storage_blocks.json
 3e0a64af56f458edc808d21324a64cc2fdb3808f data/forge/tags/blocks/storage_blocks/bronze.json
 dc9a5b24925b0c906115517b18e3f96167931ab4 data/forge/tags/blocks/storage_blocks/lead.json
+97fbd44dcbe00ce423dd2d0e44006e486be2d0b0 data/forge/tags/blocks/storage_blocks/raw_bauxite.json
+1be07263fbaee167b9c8b2486ca0d4413291f0a3 data/forge/tags/blocks/storage_blocks/raw_lead.json
+1a9b58e3611f42c87f39e380d093aeb0f7ca6a63 data/forge/tags/blocks/storage_blocks/raw_tin.json
 ec01a3cef09cd9c89c695d1e64dcc5ceea119f46 data/forge/tags/blocks/storage_blocks/steel.json
 ace87ec5bef378db7613db55c1270eb3f4dedfb1 data/forge/tags/blocks/storage_blocks/tin.json
 5fd3fc1f450bc0712a0bc701f3b7017d6ce2b1ff data/forge/tags/items/fence_gates.json
@@ -22,6 +25,9 @@ e8a1bcb3cfb5c7ab04c4b23aa7302d78343eb829 data/forge/tags/items/ores/tin.json
 dc9a5b24925b0c906115517b18e3f96167931ab4 data/forge/tags/items/storage_blocks/aluminium.json
 3e0a64af56f458edc808d21324a64cc2fdb3808f data/forge/tags/items/storage_blocks/bronze.json
 dc9a5b24925b0c906115517b18e3f96167931ab4 data/forge/tags/items/storage_blocks/lead.json
+97fbd44dcbe00ce423dd2d0e44006e486be2d0b0 data/forge/tags/items/storage_blocks/raw_bauxite.json
+1be07263fbaee167b9c8b2486ca0d4413291f0a3 data/forge/tags/items/storage_blocks/raw_lead.json
+1a9b58e3611f42c87f39e380d093aeb0f7ca6a63 data/forge/tags/items/storage_blocks/raw_tin.json
 ec01a3cef09cd9c89c695d1e64dcc5ceea119f46 data/forge/tags/items/storage_blocks/steel.json
 ace87ec5bef378db7613db55c1270eb3f4dedfb1 data/forge/tags/items/storage_blocks/tin.json
 964ab16614c848b14eceebf73c1eaf7e5003c9ac data/icnext/tags/blocks/rubber_logs.json

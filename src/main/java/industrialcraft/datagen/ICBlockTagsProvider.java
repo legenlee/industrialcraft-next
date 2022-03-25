@@ -29,6 +29,10 @@ public class ICBlockTagsProvider extends BlockTagsProvider {
                 ICBlocks.BAUXITE_ORE.get(),
                 ICBlocks.DEEPSLATE_BAUXITE_ORE.get());
 
+        tag(ICBlockTags.STORAGE_BLOCKS_RAW_TIN).add(ICBlocks.RAW_TIN_BLOCK.get());
+        tag(ICBlockTags.STORAGE_BLOCKS_RAW_LEAD).add(ICBlocks.RAW_LEAD_BLOCK.get());
+        tag(ICBlockTags.STORAGE_BLOCKS_RAW_BAUXITE).add(ICBlocks.RAW_BAUXITE_BLOCK.get());
+
         tag(ICBlockTags.STORAGE_BLOCKS_TIN).add(ICBlocks.TIN_BLOCK.get());
         tag(ICBlockTags.STORAGE_BLOCKS_LEAD).add(ICBlocks.LEAD_BLOCK.get());
         tag(ICBlockTags.STORAGE_BLOCKS_ALUMINIUM).add(ICBlocks.ALUMINIUM_BLOCK.get());
@@ -70,6 +74,9 @@ public class ICBlockTagsProvider extends BlockTagsProvider {
                 ICBlockTags.ORES_BAUXITE);
 
         tag(Tags.Blocks.STORAGE_BLOCKS).addTags(
+                ICBlockTags.STORAGE_BLOCKS_RAW_TIN,
+                ICBlockTags.STORAGE_BLOCKS_RAW_LEAD,
+                ICBlockTags.STORAGE_BLOCKS_RAW_BAUXITE,
                 ICBlockTags.STORAGE_BLOCKS_TIN,
                 ICBlockTags.STORAGE_BLOCKS_LEAD,
                 ICBlockTags.STORAGE_BLOCKS_ALUMINIUM,
