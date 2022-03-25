@@ -1,5 +1,7 @@
 package industrialcraft.registry;
 
+import java.util.List;
+
 import industrialcraft.IndustrialCraft;
 import net.minecraft.core.Holder;
 import net.minecraft.data.BuiltinRegistries;
@@ -21,7 +23,7 @@ public class ICConfiguredFeatures {
                     new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1))
                     .ignoreVines().build());
 
-    public static <FC extends FeatureConfiguration, F extends Feature<FC>> Holder<ConfiguredFeature<FC, ?>> register(
+    private static <FC extends FeatureConfiguration, F extends Feature<FC>> Holder<ConfiguredFeature<FC, ?>> register(
             String name, F feature, FC config) {
         return BuiltinRegistries.registerExact(BuiltinRegistries.CONFIGURED_FEATURE,
                 IndustrialCraft.modPrefix(name).toString(), new ConfiguredFeature<>(feature, config));
