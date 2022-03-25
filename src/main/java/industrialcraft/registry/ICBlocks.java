@@ -37,39 +37,39 @@ public class ICBlocks {
     public static final WoodType RUBBER = WoodType.create(IndustrialCraft.modPrefix("rubber").toString());
 
     // @formatter:off
-    public static final RegistryObject<Block> TIN_ORE = registerBlock("tin_ore", () -> new OreBlock(Block.Properties.copy(Blocks.IRON_ORE)));
-    public static final RegistryObject<Block> DEEPSLATE_TIN_ORE = registerBlock("deepslate_tin_ore", () -> new OreBlock(Block.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)));
-    public static final RegistryObject<Block> LEAD_ORE = registerBlock("lead_ore", () -> new OreBlock(Block.Properties.copy(Blocks.IRON_ORE)));
-    public static final RegistryObject<Block> DEEPSLATE_LEAD_ORE = registerBlock("deepslate_lead_ore", () -> new OreBlock(Block.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)));
-    public static final RegistryObject<Block> BAUXITE_ORE = registerBlock("bauxite_ore", () -> new OreBlock(Block.Properties.copy(Blocks.IRON_ORE)));
-    public static final RegistryObject<Block> DEEPSLATE_BAUXITE_ORE = registerBlock("deepslate_bauxite_ore", () -> new OreBlock(Block.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)));
+    public static final RegistryObject<Block> TIN_ORE = register("tin_ore", () -> new OreBlock(Block.Properties.copy(Blocks.IRON_ORE)));
+    public static final RegistryObject<Block> DEEPSLATE_TIN_ORE = register("deepslate_tin_ore", () -> new OreBlock(Block.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)));
+    public static final RegistryObject<Block> LEAD_ORE = register("lead_ore", () -> new OreBlock(Block.Properties.copy(Blocks.IRON_ORE)));
+    public static final RegistryObject<Block> DEEPSLATE_LEAD_ORE = register("deepslate_lead_ore", () -> new OreBlock(Block.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)));
+    public static final RegistryObject<Block> BAUXITE_ORE = register("bauxite_ore", () -> new OreBlock(Block.Properties.copy(Blocks.IRON_ORE)));
+    public static final RegistryObject<Block> DEEPSLATE_BAUXITE_ORE = register("deepslate_bauxite_ore", () -> new OreBlock(Block.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)));
 
-    public static final RegistryObject<Block> RAW_TIN_BLOCK = registerBlock("raw_tin_block", () -> new Block(Block.Properties.copy(Blocks.RAW_IRON_BLOCK)));
-    public static final RegistryObject<Block> RAW_LEAD_BLOCK = registerBlock("raw_lead_block", () -> new Block(Block.Properties.copy(Blocks.RAW_IRON_BLOCK)));
-    public static final RegistryObject<Block> RAW_BAUXITE_BLOCK = registerBlock("raw_bauxite_block", () -> new Block(Block.Properties.copy(Blocks.RAW_IRON_BLOCK)));
+    public static final RegistryObject<Block> RAW_TIN_BLOCK = register("raw_tin_block", () -> new Block(Block.Properties.copy(Blocks.RAW_IRON_BLOCK)));
+    public static final RegistryObject<Block> RAW_LEAD_BLOCK = register("raw_lead_block", () -> new Block(Block.Properties.copy(Blocks.RAW_IRON_BLOCK)));
+    public static final RegistryObject<Block> RAW_BAUXITE_BLOCK = register("raw_bauxite_block", () -> new Block(Block.Properties.copy(Blocks.RAW_IRON_BLOCK)));
 
-    public static final RegistryObject<Block> TIN_BLOCK = registerBlock("tin_block", () -> new Block(Block.Properties.copy(Blocks.IRON_BLOCK)));
-    public static final RegistryObject<Block> LEAD_BLOCK = registerBlock("lead_block", () -> new Block(Block.Properties.copy(Blocks.IRON_BLOCK)));
-    public static final RegistryObject<Block> ALUMINIUM_BLOCK = registerBlock("aluminium_block", () -> new Block(Block.Properties.copy(Blocks.IRON_BLOCK)));
-    public static final RegistryObject<Block> BRONZE_BLOCK = registerBlock("bronze_block", () -> new Block(Block.Properties.copy(Blocks.IRON_BLOCK)));
-    public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block", () -> new Block(Block.Properties.copy(Blocks.DIAMOND_BLOCK)));
+    public static final RegistryObject<Block> TIN_BLOCK = register("tin_block", () -> new Block(Block.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> LEAD_BLOCK = register("lead_block", () -> new Block(Block.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> ALUMINIUM_BLOCK = register("aluminium_block", () -> new Block(Block.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> BRONZE_BLOCK = register("bronze_block", () -> new Block(Block.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> STEEL_BLOCK = register("steel_block", () -> new Block(Block.Properties.copy(Blocks.DIAMOND_BLOCK)));
 
-    public static final RegistryObject<Block> RUBBER_LOG = registerBlock("rubber_log", () -> new RubberLogBlock(Block.Properties.copy(Blocks.OAK_LOG)));
-    public static final RegistryObject<Block> STRIPPED_RUBBER_LOG = registerBlock("stripped_rubber_log", () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
-    public static final RegistryObject<Block> RUBBER_WOOD = registerBlock("rubber_wood", () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.OAK_WOOD)));
-    public static final RegistryObject<Block> STRIPPED_RUBBER_WOOD = registerBlock("stripped_rubber_wood", () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
-    public static final RegistryObject<Block> RUBBER_LEAVES = registerBlock("rubber_leaves", () -> new LeavesBlock(Block.Properties.copy(Blocks.OAK_LEAVES)));
-    public static final RegistryObject<Block> RUBBER_SAPLING = registerBlock("rubber_sapling", () -> new SaplingBlock(new RubberTreeGrower(), Block.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> POTTED_RUBBER_SAPLING = registerBlock("potted_rubber_sapling", () -> new FlowerPotBlock(null, () -> RUBBER_SAPLING.get(), Block.Properties.copy(Blocks.FLOWER_POT)));
-    public static final RegistryObject<Block> RUBBER_PLANKS = registerBlock("rubber_planks", () -> new Block(Block.Properties.copy(Blocks.OAK_PLANKS)));
-    public static final RegistryObject<Block> RUBBER_STAIRS = registerBlock("rubber_stairs", () -> new StairBlock(() -> Blocks.OAK_PLANKS.defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS)));
-    public static final RegistryObject<Block> RUBBER_SLAB = registerBlock("rubber_slab", () -> new SlabBlock(Block.Properties.copy(Blocks.OAK_SLAB)));
-    public static final RegistryObject<Block> RUBBER_DOOR = registerBlock("rubber_door", () -> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR)));
-    public static final RegistryObject<Block> RUBBER_TRAPDOOR = registerBlock("rubber_trapdoor", () -> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR)));
-    public static final RegistryObject<Block> RUBBER_FENCE = registerBlock("rubber_fence", () -> new FenceBlock(Block.Properties.copy(Blocks.OAK_FENCE)));
-    public static final RegistryObject<Block> RUBBER_FENCE_GATE = registerBlock("rubber_fence_gate", () -> new FenceGateBlock(Block.Properties.copy(Blocks.OAK_FENCE_GATE)));
-    public static final RegistryObject<Block> RUBBER_PRESSURE_PLATE = registerBlock("rubber_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, Block.Properties.copy(Blocks.OAK_PRESSURE_PLATE)));
-    public static final RegistryObject<Block> RUBBER_BUTTON = registerBlock("rubber_button", () -> new WoodButtonBlock(Block.Properties.copy(Blocks.OAK_BUTTON)));
+    public static final RegistryObject<Block> RUBBER_LOG = register("rubber_log", () -> new RubberLogBlock(Block.Properties.copy(Blocks.OAK_LOG)));
+    public static final RegistryObject<Block> STRIPPED_RUBBER_LOG = register("stripped_rubber_log", () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
+    public static final RegistryObject<Block> RUBBER_WOOD = register("rubber_wood", () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.OAK_WOOD)));
+    public static final RegistryObject<Block> STRIPPED_RUBBER_WOOD = register("stripped_rubber_wood", () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
+    public static final RegistryObject<Block> RUBBER_LEAVES = register("rubber_leaves", () -> new LeavesBlock(Block.Properties.copy(Blocks.OAK_LEAVES)));
+    public static final RegistryObject<Block> RUBBER_SAPLING = register("rubber_sapling", () -> new SaplingBlock(new RubberTreeGrower(), Block.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> POTTED_RUBBER_SAPLING = register("potted_rubber_sapling", () -> new FlowerPotBlock(null, () -> RUBBER_SAPLING.get(), Block.Properties.copy(Blocks.FLOWER_POT)));
+    public static final RegistryObject<Block> RUBBER_PLANKS = register("rubber_planks", () -> new Block(Block.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> RUBBER_STAIRS = register("rubber_stairs", () -> new StairBlock(() -> Blocks.OAK_PLANKS.defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> RUBBER_SLAB = register("rubber_slab", () -> new SlabBlock(Block.Properties.copy(Blocks.OAK_SLAB)));
+    public static final RegistryObject<Block> RUBBER_DOOR = register("rubber_door", () -> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR)));
+    public static final RegistryObject<Block> RUBBER_TRAPDOOR = register("rubber_trapdoor", () -> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR)));
+    public static final RegistryObject<Block> RUBBER_FENCE = register("rubber_fence", () -> new FenceBlock(Block.Properties.copy(Blocks.OAK_FENCE)));
+    public static final RegistryObject<Block> RUBBER_FENCE_GATE = register("rubber_fence_gate", () -> new FenceGateBlock(Block.Properties.copy(Blocks.OAK_FENCE_GATE)));
+    public static final RegistryObject<Block> RUBBER_PRESSURE_PLATE = register("rubber_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, Block.Properties.copy(Blocks.OAK_PRESSURE_PLATE)));
+    public static final RegistryObject<Block> RUBBER_BUTTON = register("rubber_button", () -> new WoodButtonBlock(Block.Properties.copy(Blocks.OAK_BUTTON)));
 
     // public static final RegistryObject<Block> RUBBER_SIGN =
     // BLOCKS.register("rubber_sign",
@@ -80,7 +80,7 @@ public class ICBlocks {
     // () -> new WallSignBlock(p_56990_, p_56991_));
 
     // @formatter:on
-    public static final RegistryObject<Block> registerBlock(String name, Supplier<? extends Block> sup) {
+    private static final RegistryObject<Block> register(String name, Supplier<? extends Block> sup) {
         final RegistryObject<Block> registryObject = BLOCKS.register(name, sup);
         return registryObject;
     }

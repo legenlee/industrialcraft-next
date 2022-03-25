@@ -19,30 +19,30 @@ public class ICItems {
             IndustrialCraft.MOD_ID);
 
     // @formatter:off
-    public static final RegistryObject<Item> TREETAP = registerItem("treetap");
+    public static final RegistryObject<Item> TREETAP = register("treetap");
 
-    public static final RegistryObject<Item> RAW_TIN = registerItem("raw_tin");
-    public static final RegistryObject<Item> TIN_INGOT = registerItem("tin_ingot");
-    public static final RegistryObject<Item> TIN_NUGGET = registerItem("tin_nugget");
-    public static final RegistryObject<Item> TIN_DUST = registerItem("tin_dust");
+    public static final RegistryObject<Item> RAW_TIN = register("raw_tin");
+    public static final RegistryObject<Item> TIN_INGOT = register("tin_ingot");
+    public static final RegistryObject<Item> TIN_NUGGET = register("tin_nugget");
+    public static final RegistryObject<Item> TIN_DUST = register("tin_dust");
 
-    public static final RegistryObject<Item> RAW_LEAD = registerItem("raw_lead");
-    public static final RegistryObject<Item> LEAD_INGOT = registerItem("lead_ingot");
-    public static final RegistryObject<Item> LEAD_NUGGET = registerItem("lead_nugget");
-    public static final RegistryObject<Item> LEAD_DUST = registerItem("lead_dust");
+    public static final RegistryObject<Item> RAW_LEAD = register("raw_lead");
+    public static final RegistryObject<Item> LEAD_INGOT = register("lead_ingot");
+    public static final RegistryObject<Item> LEAD_NUGGET = register("lead_nugget");
+    public static final RegistryObject<Item> LEAD_DUST = register("lead_dust");
 
-    public static final RegistryObject<Item> RAW_BAUXITE = registerItem("raw_bauxite");
-    public static final RegistryObject<Item> ALUMINIUM_INGOT = registerItem("aluminium_ingot");
-    public static final RegistryObject<Item> ALUMINIUM_NUGGET = registerItem("aluminium_nugget");
-    public static final RegistryObject<Item> ALUMINIUM_DUST = registerItem("aluminium_dust");
+    public static final RegistryObject<Item> RAW_BAUXITE = register("raw_bauxite");
+    public static final RegistryObject<Item> ALUMINIUM_INGOT = register("aluminium_ingot");
+    public static final RegistryObject<Item> ALUMINIUM_NUGGET = register("aluminium_nugget");
+    public static final RegistryObject<Item> ALUMINIUM_DUST = register("aluminium_dust");
 
-    public static final RegistryObject<Item> BRONZE_INGOT = registerItem("bronze_ingot");
-    public static final RegistryObject<Item> BRONZE_NUGGET = registerItem("bronze_nugget");
-    public static final RegistryObject<Item> BRONZE_DUST = registerItem("bronze_dust");
+    public static final RegistryObject<Item> BRONZE_INGOT = register("bronze_ingot");
+    public static final RegistryObject<Item> BRONZE_NUGGET = register("bronze_nugget");
+    public static final RegistryObject<Item> BRONZE_DUST = register("bronze_dust");
     
-    public static final RegistryObject<Item> STEEL_INGOT = registerItem("steel_ingot");
-    public static final RegistryObject<Item> STEEL_NUGGET = registerItem("steel_nugget");
-    public static final RegistryObject<Item> STEEL_DUST = registerItem("steel_dust");
+    public static final RegistryObject<Item> STEEL_INGOT = register("steel_ingot");
+    public static final RegistryObject<Item> STEEL_NUGGET = register("steel_nugget");
+    public static final RegistryObject<Item> STEEL_DUST = register("steel_dust");
 
     public static final RegistryObject<Item> BRONZE_SWORD = ITEMS.register("bronze_sword", () -> new SwordItem(ICToolTier.BRONZE, 3, -2.4f, new Item.Properties().tab(ICCreativeModeTab.GENERAL)));
     public static final RegistryObject<Item> BRONZE_SHOVEL = ITEMS.register("bronze_shovel", () -> new ShovelItem(ICToolTier.BRONZE, 1.5f, -3, new Item.Properties().tab(ICCreativeModeTab.GENERAL)));
@@ -57,7 +57,7 @@ public class ICItems {
     public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe", () -> new HoeItem(ICToolTier.STEEL, -2, -1, new Item.Properties().tab(ICCreativeModeTab.GENERAL)));
 
     // @formatter:on
-    public static final RegistryObject<Item> registerItem(String name) {
+    private static final RegistryObject<Item> register(String name) {
         final RegistryObject<Item> registryObject = ITEMS.register(name,
                 () -> new Item(new Item.Properties().tab(ICCreativeModeTab.GENERAL)));
         return registryObject;
