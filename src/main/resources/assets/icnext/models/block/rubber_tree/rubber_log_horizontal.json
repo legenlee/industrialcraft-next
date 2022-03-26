@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "icnext:block/rubber_tree/rubber_log_top",
+    "side": "icnext:block/rubber_tree/rubber_log"
+  }
+}

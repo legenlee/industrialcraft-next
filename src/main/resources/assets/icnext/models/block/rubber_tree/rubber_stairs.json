@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "icnext:block/rubber_tree/rubber_planks",
+    "top": "icnext:block/rubber_tree/rubber_planks",
+    "side": "icnext:block/rubber_tree/rubber_planks"
+  }
+}

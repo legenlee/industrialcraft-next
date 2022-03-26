@@ -1,4 +1,6 @@
 {
+  "itemGroup.icnext_general": "IndustrialCraft-NEXT",
+
   // Blocks
   "block.icnext.tin_ore": "Tin Ore",
   "block.icnext.deepslate_tin_ore": "Deepslate Tin Ore",

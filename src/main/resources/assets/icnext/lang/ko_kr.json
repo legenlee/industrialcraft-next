@@ -1,4 +1,6 @@
 {
+  "itemGroup.icnext_general": "IndustrialCraft-NEXT",
+
   // Blocks
   "block.icnext.tin_ore": "주석 광석",
   "block.icnext.deepslate_tin_ore": "심층암 주석 광석",

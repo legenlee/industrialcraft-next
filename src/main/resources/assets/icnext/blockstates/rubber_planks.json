@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "icnext:block/rubber/rubber_planks"
+      "model": "icnext:block/rubber_tree/rubber_planks"
     }
   }
 }

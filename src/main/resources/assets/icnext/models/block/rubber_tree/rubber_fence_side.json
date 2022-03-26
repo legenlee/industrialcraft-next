@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/fence_side",
   "textures": {
-    "texture": "icnext:block/rubber_planks"
+    "texture": "icnext:block/rubber_tree/rubber_planks"
   }
 }
