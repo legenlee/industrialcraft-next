@@ -29,6 +29,7 @@ public class ICBlockItems {
 
     public static final RegistryObject<BlockItem> TIN_BLOCK = register("tin_block", ICBlocks.TIN_BLOCK, ICCreativeModeTab.GENERAL);
     public static final RegistryObject<BlockItem> LEAD_BLOCK = register("lead_block", ICBlocks.LEAD_BLOCK, ICCreativeModeTab.GENERAL);
+    public static final RegistryObject<BlockItem> ALUMINIUM_BLOCK = register("aluminium_block", ICBlocks.ALUMINIUM_BLOCK, ICCreativeModeTab.GENERAL);
     public static final RegistryObject<BlockItem> BRONZE_BLOCK = register("bronze_block", ICBlocks.BRONZE_BLOCK, ICCreativeModeTab.GENERAL);
     public static final RegistryObject<BlockItem> STEEL_BLOCK = register("steel_block", ICBlocks.STEEL_BLOCK, ICCreativeModeTab.GENERAL);
 
