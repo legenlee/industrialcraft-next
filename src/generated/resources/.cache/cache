@@ -38,7 +38,7 @@ ace87ec5bef378db7613db55c1270eb3f4dedfb1 data/forge/tags/items/storage_blocks/ti
 52cefcbb0b9812684596de18c7c0815b393d04ba data/minecraft/tags/blocks/leaves.json
 e5a9a25c2e338fdcf3fc5f516e16c97be093d20a data/minecraft/tags/blocks/logs.json
 e5a9a25c2e338fdcf3fc5f516e16c97be093d20a data/minecraft/tags/blocks/logs_that_burn.json
-f73086158ca0abfeef427f6b20a56626b45344e7 data/minecraft/tags/blocks/mineable/axe.json
+430cbc4d3be66cf83a8478ad7ead4650a816574d data/minecraft/tags/blocks/mineable/axe.json
 c94df535fe83a369fcb7d9cbc5f4bd2f3a656dd0 data/minecraft/tags/blocks/mineable/pickaxe.json
 ec01a3cef09cd9c89c695d1e64dcc5ceea119f46 data/minecraft/tags/blocks/needs_iron_tool.json
 67d590739bbd6cb10d396e5ce556a5b1478909a4 data/minecraft/tags/blocks/needs_stone_tool.json
