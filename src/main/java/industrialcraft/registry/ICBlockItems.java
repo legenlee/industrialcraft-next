@@ -41,8 +41,8 @@ public class ICBlockItems {
     public static final RegistryObject<BlockItem> RUBBER_PLANKS = register("rubber_planks", ICBlocks.RUBBER_PLANKS, ICCreativeModeTab.GENERAL);
     public static final RegistryObject<BlockItem> RUBBER_STAIRS = register("rubber_stairs", ICBlocks.RUBBER_STAIRS, ICCreativeModeTab.GENERAL);
     public static final RegistryObject<BlockItem> RUBBER_SLAB = register("rubber_slab", ICBlocks.RUBBER_SLAB, ICCreativeModeTab.GENERAL);
-    public static final RegistryObject<BlockItem> RUBBER_DOOR = register("rubber_door", ICBlocks.RUBBER_DOOR, ICCreativeModeTab.GENERAL);
-    public static final RegistryObject<BlockItem> RUBBER_TRAPDOOR = register("rubber_trapdoor", ICBlocks.RUBBER_TRAPDOOR, ICCreativeModeTab.GENERAL);
+    // public static final RegistryObject<BlockItem> RUBBER_DOOR = register("rubber_door", ICBlocks.RUBBER_DOOR, ICCreativeModeTab.GENERAL);
+    // public static final RegistryObject<BlockItem> RUBBER_TRAPDOOR = register("rubber_trapdoor", ICBlocks.RUBBER_TRAPDOOR, ICCreativeModeTab.GENERAL);
     public static final RegistryObject<BlockItem> RUBBER_FENCE = register("rubber_fence", ICBlocks.RUBBER_FENCE, ICCreativeModeTab.GENERAL);
     public static final RegistryObject<BlockItem> RUBBER_FENCE_GATE = register("rubber_fence_gate", ICBlocks.RUBBER_FENCE_GATE, ICCreativeModeTab.GENERAL);
     public static final RegistryObject<BlockItem> RUBBER_PRESSURE_PLATE = register("rubber_pressure_plate", ICBlocks.RUBBER_PRESSURE_PLATE, ICCreativeModeTab.GENERAL);
