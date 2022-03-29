@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "icnext:rubber_stairs"
+    ]
+  },
+  "criteria": {
+    "has_rubber_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "icnext:rubber_planks"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "icnext:rubber_stairs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_rubber_planks",
+      "has_the_recipe"
+    ]
+  ]
+}

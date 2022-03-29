@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "icnext:rubber_logs"
+    }
+  ],
+  "result": {
+    "item": "icnext:rubber_planks",
+    "count": 4
+  }
+}

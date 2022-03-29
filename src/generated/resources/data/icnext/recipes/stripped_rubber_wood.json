@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "icnext:stripped_rubber_log"
+    }
+  },
+  "result": {
+    "item": "icnext:stripped_rubber_wood",
+    "count": 3
+  }
+}
