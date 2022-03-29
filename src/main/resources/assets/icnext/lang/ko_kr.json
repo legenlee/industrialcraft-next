@@ -1,7 +1,7 @@
 {
   "itemGroup.icnext_general": "IndustrialCraft-NEXT",
 
-  // Blocks
+  "_section0": "Blocks",
   "block.icnext.tin_ore": "주석 광석",
   "block.icnext.deepslate_tin_ore": "심층암 주석 광석",
   "block.icnext.bauxite_ore": "수반 광석",
@@ -37,7 +37,7 @@
 
   "block.icnext.tapping_bowl": "수액 채취 그릇",
 
-  // Items
+  "_section1": "Items",
   "item.icnext.treetap": "수액 채취기",
   "item.icnext.raw_tin": "주석 원석",
   "item.icnext.tin_ingot": "주석 주괴",
@@ -69,7 +69,7 @@
   "item.icnext.steel_axe": "강철 도끼",
   "item.icnext.steel_hoe": "강철 괭이",
 
-  // Discs
+  "_section2": "Discs",
   "item.icnext.music_disc_your_everyday_happycore": "음반",
   "item.icnext.music_disc_your_everyday_happycore.desc": "Noisysundae - Your Everyday Happycore"
 }

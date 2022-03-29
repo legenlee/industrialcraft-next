@@ -1,7 +1,7 @@
 {
   "itemGroup.icnext_general": "IndustrialCraft-NEXT",
 
-  // Blocks
+  "_section0": "Blocks",
   "block.icnext.tin_ore": "Tin Ore",
   "block.icnext.deepslate_tin_ore": "Deepslate Tin Ore",
   "block.icnext.bauxite_ore": "Bauxite Ore",
@@ -37,7 +37,7 @@
 
   "block.icnext.tapping_bowl": "Tapping Bowl",
 
-  // Items
+  "_section1": "Items",
   "item.icnext.treetap": "Treetap",
   "item.icnext.raw_tin": "Raw Tin",
   "item.icnext.tin_ingot": "Tin Ingot",
@@ -69,7 +69,7 @@
   "item.icnext.steel_axe": "Steel Axe",
   "item.icnext.steel_hoe": "Steel Hoe",
 
-  // Discs
+  "_section2": "Discs",
   "item.icnext.music_disc_your_everyday_happycore": "Music Disc",
   "item.icnext.music_disc_your_everyday_happycore.desc": "Noisysundae - Your Everyday Happycore"
 }
