@@ -47,24 +47,24 @@ public class ICItems {
     public static final RegistryObject<Item> STEEL_NUGGET = register("steel_nugget");
     public static final RegistryObject<Item> STEEL_DUST = register("steel_dust");
 
-    public static final RegistryObject<Item> BRONZE_SWORD = ITEMS.register("bronze_sword", () -> new SwordItem(ICToolTier.BRONZE, 3, -2.4f, new Item.Properties().tab(ICCreativeModeTab.GENERAL)));
-    public static final RegistryObject<Item> BRONZE_SHOVEL = ITEMS.register("bronze_shovel", () -> new ShovelItem(ICToolTier.BRONZE, 1.5f, -3, new Item.Properties().tab(ICCreativeModeTab.GENERAL)));
-    public static final RegistryObject<Item> BRONZE_PICKAXE = ITEMS.register("bronze_pickaxe", () -> new PickaxeItem(ICToolTier.BRONZE, 1, -2.8f, new Item.Properties().tab(ICCreativeModeTab.GENERAL)));
-    public static final RegistryObject<Item> BRONZE_AXE = ITEMS.register("bronze_axe", () -> new AxeItem(ICToolTier.BRONZE, 6, -3.1f, new Item.Properties().tab(ICCreativeModeTab.GENERAL)));
-    public static final RegistryObject<Item> BRONZE_HOE = ITEMS.register("bronze_hoe", () -> new HoeItem(ICToolTier.BRONZE, -2, -1, new Item.Properties().tab(ICCreativeModeTab.GENERAL)));
+    public static final RegistryObject<Item> BRONZE_SWORD = ITEMS.register("bronze_sword", () -> new SwordItem(ICToolTier.BRONZE, 3, -2.4f, new Item.Properties().tab(ICCreativeModeTab.ICNEXT)));
+    public static final RegistryObject<Item> BRONZE_SHOVEL = ITEMS.register("bronze_shovel", () -> new ShovelItem(ICToolTier.BRONZE, 1.5f, -3, new Item.Properties().tab(ICCreativeModeTab.ICNEXT)));
+    public static final RegistryObject<Item> BRONZE_PICKAXE = ITEMS.register("bronze_pickaxe", () -> new PickaxeItem(ICToolTier.BRONZE, 1, -2.8f, new Item.Properties().tab(ICCreativeModeTab.ICNEXT)));
+    public static final RegistryObject<Item> BRONZE_AXE = ITEMS.register("bronze_axe", () -> new AxeItem(ICToolTier.BRONZE, 6, -3.1f, new Item.Properties().tab(ICCreativeModeTab.ICNEXT)));
+    public static final RegistryObject<Item> BRONZE_HOE = ITEMS.register("bronze_hoe", () -> new HoeItem(ICToolTier.BRONZE, -2, -1, new Item.Properties().tab(ICCreativeModeTab.ICNEXT)));
 
-    public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword", () -> new SwordItem(ICToolTier.STEEL, 3, -2.4f, new Item.Properties().tab(ICCreativeModeTab.GENERAL)));
-    public static final RegistryObject<Item> STEEL_SHOVEL = ITEMS.register("steel_shovel", () -> new ShovelItem(ICToolTier.STEEL, 1.5f, -3, new Item.Properties().tab(ICCreativeModeTab.GENERAL)));
-    public static final RegistryObject<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe", () -> new PickaxeItem(ICToolTier.STEEL, 1, -2.8f, new Item.Properties().tab(ICCreativeModeTab.GENERAL)));
-    public static final RegistryObject<Item> STEEL_AXE = ITEMS.register("steel_axe", () -> new AxeItem(ICToolTier.STEEL, 6, -3.1f, new Item.Properties().tab(ICCreativeModeTab.GENERAL)));
-    public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe", () -> new HoeItem(ICToolTier.STEEL, -2, -1, new Item.Properties().tab(ICCreativeModeTab.GENERAL)));
+    public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword", () -> new SwordItem(ICToolTier.STEEL, 3, -2.4f, new Item.Properties().tab(ICCreativeModeTab.ICNEXT)));
+    public static final RegistryObject<Item> STEEL_SHOVEL = ITEMS.register("steel_shovel", () -> new ShovelItem(ICToolTier.STEEL, 1.5f, -3, new Item.Properties().tab(ICCreativeModeTab.ICNEXT)));
+    public static final RegistryObject<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe", () -> new PickaxeItem(ICToolTier.STEEL, 1, -2.8f, new Item.Properties().tab(ICCreativeModeTab.ICNEXT)));
+    public static final RegistryObject<Item> STEEL_AXE = ITEMS.register("steel_axe", () -> new AxeItem(ICToolTier.STEEL, 6, -3.1f, new Item.Properties().tab(ICCreativeModeTab.ICNEXT)));
+    public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe", () -> new HoeItem(ICToolTier.STEEL, -2, -1, new Item.Properties().tab(ICCreativeModeTab.ICNEXT)));
 
-    public static final RegistryObject<Item> MUSIC_DISC_YOUR_EVERYDAY_HAPPYCORE = ITEMS.register("music_disc_your_everyday_happycore", () -> new RecordItem(15, () -> ICSoundEvents.YOUR_EVERYDAY_HAPPYCORE.get(), new Item.Properties().stacksTo(1).tab(ICCreativeModeTab.GENERAL).rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> MUSIC_DISC_YOUR_EVERYDAY_HAPPYCORE = ITEMS.register("music_disc_your_everyday_happycore", () -> new RecordItem(15, () -> ICSoundEvents.YOUR_EVERYDAY_HAPPYCORE.get(), new Item.Properties().stacksTo(1).tab(ICCreativeModeTab.ICNEXT).rarity(Rarity.RARE)));
 
     // @formatter:on
     private static final RegistryObject<Item> register(String name) {
         final RegistryObject<Item> registryObject = ITEMS.register(name,
-                () -> new Item(new Item.Properties().tab(ICCreativeModeTab.GENERAL)));
+                () -> new Item(new Item.Properties().tab(ICCreativeModeTab.ICNEXT)));
         return registryObject;
     }
 
