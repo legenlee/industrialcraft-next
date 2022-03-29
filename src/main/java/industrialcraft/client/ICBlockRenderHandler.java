@@ -12,7 +12,7 @@ public class ICBlockRenderHandler {
 
         ItemBlockRenderTypes.setRenderLayer(ICBlocks.RUBBER_LEAVES.get(), cutoutMipped);
         ItemBlockRenderTypes.setRenderLayer(ICBlocks.RUBBER_SAPLING.get(), cutout);
-        ItemBlockRenderTypes.setRenderLayer(ICBlocks.RUBBER_DOOR.get(), cutout);
-        ItemBlockRenderTypes.setRenderLayer(ICBlocks.RUBBER_TRAPDOOR.get(), cutout);
+        // ItemBlockRenderTypes.setRenderLayer(ICBlocks.RUBBER_DOOR.get(), cutout);
+        // ItemBlockRenderTypes.setRenderLayer(ICBlocks.RUBBER_TRAPDOOR.get(), cutout);
     }
 }
