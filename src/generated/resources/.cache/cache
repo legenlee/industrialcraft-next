@@ -46,6 +46,8 @@ d9388398c504bbeb3c896b701f594bfd6fefcd16 data/icnext/recipes/rubber_wood.json
 a07550c3b742d4ec59797f513f945c52ddcbb43c data/icnext/recipes/stripped_rubber_wood.json
 964ab16614c848b14eceebf73c1eaf7e5003c9ac data/icnext/tags/blocks/rubber_logs.json
 964ab16614c848b14eceebf73c1eaf7e5003c9ac data/icnext/tags/items/rubber_logs.json
+8e49e354d31721c72fde4a678b663b1cc6d7bee4 data/minecraft/advancements/icnext/root.json
+906007909995327218a03aec413e1c4ee3b84037 data/minecraft/advancements/icnext/rtfm.json
 52a4d004a7d15f69f1ba90010433e19b9036fb87 data/minecraft/tags/blocks/buttons.json
 5fd3fc1f450bc0712a0bc701f3b7017d6ce2b1ff data/minecraft/tags/blocks/fence_gates.json
 50a2c16ec1a5b3cb4a282252513d117fd4c9dee2 data/minecraft/tags/blocks/flower_pots.json

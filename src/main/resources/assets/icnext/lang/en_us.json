@@ -71,5 +71,11 @@
 
   "_section2": "Discs",
   "item.icnext.music_disc_your_everyday_happycore": "Music Disc",
-  "item.icnext.music_disc_your_everyday_happycore.desc": "Noisysundae - Your Everyday Happycore"
+  "item.icnext.music_disc_your_everyday_happycore.desc": "Noisysundae - Your Everyday Happycore",
+
+  "_section3": "Advancements",
+  "advancements.icnext.root.title": "IndustrialCraft-NEXT",
+  "advancements.icnext.root.description": "New Experience from familiar thing",
+  "advancements.icnext.rtfm.title": "Read The F***ing Manual",
+  "advancements.icnext.rtfm.description": "Obtain Rubber Log, and discover what you did"
 }

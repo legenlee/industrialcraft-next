@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:icnext/root",
+  "display": {
+    "icon": {
+      "item": "icnext:rubber_log"
+    },
+    "title": {
+      "translate": "advancements.icnext.rtfm.title"
+    },
+    "description": {
+      "translate": "advancements.icnext.rtfm.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "rubber_log": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "icnext:rubber_log"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "rubber_log"
+    ]
+  ]
+}
