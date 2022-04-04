@@ -36,4 +36,9 @@ public class ICAdvancementProvider extends AdvancementProvider {
                 .addCriterion("rubber_log", InventoryChangeTrigger.TriggerInstance.hasItems(ICBlocks.RUBBER_LOG.get()))
                 .save(consumer, "icnext/rtfm");
     }
+
+    @Override
+    public String getName() {
+        return "[IndustrialCraft-NEXT] Advancements";
+    }
 }

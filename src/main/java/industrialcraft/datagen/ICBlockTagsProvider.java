@@ -136,4 +136,9 @@ public class ICBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.NEEDS_IRON_TOOL).add(
                 ICBlocks.STEEL_BLOCK.get());
     }
+
+    @Override
+    public String getName() {
+        return "[IndustrialCraft-NEXT] Block tags";
+    }
 }

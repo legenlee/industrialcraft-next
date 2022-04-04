@@ -35,4 +35,9 @@ public class ICLootTableProvider extends LootTableProvider {
     protected List<Pair<Supplier<Consumer<BiConsumer<ResourceLocation, LootTable.Builder>>>, LootContextParamSet>> getTables() {
         return providers;
     }
+
+    @Override
+    public String getName() {
+        return "[IndustrialCraft-NEXT] Loot tables";
+    }
 }

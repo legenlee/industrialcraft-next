@@ -72,4 +72,9 @@ public class ICItemTagsProvider extends ItemTagsProvider {
         copy(Tags.Blocks.FENCE_GATES_WOODEN, Tags.Items.FENCE_GATES_WOODEN);
 
     }
+
+    @Override
+    public String getName() {
+        return "[IndustrialCraft-NEXT] Item tags";
+    }
 }
