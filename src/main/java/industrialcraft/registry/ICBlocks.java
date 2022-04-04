@@ -1,5 +1,6 @@
 package industrialcraft.registry;
 
+import java.util.Collection;
 import java.util.function.Supplier;
 
 import com.google.common.collect.ImmutableMap;
@@ -120,4 +121,7 @@ public class ICBlocks {
         BLOCKS.register(bus);
     }
 
+    public static Collection<RegistryObject<Block>> getCollection() {
+        return BLOCKS.getEntries();
+    }
 }

@@ -10,5 +10,6 @@
   },
   "files.associations": {
     "*.mcmeta": "json"
-  }
+  },
+  "java.configuration.updateBuildConfiguration": "interactive"
 }

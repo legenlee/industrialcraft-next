@@ -18,6 +18,7 @@ public class ICDataGenerators {
 
         generator.addProvider(blockTags);
         generator.addProvider(new ICItemTagsProvider(generator, blockTags, helper));
+        generator.addProvider(new ICLootTableProvider(generator));
         generator.addProvider(new ICRecipeProvider(generator));
         generator.addProvider(new ICAdvancementProvider(generator, helper));
     }

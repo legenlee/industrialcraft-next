@@ -5,6 +5,7 @@ import javax.annotation.Nullable;
 import industrialcraft.block.ICProperties;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.Holder.Direct;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -28,6 +29,7 @@ public class RubberLogBlock extends RotatedPillarBlock {
     public RubberLogBlock(BlockBehaviour.Properties properties) {
         super(properties);
         this.registerDefaultState(this.defaultBlockState()
+                .setValue(SAP_FACING, Direction.NORTH)
                 .setValue(AXIS, Direction.Axis.Y)
                 .setValue(HAS_SAP, false)
                 .setValue(IS_SAP_GENERABLE, true));
