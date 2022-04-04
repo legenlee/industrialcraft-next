@@ -37,7 +37,7 @@ public class ICBlockLoot extends BlockLoot {
 
         dropPottedContents(ICBlocks.POTTED_RUBBER_SAPLING.get());
 
-        add(ICBlocks.RUBBER_LEAVES.get(), (block) -> createLeavesDrops(block, ICBlocks.RUBBER_LEAVES.get(), new float[] { 0.05F, 0.0625F, 0.083333336F, 0.1F }));
+        add(ICBlocks.RUBBER_LEAVES.get(), (block) -> createLeavesDrops(block, ICBlocks.RUBBER_SAPLING.get(), new float[] { 0.05F, 0.0625F, 0.083333336F, 0.1F }));
         
         add(ICBlocks.TIN_ORE.get(), (block) -> createOreDrop(block, ICItems.RAW_TIN.get()));
         add(ICBlocks.DEEPSLATE_TIN_ORE.get(), (block) -> createOreDrop(block, ICItems.RAW_TIN.get()));
