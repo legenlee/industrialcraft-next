@@ -7,7 +7,6 @@ import industrialcraft.item.tool.TreetapItem;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.RecordItem;
@@ -55,9 +54,10 @@ public class ICItems {
     public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword", () -> new SwordItem(ICToolTier.STEEL, 3, -2.4f, new Item.Properties().tab(ICCreativeModeTab.ICNEXT)));
     public static final RegistryObject<Item> STEEL_SHOVEL = ITEMS.register("steel_shovel", () -> new ShovelItem(ICToolTier.STEEL, 1.5f, -3, new Item.Properties().tab(ICCreativeModeTab.ICNEXT)));
     public static final RegistryObject<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe", () -> new PickaxeItem(ICToolTier.STEEL, 1, -2.8f, new Item.Properties().tab(ICCreativeModeTab.ICNEXT)));
-    public static final RegistryObject<Item> STEEL_AXE = ITEMS.register("steel_axe", () -> new AxeItem(ICToolTier.STEEL, 6, -3.1f, new Item.Properties().tab(ICCreativeModeTab.ICNEXT)));
+    public static final RegistryObject<Item> STEEL_AXE = ITEMS.register("steel_axe", () -> new AxeItem(ICToolTier.STEEL, 6, -3.1f, new Item.Properties().tab(ICCreativeModeTab.ICNEXT).stacksTo(16)));
     public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe", () -> new HoeItem(ICToolTier.STEEL, -2, -1, new Item.Properties().tab(ICCreativeModeTab.ICNEXT)));
 
+    public static final RegistryObject<Item> SAP = ITEMS.register("sap", () -> new Item(new Item.Properties().tab(ICCreativeModeTab.ICNEXT)));
     public static final RegistryObject<Item> TREETAP = ITEMS.register("treetap", () -> new TreetapItem(new Item.Properties().tab(ICCreativeModeTab.ICNEXT).durability(49).setNoRepair()));
 
     public static final RegistryObject<Item> MUSIC_DISC_YOUR_EVERYDAY_HAPPYCORE = ITEMS.register("music_disc_your_everyday_happycore", () -> new RecordItem(15, () -> ICSoundEvents.MUSIC_DISC_YOUR_EVERYDAY_HAPPYCORE.get(), new Item.Properties().stacksTo(1).tab(ICCreativeModeTab.ICNEXT).rarity(Rarity.RARE)));

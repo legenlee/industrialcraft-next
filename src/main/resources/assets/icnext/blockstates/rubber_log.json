@@ -5,12 +5,39 @@
       "x": 90,
       "y": 90
     },
-    "axis=y": {
-      "model": "icnext:block/rubber_tree/rubber_log"
-    },
     "axis=z": {
       "model": "icnext:block/rubber_tree/rubber_log_horizontal",
       "x": 90
+    },
+    "axis=y,facing=north,has_sap=false": {
+      "model": "icnext:block/rubber_tree/rubber_log"
+    },
+    "axis=y,facing=north,has_sap=true": {
+      "model": "icnext:block/rubber_tree/rubber_log_with_sap"
+    },
+    "axis=y,facing=south,has_sap=false": {
+      "model": "icnext:block/rubber_tree/rubber_log",
+      "y": 180
+    },
+    "axis=y,facing=south,has_sap=true": {
+      "model": "icnext:block/rubber_tree/rubber_log_with_sap",
+      "y": 180
+    },
+    "axis=y,facing=east,has_sap=false": {
+      "model": "icnext:block/rubber_tree/rubber_log",
+      "y": 90
+    },
+    "axis=y,facing=east,has_sap=true": {
+      "model": "icnext:block/rubber_tree/rubber_log_with_sap",
+      "y": 90
+    },
+    "axis=y,facing=west,has_sap=false": {
+      "model": "icnext:block/rubber_tree/rubber_log",
+      "y": 270
+    },
+    "axis=y,facing=west,has_sap=true": {
+      "model": "icnext:block/rubber_tree/rubber_log_with_sap",
+      "y": 270
     }
   }
 }
