@@ -1,8 +1,8 @@
 {
-  "your_everyday_happycore": {
+  "music_disc.your_everyday_happycore": {
     "sounds": [
       {
-        "name": "icnext:your_everyday_happycore",
+        "name": "icnext:records/your_everyday_happycore",
         "stream": true
       }
     ]
