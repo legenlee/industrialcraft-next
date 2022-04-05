@@ -1,5 +1,5 @@
 {
-  "itemGroup.icnext": "IndustrialCraft-NEXT",
+  "itemGroup.icnext": "IndustrialCraft-Next",
 
   "_section0": "Blocks",
   "block.icnext.tin_ore": "Tin Ore",
@@ -74,7 +74,7 @@
   "item.icnext.music_disc_your_everyday_happycore.desc": "Noisysundae - Your Everyday Happycore",
 
   "_section3": "Advancements",
-  "advancements.icnext.root.title": "IndustrialCraft-NEXT",
+  "advancements.icnext.root.title": "IndustrialCraft-Next",
   "advancements.icnext.root.description": "New Experience from familiar thing",
   "advancements.icnext.rtfm.title": "Read The F***ing Manual",
   "advancements.icnext.rtfm.description": "Obtain rubber log, and discover what you did"

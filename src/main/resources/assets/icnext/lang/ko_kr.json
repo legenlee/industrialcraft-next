@@ -1,5 +1,5 @@
 {
-  "itemGroup.icnext": "IndustrialCraft-NEXT",
+  "itemGroup.icnext": "IndustrialCraft-Next",
 
   "_section0": "Blocks",
   "block.icnext.tin_ore": "주석 광석",
@@ -74,7 +74,7 @@
   "item.icnext.music_disc_your_everyday_happycore.desc": "Noisysundae - Your Everyday Happycore",
 
   "_section3": "Advancements",
-  "advancements.icnext.root.title": "IndustrialCraft-NEXT",
+  "advancements.icnext.root.title": "IndustrialCraft-Next",
   "advancements.icnext.root.description": "익숙하면서도 새로운 경험",
   "advancements.icnext.rtfm.title": "그거 그렇게 하는 거 아닌데",
   "advancements.icnext.rtfm.description": "고무나무에서 수액을 획득할 수 있습니다. 캤다고요? 왜 그런 짓을..."
