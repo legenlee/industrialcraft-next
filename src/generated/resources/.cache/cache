@@ -75,7 +75,7 @@ d151287ee6ce46100d0a05363bb0c69f49047e7a data/icnext/recipes/rubber_planks.json
 2bf908c805954558f496d7b37a6d8440056b9e0a data/icnext/recipes/rubber_stairs.json
 d9388398c504bbeb3c896b701f594bfd6fefcd16 data/icnext/recipes/rubber_wood.json
 a07550c3b742d4ec59797f513f945c52ddcbb43c data/icnext/recipes/stripped_rubber_wood.json
-9e02cf59c1b8742b929af5cc6c231c329f19e4b9 data/icnext/recipes/treetap.json
+fab2b57afb4722b2f2fe59febfa0d1afafa2dbe2 data/icnext/recipes/treetap.json
 964ab16614c848b14eceebf73c1eaf7e5003c9ac data/icnext/tags/blocks/rubber_logs.json
 964ab16614c848b14eceebf73c1eaf7e5003c9ac data/icnext/tags/items/rubber_logs.json
 8e49e354d31721c72fde4a678b663b1cc6d7bee4 data/minecraft/advancements/icnext/root.json

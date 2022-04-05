@@ -34,9 +34,9 @@ public class ICRecipeProvider extends RecipeProvider {
             buttonBuilder(ICBlocks.RUBBER_BUTTON.get(), Ingredient.of(ICBlocks.RUBBER_PLANKS.get())).unlockedBy("has_rubber_planks", has(ICBlocks.RUBBER_PLANKS.get())).group("wooden_button").save(consumer);
             pressurePlateBuilder(ICBlocks.RUBBER_PRESSURE_PLATE.get(), Ingredient.of(ICBlocks.RUBBER_PLANKS.get())).unlockedBy("has_rubber_planks", has(ICBlocks.RUBBER_PLANKS.get())).group("wooden_pressure_plate").save(consumer);
 
-            ShapedRecipeBuilder.shaped(ICItems.TREETAP.get()).define('#', ItemTags.PLANKS).define('/', Tags.Items.RODS_WOODEN)
+            ShapedRecipeBuilder.shaped(ICItems.TREETAP.get()).define('#', ItemTags.PLANKS).define('/', Tags.Items.RODS_WOODEN).define('*', Tags.Items.NUGGETS_IRON)
                 .pattern(" / ")
-                .pattern("###")
+                .pattern("##*")
                 .pattern("#  ").unlockedBy("has_stick", has(Tags.Items.RODS_WOODEN)).save(consumer);
             // @formatter:on
         }
