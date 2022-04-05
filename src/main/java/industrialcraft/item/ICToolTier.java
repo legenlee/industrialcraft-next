@@ -4,7 +4,7 @@ import java.util.List;
 
 import industrialcraft.IndustrialCraft;
 import industrialcraft.registry.ICItems;
-import industrialcraft.tags.ICBlockTags;
+import industrialcraft.tag.ICBlockTags;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;

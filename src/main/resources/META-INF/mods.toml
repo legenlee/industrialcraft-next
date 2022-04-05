@@ -6,12 +6,12 @@ license="No licensed"
 [[mods]] #mandatory
 modId="icnext" #mandatory
 version="${file.jarVersion}" #mandatory
-displayName="IndustrialCraft-NEXT" #mandatory
+displayName="IndustrialCraft-Next" #mandatory
 logoFile="examplemod.png" #optional
 credits="" #optional
 authors="LegenLee" #optional
 description='''
-Under development. May encount unexpected issues.
+From old thing, Create next generation.
 '''
 
 [[dependencies.icnext]] #optional

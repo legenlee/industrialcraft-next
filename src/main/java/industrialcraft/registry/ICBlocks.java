@@ -1,5 +1,6 @@
 package industrialcraft.registry;
 
+import java.util.Collection;
 import java.util.function.Supplier;
 
 import com.google.common.collect.ImmutableMap;
@@ -64,8 +65,8 @@ public class ICBlocks {
     public static final RegistryObject<Block> RUBBER_PLANKS = register("rubber_planks", () -> new Block(Block.Properties.copy(Blocks.OAK_PLANKS)));
     public static final RegistryObject<Block> RUBBER_STAIRS = register("rubber_stairs", () -> new StairBlock(() -> Blocks.OAK_PLANKS.defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS)));
     public static final RegistryObject<Block> RUBBER_SLAB = register("rubber_slab", () -> new SlabBlock(Block.Properties.copy(Blocks.OAK_SLAB)));
-    public static final RegistryObject<Block> RUBBER_DOOR = register("rubber_door", () -> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR)));
-    public static final RegistryObject<Block> RUBBER_TRAPDOOR = register("rubber_trapdoor", () -> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR)));
+    // public static final RegistryObject<Block> RUBBER_DOOR = register("rubber_door", () -> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR)));
+    // public static final RegistryObject<Block> RUBBER_TRAPDOOR = register("rubber_trapdoor", () -> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR)));
     public static final RegistryObject<Block> RUBBER_FENCE = register("rubber_fence", () -> new FenceBlock(Block.Properties.copy(Blocks.OAK_FENCE)));
     public static final RegistryObject<Block> RUBBER_FENCE_GATE = register("rubber_fence_gate", () -> new FenceGateBlock(Block.Properties.copy(Blocks.OAK_FENCE_GATE)));
     public static final RegistryObject<Block> RUBBER_PRESSURE_PLATE = register("rubber_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, Block.Properties.copy(Blocks.OAK_PRESSURE_PLATE)));
@@ -120,4 +121,7 @@ public class ICBlocks {
         BLOCKS.register(bus);
     }
 
+    public static Collection<RegistryObject<Block>> getCollection() {
+        return BLOCKS.getEntries();
+    }
 }

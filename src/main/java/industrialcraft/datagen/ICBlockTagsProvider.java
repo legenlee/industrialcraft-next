@@ -2,7 +2,7 @@ package industrialcraft.datagen;
 
 import industrialcraft.IndustrialCraft;
 import industrialcraft.registry.ICBlocks;
-import industrialcraft.tags.ICBlockTags;
+import industrialcraft.tag.ICBlockTags;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.tags.BlockTags;
@@ -95,8 +95,8 @@ public class ICBlockTagsProvider extends BlockTagsProvider {
                 ICBlocks.RUBBER_PLANKS.get(),
                 ICBlocks.RUBBER_STAIRS.get(),
                 ICBlocks.RUBBER_SLAB.get(),
-                ICBlocks.RUBBER_DOOR.get(),
-                ICBlocks.RUBBER_TRAPDOOR.get(),
+                // ICBlocks.RUBBER_DOOR.get(),
+                // ICBlocks.RUBBER_TRAPDOOR.get(),
                 ICBlocks.RUBBER_FENCE.get(),
                 ICBlocks.RUBBER_FENCE_GATE.get(),
                 ICBlocks.RUBBER_PRESSURE_PLATE.get(),
@@ -135,5 +135,10 @@ public class ICBlockTagsProvider extends BlockTagsProvider {
 
         tag(BlockTags.NEEDS_IRON_TOOL).add(
                 ICBlocks.STEEL_BLOCK.get());
+    }
+
+    @Override
+    public String getName() {
+        return "[IndustrialCraft-NEXT] Block tags";
     }
 }

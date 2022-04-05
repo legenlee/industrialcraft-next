@@ -1,4 +1,4 @@
-package industrialcraft.tags;
+package industrialcraft.tag;
 
 import industrialcraft.IndustrialCraft;
 import net.minecraft.resources.ResourceLocation;
@@ -12,8 +12,8 @@ public class ICBlockTags {
     public static final TagKey<Block> NEEDS_STEEL_TOOL = create(IndustrialCraft.modPrefix("needs_steel_tool"));
 
     public static final TagKey<Block> ORES_TIN = create(IndustrialCraft.forgePrefix("ores/tin"));
-    public static final TagKey<Block> ORES_LEAD = create(IndustrialCraft.forgePrefix("ores/tin"));
-    public static final TagKey<Block> ORES_BAUXITE = create(IndustrialCraft.forgePrefix("ores/tin"));
+    public static final TagKey<Block> ORES_LEAD = create(IndustrialCraft.forgePrefix("ores/lead"));
+    public static final TagKey<Block> ORES_BAUXITE = create(IndustrialCraft.forgePrefix("ores/bauxite"));
 
     public static final TagKey<Block> STORAGE_BLOCKS_RAW_TIN = create(IndustrialCraft.forgePrefix("storage_blocks/raw_tin"));
     public static final TagKey<Block> STORAGE_BLOCKS_RAW_LEAD = create(IndustrialCraft.forgePrefix("storage_blocks/raw_lead"));
