@@ -45,17 +45,8 @@ public class ICItemTagsProvider extends ItemTagsProvider {
         copy(ICBlockTags.RUBBER_LOGS, ICItemTags.RUBBER_LOGS);
 
         // Vanilla
-        tag(ItemTags.LOGS)
-                .add(ICBlockItems.RUBBER_LOG.get())
-                .add(ICBlockItems.STRIPPED_RUBBER_LOG.get())
-                .add(ICBlockItems.RUBBER_WOOD.get())
-                .add(ICBlockItems.STRIPPED_RUBBER_WOOD.get());
-
-        tag(ItemTags.LOGS_THAT_BURN)
-                .add(ICBlockItems.RUBBER_LOG.get())
-                .add(ICBlockItems.STRIPPED_RUBBER_LOG.get())
-                .add(ICBlockItems.RUBBER_WOOD.get())
-                .add(ICBlockItems.STRIPPED_RUBBER_WOOD.get());
+        tag(ItemTags.LOGS).addTag(ICItemTags.RUBBER_LOGS);
+        tag(ItemTags.LOGS_THAT_BURN).addTag(ICItemTags.RUBBER_LOGS);
 
         tag(ItemTags.SAPLINGS).add(ICBlockItems.RUBBER_SAPLING.get());
         tag(ItemTags.LEAVES).add(ICBlockItems.RUBBER_LEAVES.get());
@@ -70,7 +61,6 @@ public class ICItemTagsProvider extends ItemTagsProvider {
         copy(Tags.Blocks.ORES, Tags.Items.ORES);
         copy(BlockTags.FENCE_GATES, Tags.Items.FENCE_GATES);
         copy(Tags.Blocks.FENCE_GATES_WOODEN, Tags.Items.FENCE_GATES_WOODEN);
-
     }
 
     @Override
