@@ -12,7 +12,7 @@ public class ICSoundEvents {
             .create(ForgeRegistries.SOUND_EVENTS, IndustrialCraft.MOD_ID);
 
     // @formatter:off
-    public static final RegistryObject<SoundEvent> YOUR_EVERYDAY_HAPPYCORE = register("your_everyday_happycore");
+    public static final RegistryObject<SoundEvent> MUSIC_DISC_YOUR_EVERYDAY_HAPPYCORE = register("music_disc.your_everyday_happycore");
 
     // @formatter:on
     private static final RegistryObject<SoundEvent> register(String name) {

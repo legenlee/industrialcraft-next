@@ -60,7 +60,7 @@ public class ICItems {
 
     public static final RegistryObject<Item> TREETAP = ITEMS.register("treetap", () -> new TreetapItem(new Item.Properties().tab(ICCreativeModeTab.ICNEXT).durability(49).setNoRepair()));
 
-    public static final RegistryObject<Item> MUSIC_DISC_YOUR_EVERYDAY_HAPPYCORE = ITEMS.register("music_disc_your_everyday_happycore", () -> new RecordItem(15, () -> ICSoundEvents.YOUR_EVERYDAY_HAPPYCORE.get(), new Item.Properties().stacksTo(1).tab(ICCreativeModeTab.ICNEXT).rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> MUSIC_DISC_YOUR_EVERYDAY_HAPPYCORE = ITEMS.register("music_disc_your_everyday_happycore", () -> new RecordItem(15, () -> ICSoundEvents.MUSIC_DISC_YOUR_EVERYDAY_HAPPYCORE.get(), new Item.Properties().stacksTo(1).tab(ICCreativeModeTab.ICNEXT).rarity(Rarity.RARE)));
 
     // @formatter:on
     private static final RegistryObject<Item> register(String name) {
