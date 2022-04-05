@@ -1,4 +1,4 @@
-package industrialcraft.tags;
+package industrialcraft.tag;
 
 import industrialcraft.IndustrialCraft;
 import net.minecraft.resources.ResourceLocation;

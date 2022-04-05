@@ -39,6 +39,7 @@ ad77bfbab2ef813b28ae5a8864d60d377a408e32 data/icnext/advancements/recipes/icnext
 f0ee6e2af22d84aa1378c0357f70dd3ded4fd887 data/icnext/advancements/recipes/icnext/rubber_stairs.json
 2b89eafb3004c61ff104f0d9f2e3ab32406f9821 data/icnext/advancements/recipes/icnext/rubber_wood.json
 e47f12117d7d5f6c1a890e308dac73eda3163e68 data/icnext/advancements/recipes/icnext/stripped_rubber_wood.json
+43f33e0fcdd1c3c59033c9d4f4bbf3d2a68b7b2d data/icnext/advancements/recipes/icnext/treetap.json
 4180843407799c981b3ad22afceee067940bb50c data/icnext/loot_tables/blocks/aluminium_block.json
 7b2769ac0e8c48a46ced14ef517697fa5ac3b1d6 data/icnext/loot_tables/blocks/bauxite_ore.json
 3ed03b627da4dcb5d5d3df7a6076d02c4018ff72 data/icnext/loot_tables/blocks/bronze_block.json
@@ -74,6 +75,7 @@ d151287ee6ce46100d0a05363bb0c69f49047e7a data/icnext/recipes/rubber_planks.json
 2bf908c805954558f496d7b37a6d8440056b9e0a data/icnext/recipes/rubber_stairs.json
 d9388398c504bbeb3c896b701f594bfd6fefcd16 data/icnext/recipes/rubber_wood.json
 a07550c3b742d4ec59797f513f945c52ddcbb43c data/icnext/recipes/stripped_rubber_wood.json
+9e02cf59c1b8742b929af5cc6c231c329f19e4b9 data/icnext/recipes/treetap.json
 964ab16614c848b14eceebf73c1eaf7e5003c9ac data/icnext/tags/blocks/rubber_logs.json
 964ab16614c848b14eceebf73c1eaf7e5003c9ac data/icnext/tags/items/rubber_logs.json
 8e49e354d31721c72fde4a678b663b1cc6d7bee4 data/minecraft/advancements/icnext/root.json

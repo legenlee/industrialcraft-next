@@ -2,7 +2,7 @@ package industrialcraft.datagen;
 
 import industrialcraft.IndustrialCraft;
 import industrialcraft.registry.ICBlocks;
-import industrialcraft.tags.ICBlockTags;
+import industrialcraft.tag.ICBlockTags;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.tags.BlockTags;
