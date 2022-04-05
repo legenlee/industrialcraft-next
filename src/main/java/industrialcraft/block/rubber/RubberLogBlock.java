@@ -19,7 +19,6 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.phys.BlockHitResult;
 
 public class RubberLogBlock extends RotatedPillarBlock {
     public static final DirectionProperty SAP_FACING = BlockStateProperties.HORIZONTAL_FACING;
@@ -38,10 +37,7 @@ public class RubberLogBlock extends RotatedPillarBlock {
     @Nullable
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
-        return this.defaultBlockState()
-                .setValue(SAP_FACING, Direction.NORTH)
-                .setValue(AXIS, context.getClickedFace().getAxis())
-                .setValue(IS_SAP_GENERABLE, false);
+        return super.getStateForPlacement(context).setValue(IS_SAP_GENERABLE, false);
     }
 
     @Override
