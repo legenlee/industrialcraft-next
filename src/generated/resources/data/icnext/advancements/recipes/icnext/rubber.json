@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "icnext:rubber"
+    ]
+  },
+  "criteria": {
+    "has_sap": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "icnext:sap"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "icnext:rubber"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sap",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -9,6 +9,7 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.Tags;
@@ -21,6 +22,7 @@ public class ICRecipeProvider extends RecipeProvider {
     @Override
     protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer) {
         Crafting.build(consumer);
+        Smelting.build(consumer);
     }
 
     public static class Crafting {
@@ -39,6 +41,13 @@ public class ICRecipeProvider extends RecipeProvider {
                 .pattern("##*")
                 .pattern("#  ").unlockedBy("has_stick", has(Tags.Items.RODS_WOODEN)).save(consumer);
             // @formatter:on
+        }
+    }
+
+    public static class Smelting {
+        public static void build(Consumer<FinishedRecipe> consumer) {
+            SimpleCookingRecipeBuilder.smelting(Ingredient.of(ICItems.SAP.get()), ICItems.RUBBER.get(), 0.3f, 200)
+                    .unlockedBy("has_sap", has(ICItems.SAP.get())).save(consumer);
         }
     }
 

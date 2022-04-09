@@ -39,7 +39,7 @@
 
   "_section1": "Items",
   "item.icnext.sap": "Sap",
-  "item.icnext.treetap": "Treetap",
+  "item.icnext.rubber": "Rubber",
   "item.icnext.raw_tin": "Raw Tin",
   "item.icnext.tin_ingot": "Tin Ingot",
   "item.icnext.tin_nugget": "Tin Nugget",
@@ -59,6 +59,7 @@
   "item.icnext.steel_nugget": "Steel Nugget",
   "item.icnext.steel_dust": "Steel Dust",
 
+  "item.icnext.treetap": "Treetap",
   "item.icnext.bronze_sword": "Bronze Sword",
   "item.icnext.bronze_shovel": "Bronze Shovel",
   "item.icnext.bronze_pickaxe": "Bronze Pickaxe",

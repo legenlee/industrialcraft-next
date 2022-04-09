@@ -24,25 +24,31 @@ public class ICItemTagsProvider extends ItemTagsProvider {
         // ICNext
         copy(ICBlockTags.ORES_TIN, ICItemTags.ORES_TIN);
         copy(ICBlockTags.ORES_LEAD, ICItemTags.ORES_LEAD);
-        copy(ICBlockTags.ORES_BAUXITE, ICItemTags.ORES_BAUXITE);
+        copy(ICBlockTags.ORES_ALUMINUM, ICItemTags.ORES_ALUMINUM);
 
         copy(ICBlockTags.STORAGE_BLOCKS_RAW_TIN, ICItemTags.STORAGE_BLOCKS_RAW_TIN);
         copy(ICBlockTags.STORAGE_BLOCKS_RAW_LEAD, ICItemTags.STORAGE_BLOCKS_RAW_LEAD);
-        copy(ICBlockTags.STORAGE_BLOCKS_RAW_BAUXITE, ICItemTags.STORAGE_BLOCKS_RAW_BAUXITE);
+        copy(ICBlockTags.STORAGE_BLOCKS_RAW_ALUMINUM, ICItemTags.STORAGE_BLOCKS_RAW_ALUMINUM);
 
         copy(ICBlockTags.STORAGE_BLOCKS_TIN, ICItemTags.STORAGE_BLOCKS_TIN);
         copy(ICBlockTags.STORAGE_BLOCKS_LEAD, ICItemTags.STORAGE_BLOCKS_LEAD);
-        copy(ICBlockTags.STORAGE_BLOCKS_ALUMINIUM, ICItemTags.STORAGE_BLOCKS_ALUMINIUM);
+        copy(ICBlockTags.STORAGE_BLOCKS_ALUMINUM, ICItemTags.STORAGE_BLOCKS_ALUMINUM);
         copy(ICBlockTags.STORAGE_BLOCKS_BRONZE, ICItemTags.STORAGE_BLOCKS_BRONZE);
         copy(ICBlockTags.STORAGE_BLOCKS_STEEL, ICItemTags.STORAGE_BLOCKS_STEEL);
 
+        tag(ICItemTags.RAW_MATERIALS_TIN).add(ICItems.RAW_TIN.get());
+        tag(ICItemTags.RAW_MATERIALS_LEAD).add(ICItems.RAW_LEAD.get());
+        tag(ICItemTags.RAW_MATERIALS_ALUMINUM).add(ICItems.RAW_BAUXITE.get());
+
         tag(ICItemTags.INGOTS_TIN).add(ICItems.TIN_INGOT.get());
         tag(ICItemTags.INGOTS_LEAD).add(ICItems.LEAD_INGOT.get());
-        tag(ICItemTags.INGOTS_ALUMINIUM).add(ICItems.ALUMINIUM_INGOT.get());
+        tag(ICItemTags.INGOTS_ALUMINUM).add(ICItems.ALUMINIUM_INGOT.get());
         tag(ICItemTags.INGOTS_BRONZE).add(ICItems.BRONZE_INGOT.get());
         tag(ICItemTags.INGOTS_STEEL).add(ICItems.STEEL_INGOT.get());
 
         copy(ICBlockTags.RUBBER_LOGS, ICItemTags.RUBBER_LOGS);
+
+        tag(ICItemTags.RUBBER).add(ICItems.RUBBER.get());
 
         // Vanilla
         tag(ItemTags.LOGS).addTag(ICItemTags.RUBBER_LOGS);
@@ -61,6 +67,18 @@ public class ICItemTagsProvider extends ItemTagsProvider {
         copy(Tags.Blocks.ORES, Tags.Items.ORES);
         copy(BlockTags.FENCE_GATES, Tags.Items.FENCE_GATES);
         copy(Tags.Blocks.FENCE_GATES_WOODEN, Tags.Items.FENCE_GATES_WOODEN);
+
+        tag(Tags.Items.RAW_MATERIALS).addTags(
+                ICItemTags.RAW_MATERIALS_TIN,
+                ICItemTags.RAW_MATERIALS_LEAD,
+                ICItemTags.RAW_MATERIALS_ALUMINUM);
+
+        tag(Tags.Items.INGOTS).addTags(
+                ICItemTags.INGOTS_TIN,
+                ICItemTags.INGOTS_LEAD,
+                ICItemTags.INGOTS_ALUMINUM,
+                ICItemTags.INGOTS_BRONZE,
+                ICItemTags.INGOTS_STEEL);
     }
 
     @Override
