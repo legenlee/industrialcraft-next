@@ -46,9 +46,9 @@ public class ICItemTagsProvider extends ItemTagsProvider {
         tag(ICItemTags.INGOTS_BRONZE).add(ICItems.BRONZE_INGOT.get());
         tag(ICItemTags.INGOTS_STEEL).add(ICItems.STEEL_INGOT.get());
 
-        tag(ICItemTags.RUBBER).add(ICItems.RUBBER.get());
-
         copy(ICBlockTags.RUBBER_LOGS, ICItemTags.RUBBER_LOGS);
+
+        tag(ICItemTags.RUBBER).add(ICItems.RUBBER.get());
 
         // Vanilla
         tag(ItemTags.LOGS).addTag(ICItemTags.RUBBER_LOGS);

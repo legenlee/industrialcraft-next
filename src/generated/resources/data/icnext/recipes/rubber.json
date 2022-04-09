@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "icnext:sap"
+  },
+  "result": "icnext:rubber",
+  "experience": 0.3,
+  "cookingtime": 200
+}

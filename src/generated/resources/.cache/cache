@@ -39,6 +39,7 @@ e3df5cae72c593049ad4eacdc517349bd3a1ed57 data/forge/tags/items/storage_blocks/le
 1a9b58e3611f42c87f39e380d093aeb0f7ca6a63 data/forge/tags/items/storage_blocks/raw_tin.json
 ec01a3cef09cd9c89c695d1e64dcc5ceea119f46 data/forge/tags/items/storage_blocks/steel.json
 ace87ec5bef378db7613db55c1270eb3f4dedfb1 data/forge/tags/items/storage_blocks/tin.json
+c675de820bfe939e3870e6c3e8c576589512c9cb data/icnext/advancements/recipes/icnext/rubber.json
 029501cb3fa8d2d1f881a79b3305fcc2dafc8303 data/icnext/advancements/recipes/icnext/rubber_button.json
 bddce6102d422b1c41ddaf5cee87b7dd4bbf8b6c data/icnext/advancements/recipes/icnext/rubber_planks.json
 34faac321f8b9f470b896645e144f4b7e86f2c32 data/icnext/advancements/recipes/icnext/rubber_pressure_plate.json
@@ -75,6 +76,7 @@ e3e412ac6b8ad669fbc3ad1e95551490b4aee8c2 data/icnext/loot_tables/blocks/stripped
 4a2dc25be6335bf21176df05942f574cc9edf59c data/icnext/loot_tables/blocks/stripped_rubber_wood.json
 4dcfa56850c707a598b2dfef5403a4e8f21b7c53 data/icnext/loot_tables/blocks/tin_block.json
 f77640556f0c672952f9561be7f0aef8e8b5128e data/icnext/loot_tables/blocks/tin_ore.json
+f1d6689b3f905100ada0a1e7466ee69d66e6ad20 data/icnext/recipes/rubber.json
 42e26f56d43790ea796f475ea8e9e55af5ef5246 data/icnext/recipes/rubber_button.json
 d151287ee6ce46100d0a05363bb0c69f49047e7a data/icnext/recipes/rubber_planks.json
 8f65555200d959efe245c8a4b149d1c92301aa10 data/icnext/recipes/rubber_pressure_plate.json
