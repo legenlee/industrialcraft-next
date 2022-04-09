@@ -39,7 +39,7 @@
 
   "_section1": "Items",
   "item.icnext.sap": "수액",
-  "item.icnext.treetap": "나무꼭지",
+  "item.icnext.rubber": "고무",
   "item.icnext.raw_tin": "주석 원석",
   "item.icnext.tin_ingot": "주석 주괴",
   "item.icnext.tin_nugget": "주석 조각",
@@ -59,6 +59,7 @@
   "item.icnext.steel_nugget": "강철 조각",
   "item.icnext.steel_dust": "강철 가루",
 
+  "item.icnext.treetap": "나무꼭지",
   "item.icnext.bronze_sword": "청동 검",
   "item.icnext.bronze_shovel": "청동 삽",
   "item.icnext.bronze_pickaxe": "청동 곡괭이",
