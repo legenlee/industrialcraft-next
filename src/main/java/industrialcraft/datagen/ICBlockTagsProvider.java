@@ -25,17 +25,17 @@ public class ICBlockTagsProvider extends BlockTagsProvider {
                 ICBlocks.LEAD_ORE.get(),
                 ICBlocks.DEEPSLATE_LEAD_ORE.get());
 
-        tag(ICBlockTags.ORES_BAUXITE).add(
+        tag(ICBlockTags.ORES_ALUMINUM).add(
                 ICBlocks.BAUXITE_ORE.get(),
                 ICBlocks.DEEPSLATE_BAUXITE_ORE.get());
 
         tag(ICBlockTags.STORAGE_BLOCKS_RAW_TIN).add(ICBlocks.RAW_TIN_BLOCK.get());
         tag(ICBlockTags.STORAGE_BLOCKS_RAW_LEAD).add(ICBlocks.RAW_LEAD_BLOCK.get());
-        tag(ICBlockTags.STORAGE_BLOCKS_RAW_BAUXITE).add(ICBlocks.RAW_BAUXITE_BLOCK.get());
+        tag(ICBlockTags.STORAGE_BLOCKS_RAW_ALUMINUM).add(ICBlocks.RAW_BAUXITE_BLOCK.get());
 
         tag(ICBlockTags.STORAGE_BLOCKS_TIN).add(ICBlocks.TIN_BLOCK.get());
         tag(ICBlockTags.STORAGE_BLOCKS_LEAD).add(ICBlocks.LEAD_BLOCK.get());
-        tag(ICBlockTags.STORAGE_BLOCKS_ALUMINIUM).add(ICBlocks.ALUMINIUM_BLOCK.get());
+        tag(ICBlockTags.STORAGE_BLOCKS_ALUMINUM).add(ICBlocks.ALUMINIUM_BLOCK.get());
         tag(ICBlockTags.STORAGE_BLOCKS_BRONZE).add(ICBlocks.BRONZE_BLOCK.get());
         tag(ICBlockTags.STORAGE_BLOCKS_STEEL).add(ICBlocks.STEEL_BLOCK.get());
 
@@ -66,20 +66,20 @@ public class ICBlockTagsProvider extends BlockTagsProvider {
         tag(Tags.Blocks.ORES).addTags(
                 ICBlockTags.ORES_TIN,
                 ICBlockTags.ORES_LEAD,
-                ICBlockTags.ORES_BAUXITE);
+                ICBlockTags.ORES_ALUMINUM);
 
         tag(Tags.Blocks.ORE_RATES_SINGULAR).addTags(
                 ICBlockTags.ORES_TIN,
                 ICBlockTags.ORES_LEAD,
-                ICBlockTags.ORES_BAUXITE);
+                ICBlockTags.ORES_ALUMINUM);
 
         tag(Tags.Blocks.STORAGE_BLOCKS).addTags(
                 ICBlockTags.STORAGE_BLOCKS_RAW_TIN,
                 ICBlockTags.STORAGE_BLOCKS_RAW_LEAD,
-                ICBlockTags.STORAGE_BLOCKS_RAW_BAUXITE,
+                ICBlockTags.STORAGE_BLOCKS_RAW_ALUMINUM,
                 ICBlockTags.STORAGE_BLOCKS_TIN,
                 ICBlockTags.STORAGE_BLOCKS_LEAD,
-                ICBlockTags.STORAGE_BLOCKS_ALUMINIUM,
+                ICBlockTags.STORAGE_BLOCKS_ALUMINUM,
                 ICBlockTags.STORAGE_BLOCKS_BRONZE,
                 ICBlockTags.STORAGE_BLOCKS_STEEL);
 

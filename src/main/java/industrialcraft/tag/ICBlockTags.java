@@ -13,15 +13,15 @@ public class ICBlockTags {
 
     public static final TagKey<Block> ORES_TIN = create(IndustrialCraft.forgePrefix("ores/tin"));
     public static final TagKey<Block> ORES_LEAD = create(IndustrialCraft.forgePrefix("ores/lead"));
-    public static final TagKey<Block> ORES_BAUXITE = create(IndustrialCraft.forgePrefix("ores/bauxite"));
+    public static final TagKey<Block> ORES_ALUMINUM = create(IndustrialCraft.forgePrefix("ores/aluminum"));
 
     public static final TagKey<Block> STORAGE_BLOCKS_RAW_TIN = create(IndustrialCraft.forgePrefix("storage_blocks/raw_tin"));
     public static final TagKey<Block> STORAGE_BLOCKS_RAW_LEAD = create(IndustrialCraft.forgePrefix("storage_blocks/raw_lead"));
-    public static final TagKey<Block> STORAGE_BLOCKS_RAW_BAUXITE = create(IndustrialCraft.forgePrefix("storage_blocks/raw_bauxite"));
+    public static final TagKey<Block> STORAGE_BLOCKS_RAW_ALUMINUM = create(IndustrialCraft.forgePrefix("storage_blocks/raw_aluminum"));
 
     public static final TagKey<Block> STORAGE_BLOCKS_TIN = create(IndustrialCraft.forgePrefix("storage_blocks/tin"));
     public static final TagKey<Block> STORAGE_BLOCKS_LEAD = create(IndustrialCraft.forgePrefix("storage_blocks/lead"));
-    public static final TagKey<Block> STORAGE_BLOCKS_ALUMINIUM = create(IndustrialCraft.forgePrefix("storage_blocks/lead"));
+    public static final TagKey<Block> STORAGE_BLOCKS_ALUMINUM = create(IndustrialCraft.forgePrefix("storage_blocks/aluminum"));
     public static final TagKey<Block> STORAGE_BLOCKS_BRONZE = create(IndustrialCraft.forgePrefix("storage_blocks/bronze"));
     public static final TagKey<Block> STORAGE_BLOCKS_STEEL = create(IndustrialCraft.forgePrefix("storage_blocks/steel"));
 
