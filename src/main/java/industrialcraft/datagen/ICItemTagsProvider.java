@@ -53,14 +53,17 @@ public class ICItemTagsProvider extends ItemTagsProvider {
         // Vanilla
         tag(ItemTags.LOGS).addTag(ICItemTags.RUBBER_LOGS);
         tag(ItemTags.LOGS_THAT_BURN).addTag(ICItemTags.RUBBER_LOGS);
-
         tag(ItemTags.SAPLINGS).add(ICBlockItems.RUBBER_SAPLING.get());
         tag(ItemTags.LEAVES).add(ICBlockItems.RUBBER_LEAVES.get());
         tag(ItemTags.PLANKS).add(ICBlockItems.RUBBER_PLANKS.get());
+        tag(ItemTags.STAIRS).add(ICBlockItems.RUBBER_STAIRS.get());
+        tag(ItemTags.SLABS).add(ICBlockItems.RUBBER_SLAB.get());
+        tag(ItemTags.FENCES).add(ICBlockItems.RUBBER_FENCE.get());
+        tag(ItemTags.BUTTONS).add(ICBlockItems.RUBBER_BUTTON.get());
         tag(ItemTags.WOODEN_STAIRS).add(ICBlockItems.RUBBER_STAIRS.get());
         tag(ItemTags.WOODEN_SLABS).add(ICBlockItems.RUBBER_SLAB.get());
-        tag(ItemTags.FENCES).add(ICBlockItems.RUBBER_FENCE.get());
         tag(ItemTags.WOODEN_FENCES).add(ICBlockItems.RUBBER_FENCE_GATE.get());
+        tag(ItemTags.WOODEN_BUTTONS).add(ICBlockItems.RUBBER_BUTTON.get());
         tag(ItemTags.WOODEN_PRESSURE_PLATES).add(ICBlockItems.RUBBER_PRESSURE_PLATE.get());
 
         // Forge

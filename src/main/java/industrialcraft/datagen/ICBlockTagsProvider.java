@@ -51,13 +51,16 @@ public class ICBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.SAPLINGS).add(ICBlocks.RUBBER_SAPLING.get());
         tag(BlockTags.LEAVES).add(ICBlocks.RUBBER_LEAVES.get());
         tag(BlockTags.PLANKS).add(ICBlocks.RUBBER_PLANKS.get());
+        tag(BlockTags.STAIRS).add(ICBlocks.RUBBER_STAIRS.get());
+        tag(BlockTags.SLABS).add(ICBlocks.RUBBER_SLAB.get());
+        tag(BlockTags.FENCES).add(ICBlocks.RUBBER_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ICBlocks.RUBBER_FENCE_GATE.get());
+        tag(BlockTags.BUTTONS).add(ICBlocks.RUBBER_BUTTON.get());
+        tag(BlockTags.PRESSURE_PLATES).add(ICBlocks.RUBBER_PRESSURE_PLATE.get());
         tag(BlockTags.WOODEN_STAIRS).add(ICBlocks.RUBBER_STAIRS.get());
         tag(BlockTags.WOODEN_SLABS).add(ICBlocks.RUBBER_SLAB.get());
         tag(BlockTags.WOODEN_FENCES).add(ICBlocks.RUBBER_FENCE.get());
-        tag(BlockTags.FENCE_GATES).add(ICBlocks.RUBBER_FENCE_GATE.get());
-        tag(BlockTags.BUTTONS).add(ICBlocks.RUBBER_BUTTON.get());
         tag(BlockTags.WOODEN_BUTTONS).add(ICBlocks.RUBBER_BUTTON.get());
-        tag(BlockTags.PRESSURE_PLATES).add(ICBlocks.RUBBER_PRESSURE_PLATE.get());
         tag(BlockTags.WOODEN_PRESSURE_PLATES).add(ICBlocks.RUBBER_PRESSURE_PLATE.get());
 
         tag(BlockTags.FLOWER_POTS).add(ICBlocks.POTTED_RUBBER_SAPLING.get());
