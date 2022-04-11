@@ -94,6 +94,10 @@ public class RubberLogBlock extends RotatedPillarBlock {
         }
     }
 
+    /**
+     * Leaving this method for after moving sap extraction method to treetap item
+     * class.
+     */
     public static boolean canExtractSap(BlockState state, Direction direction) {
         if (state.is(ICBlocks.RUBBER_LOG.get())) {
             if (state.hasProperty(HAS_SAP) && state.getValue(HAS_SAP)) {
