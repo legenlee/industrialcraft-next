@@ -1,4 +1,4 @@
-package industrialcraft.item;
+package industrialcraft.inventory;
 
 import industrialcraft.IndustrialCraft;
 import industrialcraft.registry.ICItems;

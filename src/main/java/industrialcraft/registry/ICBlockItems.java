@@ -1,7 +1,7 @@
 package industrialcraft.registry;
 
 import industrialcraft.IndustrialCraft;
-import industrialcraft.item.ICCreativeModeTab;
+import industrialcraft.inventory.ICCreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
