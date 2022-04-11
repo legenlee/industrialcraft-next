@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "icnext:block/rubber_tree/rubber_sapling"
+  }
+}

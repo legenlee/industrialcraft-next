@@ -2,9 +2,9 @@ package industrialcraft.datagen;
 
 import java.util.function.Consumer;
 
-import industrialcraft.registry.ICBlocks;
-import industrialcraft.registry.ICItems;
-import industrialcraft.tag.ICItemTags;
+import industrialcraft.core.registry.ICBlocks;
+import industrialcraft.core.registry.ICItems;
+import industrialcraft.core.ICTags;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeProvider;
@@ -28,7 +28,7 @@ public class ICRecipeProvider extends RecipeProvider {
     public static class Crafting {
         public static void build(Consumer<FinishedRecipe> consumer) {
             // @formatter:off
-            planksFromLog(consumer, ICBlocks.RUBBER_PLANKS.get(), ICItemTags.RUBBER_LOGS);
+            planksFromLog(consumer, ICBlocks.RUBBER_PLANKS.get(), ICTags.Items.RUBBER_LOGS);
             woodFromLogs(consumer, ICBlocks.RUBBER_WOOD.get(), ICBlocks.RUBBER_LOG.get());
             woodFromLogs(consumer, ICBlocks.STRIPPED_RUBBER_WOOD.get(), ICBlocks.STRIPPED_RUBBER_LOG.get());
             slabBuilder(ICBlocks.RUBBER_SLAB.get(), Ingredient.of(ICBlocks.RUBBER_PLANKS.get())).unlockedBy("has_rubber_planks", has(ICBlocks.RUBBER_PLANKS.get())).group("wooden_slab").save(consumer);
