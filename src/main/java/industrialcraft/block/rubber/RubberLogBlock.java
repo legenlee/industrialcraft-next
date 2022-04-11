@@ -78,7 +78,7 @@ public class RubberLogBlock extends RotatedPillarBlock {
         } else {
             if (player.getItemInHand(hand).is(ICItems.TREETAP.get()) && result.getDirection() == direction) {
                 int dropStack = 1 + level.random.nextInt(2);
-                popResource(level, pos, new ItemStack(ICItems.SAP.get(), dropStack));
+                popResource(level, pos.relative(direction), new ItemStack(ICItems.SAP.get(), dropStack));
                 level.setBlock(pos, state.setValue(ICProperties.HAS_SAP, Boolean.valueOf(false)), 2);
 
                 if (player != null) {
