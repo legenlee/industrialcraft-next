@@ -9,9 +9,9 @@ import net.minecraft.data.loot.BlockLoot;
 import net.minecraft.world.level.block.Block;
 
 public class ICBlockLoot extends BlockLoot {
-    // @formatter:off
     @Override
     protected void addTables() {
+        // @formatter:off
         dropSelf(ICBlocks.RAW_TIN_BLOCK.get());
         dropSelf(ICBlocks.RAW_LEAD_BLOCK.get());
         dropSelf(ICBlocks.RAW_BAUXITE_BLOCK.get());
@@ -45,6 +45,8 @@ public class ICBlockLoot extends BlockLoot {
         add(ICBlocks.DEEPSLATE_LEAD_ORE.get(), (block) -> createOreDrop(block, ICItems.RAW_LEAD.get()));
         add(ICBlocks.BAUXITE_ORE.get(), (block) -> createOreDrop(block, ICItems.RAW_BAUXITE.get()));
         add(ICBlocks.DEEPSLATE_BAUXITE_ORE.get(), (block) -> createOreDrop(block, ICItems.RAW_BAUXITE.get()));
+
+        // @formatter:on
     }
 
     @Override
