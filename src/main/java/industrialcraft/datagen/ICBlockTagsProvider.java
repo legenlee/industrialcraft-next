@@ -1,8 +1,8 @@
 package industrialcraft.datagen;
 
 import industrialcraft.IndustrialCraft;
-import industrialcraft.registry.ICBlocks;
-import industrialcraft.tag.ICBlockTags;
+import industrialcraft.core.registry.ICBlocks;
+import industrialcraft.core.ICTags;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.tags.BlockTags;
@@ -17,37 +17,37 @@ public class ICBlockTagsProvider extends BlockTagsProvider {
     @Override
     protected void addTags() {
         // ICNext
-        tag(ICBlockTags.ORES_TIN).add(
+        tag(ICTags.Blocks.ORES_TIN).add(
                 ICBlocks.TIN_ORE.get(),
                 ICBlocks.DEEPSLATE_TIN_ORE.get());
 
-        tag(ICBlockTags.ORES_LEAD).add(
+        tag(ICTags.Blocks.ORES_LEAD).add(
                 ICBlocks.LEAD_ORE.get(),
                 ICBlocks.DEEPSLATE_LEAD_ORE.get());
 
-        tag(ICBlockTags.ORES_ALUMINUM).add(
+        tag(ICTags.Blocks.ORES_ALUMINUM).add(
                 ICBlocks.BAUXITE_ORE.get(),
                 ICBlocks.DEEPSLATE_BAUXITE_ORE.get());
 
-        tag(ICBlockTags.STORAGE_BLOCKS_RAW_TIN).add(ICBlocks.RAW_TIN_BLOCK.get());
-        tag(ICBlockTags.STORAGE_BLOCKS_RAW_LEAD).add(ICBlocks.RAW_LEAD_BLOCK.get());
-        tag(ICBlockTags.STORAGE_BLOCKS_RAW_ALUMINUM).add(ICBlocks.RAW_BAUXITE_BLOCK.get());
+        tag(ICTags.Blocks.STORAGE_BLOCKS_RAW_TIN).add(ICBlocks.RAW_TIN_BLOCK.get());
+        tag(ICTags.Blocks.STORAGE_BLOCKS_RAW_LEAD).add(ICBlocks.RAW_LEAD_BLOCK.get());
+        tag(ICTags.Blocks.STORAGE_BLOCKS_RAW_ALUMINUM).add(ICBlocks.RAW_BAUXITE_BLOCK.get());
 
-        tag(ICBlockTags.STORAGE_BLOCKS_TIN).add(ICBlocks.TIN_BLOCK.get());
-        tag(ICBlockTags.STORAGE_BLOCKS_LEAD).add(ICBlocks.LEAD_BLOCK.get());
-        tag(ICBlockTags.STORAGE_BLOCKS_ALUMINUM).add(ICBlocks.ALUMINIUM_BLOCK.get());
-        tag(ICBlockTags.STORAGE_BLOCKS_BRONZE).add(ICBlocks.BRONZE_BLOCK.get());
-        tag(ICBlockTags.STORAGE_BLOCKS_STEEL).add(ICBlocks.STEEL_BLOCK.get());
+        tag(ICTags.Blocks.STORAGE_BLOCKS_TIN).add(ICBlocks.TIN_BLOCK.get());
+        tag(ICTags.Blocks.STORAGE_BLOCKS_LEAD).add(ICBlocks.LEAD_BLOCK.get());
+        tag(ICTags.Blocks.STORAGE_BLOCKS_ALUMINUM).add(ICBlocks.ALUMINIUM_BLOCK.get());
+        tag(ICTags.Blocks.STORAGE_BLOCKS_BRONZE).add(ICBlocks.BRONZE_BLOCK.get());
+        tag(ICTags.Blocks.STORAGE_BLOCKS_STEEL).add(ICBlocks.STEEL_BLOCK.get());
 
-        tag(ICBlockTags.RUBBER_LOGS).add(
+        tag(ICTags.Blocks.RUBBER_LOGS).add(
                 ICBlocks.RUBBER_LOG.get(),
                 ICBlocks.STRIPPED_RUBBER_LOG.get(),
                 ICBlocks.RUBBER_WOOD.get(),
                 ICBlocks.STRIPPED_RUBBER_WOOD.get());
 
         // Vanilla
-        tag(BlockTags.LOGS).addTag(ICBlockTags.RUBBER_LOGS);
-        tag(BlockTags.LOGS_THAT_BURN).addTag(ICBlockTags.RUBBER_LOGS);
+        tag(BlockTags.LOGS).addTag(ICTags.Blocks.RUBBER_LOGS);
+        tag(BlockTags.LOGS_THAT_BURN).addTag(ICTags.Blocks.RUBBER_LOGS);
         tag(BlockTags.SAPLINGS).add(ICBlocks.RUBBER_SAPLING.get());
         tag(BlockTags.LEAVES).add(ICBlocks.RUBBER_LEAVES.get());
         tag(BlockTags.PLANKS).add(ICBlocks.RUBBER_PLANKS.get());
@@ -67,24 +67,24 @@ public class ICBlockTagsProvider extends BlockTagsProvider {
 
         // Forge
         tag(Tags.Blocks.ORES).addTags(
-                ICBlockTags.ORES_TIN,
-                ICBlockTags.ORES_LEAD,
-                ICBlockTags.ORES_ALUMINUM);
+                ICTags.Blocks.ORES_TIN,
+                ICTags.Blocks.ORES_LEAD,
+                ICTags.Blocks.ORES_ALUMINUM);
 
         tag(Tags.Blocks.ORE_RATES_SINGULAR).addTags(
-                ICBlockTags.ORES_TIN,
-                ICBlockTags.ORES_LEAD,
-                ICBlockTags.ORES_ALUMINUM);
+                ICTags.Blocks.ORES_TIN,
+                ICTags.Blocks.ORES_LEAD,
+                ICTags.Blocks.ORES_ALUMINUM);
 
         tag(Tags.Blocks.STORAGE_BLOCKS).addTags(
-                ICBlockTags.STORAGE_BLOCKS_RAW_TIN,
-                ICBlockTags.STORAGE_BLOCKS_RAW_LEAD,
-                ICBlockTags.STORAGE_BLOCKS_RAW_ALUMINUM,
-                ICBlockTags.STORAGE_BLOCKS_TIN,
-                ICBlockTags.STORAGE_BLOCKS_LEAD,
-                ICBlockTags.STORAGE_BLOCKS_ALUMINUM,
-                ICBlockTags.STORAGE_BLOCKS_BRONZE,
-                ICBlockTags.STORAGE_BLOCKS_STEEL);
+                ICTags.Blocks.STORAGE_BLOCKS_RAW_TIN,
+                ICTags.Blocks.STORAGE_BLOCKS_RAW_LEAD,
+                ICTags.Blocks.STORAGE_BLOCKS_RAW_ALUMINUM,
+                ICTags.Blocks.STORAGE_BLOCKS_TIN,
+                ICTags.Blocks.STORAGE_BLOCKS_LEAD,
+                ICTags.Blocks.STORAGE_BLOCKS_ALUMINUM,
+                ICTags.Blocks.STORAGE_BLOCKS_BRONZE,
+                ICTags.Blocks.STORAGE_BLOCKS_STEEL);
 
         tag(Tags.Blocks.FENCES_WOODEN).add(ICBlocks.RUBBER_FENCE.get());
         tag(Tags.Blocks.FENCE_GATES_WOODEN).add(ICBlocks.RUBBER_FENCE_GATE.get());

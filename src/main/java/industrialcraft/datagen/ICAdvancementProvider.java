@@ -3,7 +3,7 @@ package industrialcraft.datagen;
 import java.util.function.Consumer;
 
 import industrialcraft.IndustrialCraft;
-import industrialcraft.registry.ICBlocks;
+import industrialcraft.core.registry.ICBlocks;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.FrameType;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;

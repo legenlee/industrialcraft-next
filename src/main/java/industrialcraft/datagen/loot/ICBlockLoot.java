@@ -3,8 +3,8 @@ package industrialcraft.datagen.loot;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
-import industrialcraft.registry.ICBlocks;
-import industrialcraft.registry.ICItems;
+import industrialcraft.core.registry.ICBlocks;
+import industrialcraft.core.registry.ICItems;
 import net.minecraft.data.loot.BlockLoot;
 import net.minecraft.world.level.block.Block;
 
