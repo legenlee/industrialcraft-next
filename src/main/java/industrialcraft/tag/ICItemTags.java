@@ -24,6 +24,18 @@ public class ICItemTags {
     public static final TagKey<Item> INGOTS_BRONZE = create(IndustrialCraft.forgePrefix("ingots/bronze"));
     public static final TagKey<Item> INGOTS_STEEL = create(IndustrialCraft.forgePrefix("ingots/steel"));
 
+    public static final TagKey<Item> NUGGETS_TIN = create(IndustrialCraft.forgePrefix("nuggets/tin"));
+    public static final TagKey<Item> NUGGETS_LEAD = create(IndustrialCraft.forgePrefix("nuggets/lead"));
+    public static final TagKey<Item> NUGGETS_ALUMINUM = create(IndustrialCraft.forgePrefix("nuggets/aluminum"));
+    public static final TagKey<Item> NUGGETS_BRONZE = create(IndustrialCraft.forgePrefix("nuggets/bronze"));
+    public static final TagKey<Item> NUGGETS_STEEL = create(IndustrialCraft.forgePrefix("nuggets/steel"));
+    
+    public static final TagKey<Item> DUSTS_TIN = create(IndustrialCraft.forgePrefix("dusts/tin"));
+    public static final TagKey<Item> DUSTS_LEAD = create(IndustrialCraft.forgePrefix("dusts/lead"));
+    public static final TagKey<Item> DUSTS_ALUMINUM = create(IndustrialCraft.forgePrefix("dusts/aluminum"));
+    public static final TagKey<Item> DUSTS_BRONZE = create(IndustrialCraft.forgePrefix("dusts/bronze"));
+    public static final TagKey<Item> DUSTS_STEEL = create(IndustrialCraft.forgePrefix("dusts/steel"));
+
     public static final TagKey<Item> STORAGE_BLOCKS_RAW_TIN = create(IndustrialCraft.forgePrefix("storage_blocks/raw_tin"));
     public static final TagKey<Item> STORAGE_BLOCKS_RAW_LEAD = create(IndustrialCraft.forgePrefix("storage_blocks/raw_lead"));
     public static final TagKey<Item> STORAGE_BLOCKS_RAW_ALUMINUM = create(IndustrialCraft.forgePrefix("storage_blocks/raw_aluminum"));

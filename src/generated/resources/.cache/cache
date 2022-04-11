@@ -14,6 +14,12 @@ e3df5cae72c593049ad4eacdc517349bd3a1ed57 data/forge/tags/blocks/storage_blocks/l
 1a9b58e3611f42c87f39e380d093aeb0f7ca6a63 data/forge/tags/blocks/storage_blocks/raw_tin.json
 ec01a3cef09cd9c89c695d1e64dcc5ceea119f46 data/forge/tags/blocks/storage_blocks/steel.json
 ace87ec5bef378db7613db55c1270eb3f4dedfb1 data/forge/tags/blocks/storage_blocks/tin.json
+2c38b5e6cd72017b0039871904f529445320f3ad data/forge/tags/items/dusts.json
+e7391d0d1134cea380e233e2d35fc8883b3a7cbe data/forge/tags/items/dusts/aluminum.json
+d18eb63bcc9edf85b19cc3eb13bf3555eabc5adf data/forge/tags/items/dusts/bronze.json
+d46d2f244af5b35ebe78863690b77f890f923b62 data/forge/tags/items/dusts/lead.json
+e55c68de4384d9fa88a0a8a094687155716ea5d3 data/forge/tags/items/dusts/steel.json
+3f9919fd857f6db23b24210a0572b0dbbefc7b7d data/forge/tags/items/dusts/tin.json
 5fd3fc1f450bc0712a0bc701f3b7017d6ce2b1ff data/forge/tags/items/fence_gates.json
 5fd3fc1f450bc0712a0bc701f3b7017d6ce2b1ff data/forge/tags/items/fence_gates/wooden.json
 8e5523a50efad1ea64b164f4769ab1b55b38a013 data/forge/tags/items/ingots.json
@@ -22,6 +28,12 @@ d0f41addcc0eb24382c25a07956142b10727189e data/forge/tags/items/ingots/aluminum.j
 9d0cdfedbd68554150d79e99beba34f936ed7ff7 data/forge/tags/items/ingots/lead.json
 4b90bfa9354cd107032bf2b4a7a6a2ce84f2078b data/forge/tags/items/ingots/steel.json
 a7e7f464f209ed5754c8148fe2f8557a06b85d38 data/forge/tags/items/ingots/tin.json
+4d75ac54e3194099948f1eff8c917f642483591f data/forge/tags/items/nuggets.json
+6c9bd3a61395858f533b8fa1dafd08eade19c9d9 data/forge/tags/items/nuggets/aluminum.json
+4c318eb771556249f0a3c6d8294fac3cf50d37a4 data/forge/tags/items/nuggets/bronze.json
+b6dd77214b47b6bfa354e4465f665b84ce66a2f4 data/forge/tags/items/nuggets/lead.json
+f38552d302c8a3d8d91de7a9e0183aa2d303e267 data/forge/tags/items/nuggets/steel.json
+cdceef9eec55d55a0fa0b4bb76624f3bc3da8bc2 data/forge/tags/items/nuggets/tin.json
 b2fe981eac228c61cf581c8e68d8f5c6f6130bcd data/forge/tags/items/ores.json
 09cd372796a3d6a15133efda552080672f4a71c4 data/forge/tags/items/ores/aluminum.json
 641f28d0282f21359844ab69207ebce13cb5da42 data/forge/tags/items/ores/lead.json

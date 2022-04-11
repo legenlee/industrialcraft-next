@@ -46,6 +46,18 @@ public class ICItemTagsProvider extends ItemTagsProvider {
         tag(ICItemTags.INGOTS_BRONZE).add(ICItems.BRONZE_INGOT.get());
         tag(ICItemTags.INGOTS_STEEL).add(ICItems.STEEL_INGOT.get());
 
+        tag(ICItemTags.NUGGETS_TIN).add(ICItems.TIN_NUGGET.get());
+        tag(ICItemTags.NUGGETS_LEAD).add(ICItems.LEAD_NUGGET.get());
+        tag(ICItemTags.NUGGETS_ALUMINUM).add(ICItems.ALUMINIUM_NUGGET.get());
+        tag(ICItemTags.NUGGETS_BRONZE).add(ICItems.BRONZE_NUGGET.get());
+        tag(ICItemTags.NUGGETS_STEEL).add(ICItems.STEEL_NUGGET.get());
+
+        tag(ICItemTags.DUSTS_TIN).add(ICItems.TIN_DUST.get());
+        tag(ICItemTags.DUSTS_LEAD).add(ICItems.LEAD_DUST.get());
+        tag(ICItemTags.DUSTS_ALUMINUM).add(ICItems.ALUMINIUM_DUST.get());
+        tag(ICItemTags.DUSTS_BRONZE).add(ICItems.BRONZE_DUST.get());
+        tag(ICItemTags.DUSTS_STEEL).add(ICItems.STEEL_DUST.get());
+
         copy(ICBlockTags.RUBBER_LOGS, ICItemTags.RUBBER_LOGS);
 
         tag(ICItemTags.RUBBER).add(ICItems.RUBBER.get());
@@ -82,6 +94,21 @@ public class ICItemTagsProvider extends ItemTagsProvider {
                 ICItemTags.INGOTS_ALUMINUM,
                 ICItemTags.INGOTS_BRONZE,
                 ICItemTags.INGOTS_STEEL);
+
+        tag(Tags.Items.NUGGETS).addTags(
+                ICItemTags.NUGGETS_TIN,
+                ICItemTags.NUGGETS_LEAD,
+                ICItemTags.NUGGETS_ALUMINUM,
+                ICItemTags.NUGGETS_BRONZE,
+                ICItemTags.NUGGETS_STEEL);
+
+        tag(Tags.Items.DUSTS).addTags(
+                ICItemTags.DUSTS_TIN,
+                ICItemTags.DUSTS_LEAD,
+                ICItemTags.DUSTS_ALUMINUM,
+                ICItemTags.DUSTS_BRONZE,
+                ICItemTags.DUSTS_STEEL);
+
     }
 
     @Override
