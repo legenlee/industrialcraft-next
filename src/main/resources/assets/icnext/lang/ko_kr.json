@@ -34,8 +34,10 @@
   "block.icnext.rubber_pressure_plate": "고무나무 압력판",
   "block.icnext.rubber_button": "고무나무 버튼",
   "block.icnext.rubber_sign": "고무나무 표지판",
-
   "block.icnext.tapping_bowl": "수액 채취 그릇",
+
+  "block.icnext.basic_generator": "기본 발전기",
+  "block.icnext.basic_generator.desc": "기본적인 발전기입니다. 아이템을 태워 에너지를 생성합니다.",
 
   "_section1": "Items",
   "item.icnext.sap": "수액",

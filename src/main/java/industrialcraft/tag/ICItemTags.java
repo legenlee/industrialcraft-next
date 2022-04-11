@@ -8,8 +8,6 @@ import net.minecraft.world.item.Item;
 
 public class ICItemTags {
     // @formatter:off
-    public static final TagKey<Item> RUBBER_LOGS = create(IndustrialCraft.modPrefix("rubber_logs"));
-
     public static final TagKey<Item> ORES_TIN = create(IndustrialCraft.forgePrefix("ores/tin"));
     public static final TagKey<Item> ORES_LEAD = create(IndustrialCraft.forgePrefix("ores/lead"));
     public static final TagKey<Item> ORES_ALUMINUM = create(IndustrialCraft.forgePrefix("ores/aluminum"));
@@ -47,6 +45,9 @@ public class ICItemTags {
     public static final TagKey<Item> STORAGE_BLOCKS_STEEL = create(IndustrialCraft.forgePrefix("storage_blocks/steel"));
 
     public static final TagKey<Item> RUBBER = create(IndustrialCraft.forgePrefix("rubber"));
+
+    public static final TagKey<Item> RUBBER_LOGS = create(IndustrialCraft.modPrefix("rubber_logs"));
+    public static final TagKey<Item> MACHINES = create(IndustrialCraft.modPrefix("machines"));
 
     // @formatter:on
     public static final TagKey<Item> create(ResourceLocation location) {

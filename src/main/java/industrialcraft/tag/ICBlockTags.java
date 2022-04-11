@@ -26,6 +26,7 @@ public class ICBlockTags {
     public static final TagKey<Block> STORAGE_BLOCKS_STEEL = create(IndustrialCraft.forgePrefix("storage_blocks/steel"));
 
     public static final TagKey<Block> RUBBER_LOGS = create(IndustrialCraft.modPrefix("rubber_logs"));
+    public static final TagKey<Block> MACHINES = create(IndustrialCraft.modPrefix("machines"));
 
     // @formatter:on
     public static final TagKey<Block> create(ResourceLocation location) {

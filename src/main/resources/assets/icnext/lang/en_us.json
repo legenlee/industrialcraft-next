@@ -34,8 +34,10 @@
   "block.icnext.rubber_pressure_plate": "Rubber Pressure Plate",
   "block.icnext.rubber_button": "Rubber Button",
   "block.icnext.rubber_sign": "Rubber Sign",
-
   "block.icnext.tapping_bowl": "Tapping Bowl",
+
+  "block.icnext.basic_generator": "Basic Generator",
+  "block.icnext.basic_generator.desc": "A basic generator. Generates energy by blasting item.",
 
   "_section1": "Items",
   "item.icnext.sap": "Sap",
