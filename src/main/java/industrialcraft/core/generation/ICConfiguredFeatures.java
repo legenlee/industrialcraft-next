@@ -1,4 +1,4 @@
-package industrialcraft.core.world;
+package industrialcraft.core.generation;
 
 import industrialcraft.IndustrialCraft;
 import industrialcraft.core.registry.ICBlocks;

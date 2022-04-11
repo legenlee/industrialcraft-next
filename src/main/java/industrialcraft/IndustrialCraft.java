@@ -21,6 +21,7 @@ import industrialcraft.core.registry.ICItems;
 import industrialcraft.core.registry.ICSoundEvents;
 
 @Mod(IndustrialCraft.MOD_ID)
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class IndustrialCraft {
     public static final String MOD_ID = "icnext";
     public static final Logger LOGGER = LogManager.getLogger();
