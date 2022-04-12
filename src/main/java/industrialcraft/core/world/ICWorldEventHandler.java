@@ -31,6 +31,7 @@ public class ICWorldEventHandler {
 
     private static void addOreGeneration(final BiomeLoadingEvent event) {
         List<Holder<PlacedFeature>> base = event.getGeneration().getFeatures(Decoration.UNDERGROUND_ORES);
+        // TODO Write place features refs ore generation
     }
 
     @SubscribeEvent

@@ -15,7 +15,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 
-// TODO: Write class to extend this for implementing machines, tanks, etc...
+// TODO Write class to extend this for implementing machines, tanks, etc...
 public abstract class ICBaseContainerBlockEntity extends BlockEntity implements Container, MenuProvider, Nameable {
     private Component name;
 
