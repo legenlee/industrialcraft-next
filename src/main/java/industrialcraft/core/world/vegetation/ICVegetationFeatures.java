@@ -1,4 +1,4 @@
-package industrialcraft.core.world;
+package industrialcraft.core.world.vegetation;
 
 import java.util.List;
 

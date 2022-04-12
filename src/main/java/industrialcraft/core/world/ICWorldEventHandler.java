@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Set;
 
 import industrialcraft.IndustrialCraft;
+import industrialcraft.core.world.vegetation.ICVegetationPlacements;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
@@ -28,8 +29,13 @@ public class ICWorldEventHandler {
         }
     }
 
+    private static void addOreGeneration(final BiomeLoadingEvent event) {
+        List<Holder<PlacedFeature>> base = event.getGeneration().getFeatures(Decoration.UNDERGROUND_ORES);
+    }
+
     @SubscribeEvent
     public static void onBiomeLoading(final BiomeLoadingEvent event) {
         addTreeGeneration(event);
+        addOreGeneration(event);
     }
 }
