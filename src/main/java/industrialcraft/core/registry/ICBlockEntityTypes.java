@@ -10,17 +10,17 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-public class ICBlockEntities {
-    protected static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = DeferredRegister
+public class ICBlockEntityTypes {
+    protected static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITY_TYPES = DeferredRegister
             .create(ForgeRegistries.BLOCK_ENTITIES, IndustrialCraft.MOD_ID);
 
     private static final <T extends BlockEntity> RegistryObject<BlockEntityType<T>> register(String name,
             Supplier<? extends BlockEntityType<T>> sup) {
-        final RegistryObject<BlockEntityType<T>> registryObject = BLOCK_ENTITIES.register(name, sup);
+        final RegistryObject<BlockEntityType<T>> registryObject = BLOCK_ENTITY_TYPES.register(name, sup);
         return registryObject;
     }
 
     public static void setup(final IEventBus bus) {
-        BLOCK_ENTITIES.register(bus);
+        BLOCK_ENTITY_TYPES.register(bus);
     }
 }
