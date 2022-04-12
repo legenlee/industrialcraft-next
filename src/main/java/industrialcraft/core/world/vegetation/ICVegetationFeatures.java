@@ -15,6 +15,6 @@ public class ICVegetationFeatures {
     public static final Holder<ConfiguredFeature<RandomFeatureConfiguration, ?>> TREES_RUBBER = FeatureUtils.register(
             IndustrialCraft.modPrefix("trees_rubber").toString(), Feature.RANDOM_SELECTOR,
             new RandomFeatureConfiguration(
-                    List.of(new WeightedPlacedFeature(ICPlacedFeatures.RUBBER_CHECKED, 0.05f)),
-                    ICPlacedFeatures.RUBBER_CHECKED));
+                    List.of(new WeightedPlacedFeature(ICPlacedFeatures.Vegetations.RUBBER_CHECKED, 0.05f)),
+                    ICPlacedFeatures.Vegetations.RUBBER_CHECKED));
 }

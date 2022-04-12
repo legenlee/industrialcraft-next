@@ -1,4 +1,4 @@
-package industrialcraft.core.generation.tree.rubber;
+package industrialcraft.core.generation.vegetation.rubber;
 
 import java.util.Random;
 
@@ -13,6 +13,6 @@ public class RubberTreeGrower extends AbstractTreeGrower {
     @Nullable
     @Override
     protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(Random random, boolean beeHive) {
-        return ICConfiguredFeatures.RUBBER_TREE;
+        return ICConfiguredFeatures.Vegetations.RUBBER_TREE;
     }
 }
