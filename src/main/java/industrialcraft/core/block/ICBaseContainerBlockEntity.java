@@ -3,6 +3,7 @@ package industrialcraft.core.block;
 import javax.annotation.Nullable;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.Container;
@@ -14,10 +15,16 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.common.capabilities.Capability;
+import net.minecraftforge.common.util.LazyOptional;
+import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.items.wrapper.InvWrapper;
 
 // TODO Write class to extend this for implementing machines, tanks, etc...
 public abstract class ICBaseContainerBlockEntity extends BlockEntity implements Container, MenuProvider, Nameable {
     private Component name;
+    private LazyOptional<IItemHandler> itemHandler = LazyOptional.of(() -> createItemHandler());
 
     protected ICBaseContainerBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) {
         super(type, pos, state);
@@ -66,11 +73,27 @@ public abstract class ICBaseContainerBlockEntity extends BlockEntity implements 
         return null;
     }
 
-    protected abstract AbstractContainerMenu createMenu(int what, Inventory inventory);
+    public IItemHandler createItemHandler() {
+        return new InvWrapper(this);
+    }
+
+    @Override
+    public <T> LazyOptional<T> getCapability(Capability<T> cap, Direction side) {
+        if (cap == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) {
+            return itemHandler.cast();
+        }
+        return super.getCapability(cap, side);
+    }
+
+    @Override
+    public void invalidateCaps() {
+        super.invalidateCaps();
+        itemHandler.invalidate();
+    }
 
     @Override
     public void reviveCaps() {
-        // TODO Auto-generated method stub
         super.reviveCaps();
+        itemHandler = LazyOptional.of(() -> createItemHandler());
     }
 }
