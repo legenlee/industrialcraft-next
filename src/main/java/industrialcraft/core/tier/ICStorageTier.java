@@ -1,4 +1,4 @@
-package industrialcraft.core.block;
+package industrialcraft.core.tier;
 
 public enum ICStorageTier {
     LV,
