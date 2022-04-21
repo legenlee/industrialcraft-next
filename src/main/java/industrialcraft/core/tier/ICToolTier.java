@@ -1,4 +1,4 @@
-package industrialcraft.core.item;
+package industrialcraft.core.tier;
 
 import java.util.List;
 

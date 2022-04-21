@@ -2,8 +2,8 @@ package industrialcraft.core.registry;
 
 import industrialcraft.IndustrialCraft;
 import industrialcraft.core.inventory.ICCreativeModeTab;
-import industrialcraft.core.item.ICToolTier;
 import industrialcraft.core.item.tool.TreetapItem;
+import industrialcraft.core.tier.ICToolTier;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
