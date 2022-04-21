@@ -18,7 +18,7 @@ public class ICBlockLoot extends BlockLoot {
 
         dropSelf(ICBlocks.TIN_BLOCK.get());
         dropSelf(ICBlocks.LEAD_BLOCK.get());
-        dropSelf(ICBlocks.ALUMINIUM_BLOCK.get());
+        dropSelf(ICBlocks.ALUMINUM_BLOCK.get());
         dropSelf(ICBlocks.BRONZE_BLOCK.get());
         dropSelf(ICBlocks.STEEL_BLOCK.get());
 

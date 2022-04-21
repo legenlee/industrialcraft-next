@@ -35,7 +35,7 @@ public class ICBlockTagsProvider extends BlockTagsProvider {
 
         tag(ICTags.Blocks.STORAGE_BLOCKS_TIN).add(ICBlocks.TIN_BLOCK.get());
         tag(ICTags.Blocks.STORAGE_BLOCKS_LEAD).add(ICBlocks.LEAD_BLOCK.get());
-        tag(ICTags.Blocks.STORAGE_BLOCKS_ALUMINUM).add(ICBlocks.ALUMINIUM_BLOCK.get());
+        tag(ICTags.Blocks.STORAGE_BLOCKS_ALUMINUM).add(ICBlocks.ALUMINUM_BLOCK.get());
         tag(ICTags.Blocks.STORAGE_BLOCKS_BRONZE).add(ICBlocks.BRONZE_BLOCK.get());
         tag(ICTags.Blocks.STORAGE_BLOCKS_STEEL).add(ICBlocks.STEEL_BLOCK.get());
 
@@ -117,7 +117,7 @@ public class ICBlockTagsProvider extends BlockTagsProvider {
                 ICBlocks.RAW_BAUXITE_BLOCK.get(),
                 ICBlocks.TIN_BLOCK.get(),
                 ICBlocks.LEAD_BLOCK.get(),
-                ICBlocks.ALUMINIUM_BLOCK.get(),
+                ICBlocks.ALUMINUM_BLOCK.get(),
                 ICBlocks.BRONZE_BLOCK.get(),
                 ICBlocks.STEEL_BLOCK.get());
 
@@ -133,7 +133,7 @@ public class ICBlockTagsProvider extends BlockTagsProvider {
                 ICBlocks.RAW_BAUXITE_BLOCK.get(),
                 ICBlocks.TIN_BLOCK.get(),
                 ICBlocks.LEAD_BLOCK.get(),
-                ICBlocks.ALUMINIUM_BLOCK.get(),
+                ICBlocks.ALUMINUM_BLOCK.get(),
                 ICBlocks.BRONZE_BLOCK.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL).add(
