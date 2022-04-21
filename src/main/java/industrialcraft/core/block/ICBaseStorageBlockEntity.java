@@ -73,7 +73,9 @@ public abstract class ICBaseStorageBlockEntity extends BlockEntity implements Co
         return null;
     }
 
-    public IItemHandler createItemHandler() {
+    protected abstract AbstractContainerMenu createMenu(int p_39954_, Inventory inventory);
+
+    protected IItemHandler createItemHandler() {
         return new InvWrapper(this);
     }
 
