@@ -1,4 +1,4 @@
-package industrialcraft.core.block;
+package industrialcraft.core.block.entity;
 
 import javax.annotation.Nullable;
 
