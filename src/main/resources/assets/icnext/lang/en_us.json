@@ -1,5 +1,5 @@
 {
-  "itemGroup.icnext": "IndustrialCraft-Next",
+  "itemGroup.icnext.general": "IndustrialCraft-Next",
 
   "_section0": "Blocks",
   "block.icnext.tin_ore": "Tin Ore",
@@ -11,7 +11,7 @@
 
   "block.icnext.tin_block": "Block of Tin",
   "block.icnext.raw_tin_block": "Block of Raw Tin",
-  "block.icnext.aluminium_block": "Block of Aluminium",
+  "block.icnext.aluminum_block": "Block of Aluminum",
   "block.icnext.raw_bauxite_block": "Block of Raw Bauxite",
   "block.icnext.lead_block": "Block of Lead",
   "block.icnext.raw_lead_block": "Block of Raw Lead",
@@ -47,9 +47,9 @@
   "item.icnext.tin_nugget": "Tin Nugget",
   "item.icnext.tin_dust": "Tin Dust",
   "item.icnext.raw_bauxite": "Raw Bauxite",
-  "item.icnext.aluminium_ingot": "Aluminium Ingot",
-  "item.icnext.aluminium_nugget": "Aluminium Nugget",
-  "item.icnext.aluminium_dust": "Aluminium Dust",
+  "item.icnext.aluminum_ingot": "Aluminum Ingot",
+  "item.icnext.aluminum_nugget": "Aluminum Nugget",
+  "item.icnext.aluminum_dust": "Aluminum Dust",
   "item.icnext.raw_lead": "Raw Lead",
   "item.icnext.lead_ingot": "Lead Ingot",
   "item.icnext.lead_nugget": "Lead Nugget",
@@ -77,9 +77,13 @@
   "item.icnext.music_disc_your_everyday_happycore": "Music Disc",
   "item.icnext.music_disc_your_everyday_happycore.desc": "Noisysundae - Your Everyday Happycore",
 
-  "_section3": "Advancements",
+  "_section3": "Containers",
+
+  "_section4": "Advancements",
   "advancements.icnext.root.title": "IndustrialCraft-Next",
   "advancements.icnext.root.description": "New Experience from familiar thing",
   "advancements.icnext.rtfm.title": "Read The F***ing Manual",
-  "advancements.icnext.rtfm.description": "Obtain rubber log, and discover what you did"
+  "advancements.icnext.rtfm.description": "Obtain rubber log, and discover what you did",
+
+  "_section5": "GUI"
 }

@@ -1,4 +1,4 @@
-package industrialcraft.core.world;
+package industrialcraft.core.world.vegetation;
 
 import industrialcraft.IndustrialCraft;
 import net.minecraft.core.Holder;

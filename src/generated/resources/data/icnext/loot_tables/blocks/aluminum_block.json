@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "icnext:aluminium_block"
+          "name": "icnext:aluminum_block"
         }
       ],
       "conditions": [

@@ -41,19 +41,19 @@ public class ICItemTagsProvider extends ItemTagsProvider {
 
         tag(ICTags.Items.INGOTS_TIN).add(ICItems.TIN_INGOT.get());
         tag(ICTags.Items.INGOTS_LEAD).add(ICItems.LEAD_INGOT.get());
-        tag(ICTags.Items.INGOTS_ALUMINUM).add(ICItems.ALUMINIUM_INGOT.get());
+        tag(ICTags.Items.INGOTS_ALUMINUM).add(ICItems.ALUMINUM_INGOT.get());
         tag(ICTags.Items.INGOTS_BRONZE).add(ICItems.BRONZE_INGOT.get());
         tag(ICTags.Items.INGOTS_STEEL).add(ICItems.STEEL_INGOT.get());
 
         tag(ICTags.Items.NUGGETS_TIN).add(ICItems.TIN_NUGGET.get());
         tag(ICTags.Items.NUGGETS_LEAD).add(ICItems.LEAD_NUGGET.get());
-        tag(ICTags.Items.NUGGETS_ALUMINUM).add(ICItems.ALUMINIUM_NUGGET.get());
+        tag(ICTags.Items.NUGGETS_ALUMINUM).add(ICItems.ALUMINUM_NUGGET.get());
         tag(ICTags.Items.NUGGETS_BRONZE).add(ICItems.BRONZE_NUGGET.get());
         tag(ICTags.Items.NUGGETS_STEEL).add(ICItems.STEEL_NUGGET.get());
 
         tag(ICTags.Items.DUSTS_TIN).add(ICItems.TIN_DUST.get());
         tag(ICTags.Items.DUSTS_LEAD).add(ICItems.LEAD_DUST.get());
-        tag(ICTags.Items.DUSTS_ALUMINUM).add(ICItems.ALUMINIUM_DUST.get());
+        tag(ICTags.Items.DUSTS_ALUMINUM).add(ICItems.ALUMINUM_DUST.get());
         tag(ICTags.Items.DUSTS_BRONZE).add(ICItems.BRONZE_DUST.get());
         tag(ICTags.Items.DUSTS_STEEL).add(ICItems.STEEL_DUST.get());
 

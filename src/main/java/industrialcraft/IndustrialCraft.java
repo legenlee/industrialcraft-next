@@ -2,9 +2,11 @@ package industrialcraft;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -21,13 +23,15 @@ import industrialcraft.core.registry.ICItems;
 import industrialcraft.core.registry.ICSoundEvents;
 
 @Mod(IndustrialCraft.MOD_ID)
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class IndustrialCraft {
     public static final String MOD_ID = "icnext";
     public static final Logger LOGGER = LogManager.getLogger();
 
     public IndustrialCraft() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        bus.addListener(this::commonSetup);
+        bus.addListener(this::clientSetup);
 
         ICSoundEvents.setup(bus);
         ICBlocks.setup(bus);
@@ -39,8 +43,7 @@ public class IndustrialCraft {
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    @SubscribeEvent
-    public static void commonSetup(final FMLCommonSetupEvent event) {
+    private void commonSetup(final FMLCommonSetupEvent event) {
         WoodType.register(ICBlocks.RUBBER);
 
         event.enqueueWork(() -> {
@@ -50,8 +53,8 @@ public class IndustrialCraft {
         });
     }
 
-    @SubscribeEvent
-    public static void clientSetup(final FMLClientSetupEvent event) {
+    @OnlyIn(Dist.CLIENT)
+    private void clientSetup(final FMLClientSetupEvent event) {
         ICBlockRenderHandler.setup();
     }
 

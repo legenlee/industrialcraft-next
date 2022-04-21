@@ -1,5 +1,5 @@
 {
-  "itemGroup.icnext": "IndustrialCraft-Next",
+  "itemGroup.icnext.general": "IndustrialCraft-Next",
 
   "_section0": "Blocks",
   "block.icnext.tin_ore": "주석 광석",
@@ -11,7 +11,7 @@
 
   "block.icnext.tin_block": "주석 블록",
   "block.icnext.raw_tin_block": "주석 원석 블록",
-  "block.icnext.aluminium_block": "알루미늄 블록",
+  "block.icnext.aluminum_block": "알루미늄 블록",
   "block.icnext.raw_bauxite_block": "수반 원석 블록",
   "block.icnext.lead_block": "납 블록",
   "block.icnext.raw_lead_block": "납 원석 블록",
@@ -47,9 +47,9 @@
   "item.icnext.tin_nugget": "주석 조각",
   "item.icnext.tin_dust": "주석 가루",
   "item.icnext.raw_bauxite": "수반 원석",
-  "item.icnext.aluminium_ingot": "알루미늄 주괴",
-  "item.icnext.aluminium_nugget": "알루미늄 조각",
-  "item.icnext.aluminium_dust": "알루미늄 가루",
+  "item.icnext.aluminum_ingot": "알루미늄 주괴",
+  "item.icnext.aluminum_nugget": "알루미늄 조각",
+  "item.icnext.aluminum_dust": "알루미늄 가루",
   "item.icnext.raw_lead": "납 원석",
   "item.icnext.lead_ingot": "납 주괴",
   "item.icnext.lead_nugget": "납 조각",
@@ -77,9 +77,13 @@
   "item.icnext.music_disc_your_everyday_happycore": "음반",
   "item.icnext.music_disc_your_everyday_happycore.desc": "Noisysundae - Your Everyday Happycore",
 
-  "_section3": "Advancements",
+  "_section3": "Containers",
+
+  "_section4": "Advancements",
   "advancements.icnext.root.title": "IndustrialCraft-Next",
   "advancements.icnext.root.description": "익숙하면서도 새로운 경험",
   "advancements.icnext.rtfm.title": "그거 그렇게 하는 거 아닌데",
-  "advancements.icnext.rtfm.description": "고무나무에서 수액을 획득할 수 있습니다. 캤다고요? 왜 그런 짓을..."
+  "advancements.icnext.rtfm.description": "고무나무에서 수액을 획득할 수 있습니다. 아 그거 그렇게 하는 거 아닌데",
+
+  "_section5": "GUI"
 }

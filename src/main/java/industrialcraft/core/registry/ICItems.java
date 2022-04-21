@@ -33,9 +33,9 @@ public class ICItems {
     public static final RegistryObject<Item> LEAD_DUST = register("lead_dust");
 
     public static final RegistryObject<Item> RAW_BAUXITE = register("raw_bauxite");
-    public static final RegistryObject<Item> ALUMINIUM_INGOT = register("aluminium_ingot");
-    public static final RegistryObject<Item> ALUMINIUM_NUGGET = register("aluminium_nugget");
-    public static final RegistryObject<Item> ALUMINIUM_DUST = register("aluminium_dust");
+    public static final RegistryObject<Item> ALUMINUM_INGOT = register("aluminum_ingot");
+    public static final RegistryObject<Item> ALUMINUM_NUGGET = register("aluminum_nugget");
+    public static final RegistryObject<Item> ALUMINUM_DUST = register("aluminum_dust");
 
     public static final RegistryObject<Item> BRONZE_INGOT = register("bronze_ingot");
     public static final RegistryObject<Item> BRONZE_NUGGET = register("bronze_nugget");
