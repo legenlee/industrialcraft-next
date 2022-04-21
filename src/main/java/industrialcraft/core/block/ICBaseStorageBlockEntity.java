@@ -22,11 +22,11 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.wrapper.InvWrapper;
 
 // TODO Write class to extend this for implementing machines, tanks, etc...
-public abstract class ICBaseContainerBlockEntity extends BlockEntity implements Container, MenuProvider, Nameable {
+public abstract class ICBaseStorageBlockEntity extends BlockEntity implements Container, MenuProvider, Nameable {
     private Component name;
     private LazyOptional<IItemHandler> itemHandler = LazyOptional.of(() -> createItemHandler());
 
-    protected ICBaseContainerBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) {
+    protected ICBaseStorageBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) {
         super(type, pos, state);
     }
 
