@@ -14,6 +14,10 @@ public class ICEntities {
     protected static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITIES,
             IndustrialCraft.MOD_ID);
 
+    // @formatter:off
+
+
+    // @formatter:on
     private static final <T extends Entity> RegistryObject<EntityType<T>> register(String name,
             Supplier<? extends EntityType<T>> sup) {
         final RegistryObject<EntityType<T>> registryObject = ENTITIES.register(name, sup);

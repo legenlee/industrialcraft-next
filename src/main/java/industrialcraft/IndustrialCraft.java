@@ -6,7 +6,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -15,8 +14,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import industrialcraft.core.client.ICBlockRenderHandler;
+import industrialcraft.core.client.ICScreenRenderHandler;
+import industrialcraft.core.registry.ICBlockEntityTypes;
 import industrialcraft.core.registry.ICBlockItems;
 import industrialcraft.core.registry.ICBlocks;
+import industrialcraft.core.registry.ICContainers;
 import industrialcraft.core.registry.ICEntities;
 import industrialcraft.core.registry.ICFeatures;
 import industrialcraft.core.registry.ICItems;
@@ -38,6 +40,8 @@ public class IndustrialCraft {
         ICBlockItems.setup(bus);
         ICItems.setup(bus);
         ICEntities.setup(bus);
+        ICBlockEntityTypes.setup(bus);
+        ICContainers.setup(bus);
         ICFeatures.setup(bus);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -56,6 +60,10 @@ public class IndustrialCraft {
     @OnlyIn(Dist.CLIENT)
     private void clientSetup(final FMLClientSetupEvent event) {
         ICBlockRenderHandler.setup();
+
+        event.enqueueWork(() -> {
+            ICScreenRenderHandler.setup();
+        });
     }
 
     public static ResourceLocation modPrefix(String name) {
