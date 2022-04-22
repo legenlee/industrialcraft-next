@@ -1,4 +1,4 @@
-package industrialcraft.core.block.entity;
+package industrialcraft.core.blockentity;
 
 import javax.annotation.Nullable;
 
@@ -21,7 +21,6 @@ import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.wrapper.InvWrapper;
 
-// TODO Write class to extend this for implementing machines, tanks, etc...
 public abstract class ICBaseStorageBlockEntity extends BlockEntity implements Container, MenuProvider, Nameable {
     private Component name;
     private LazyOptional<IItemHandler> itemHandler = LazyOptional.of(() -> createItemHandler());
