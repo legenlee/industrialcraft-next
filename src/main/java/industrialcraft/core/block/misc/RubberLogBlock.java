@@ -1,4 +1,4 @@
-package industrialcraft.core.block.rubber;
+package industrialcraft.core.block.misc;
 
 import java.util.Random;
 

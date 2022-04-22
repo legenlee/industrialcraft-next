@@ -7,7 +7,7 @@ import java.util.function.ToIntFunction;
 import com.google.common.collect.ImmutableMap;
 
 import industrialcraft.IndustrialCraft;
-import industrialcraft.core.block.rubber.RubberLogBlock;
+import industrialcraft.core.block.misc.RubberLogBlock;
 import industrialcraft.core.generation.vegetation.rubber.RubberTreeGrower;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.level.block.Block;
