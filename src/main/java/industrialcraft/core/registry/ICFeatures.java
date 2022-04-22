@@ -11,9 +11,13 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ICFeatures {
-    private static final DeferredRegister<Feature<?>> FEATURES = DeferredRegister.create(ForgeRegistries.FEATURES,
+    protected static final DeferredRegister<Feature<?>> FEATURES = DeferredRegister.create(ForgeRegistries.FEATURES,
             IndustrialCraft.MOD_ID);
 
+    // @formatter:off
+
+    
+    // @formatter:on
     private static <FC extends FeatureConfiguration> RegistryObject<Feature<FC>> register(String name,
             Supplier<? extends Feature<FC>> sup) {
         final RegistryObject<Feature<FC>> registryObject = FEATURES.register(name, sup);
