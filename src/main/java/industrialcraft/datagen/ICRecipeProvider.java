@@ -2,9 +2,9 @@ package industrialcraft.datagen;
 
 import java.util.function.Consumer;
 
-import industrialcraft.core.registry.ICBlocks;
-import industrialcraft.core.registry.ICItems;
-import industrialcraft.core.ICTags;
+import industrialcraft.ICTags;
+import industrialcraft.registry.ICBlocks;
+import industrialcraft.registry.ICItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeProvider;

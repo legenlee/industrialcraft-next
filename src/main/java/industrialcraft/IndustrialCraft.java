@@ -13,16 +13,16 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import industrialcraft.core.client.ICBlockRenderHandler;
-import industrialcraft.core.client.ICScreenRenderHandler;
-import industrialcraft.core.registry.ICBlockEntityTypes;
-import industrialcraft.core.registry.ICBlockItems;
-import industrialcraft.core.registry.ICBlocks;
-import industrialcraft.core.registry.ICContainers;
-import industrialcraft.core.registry.ICEntities;
-import industrialcraft.core.registry.ICFeatures;
-import industrialcraft.core.registry.ICItems;
-import industrialcraft.core.registry.ICSoundEvents;
+import industrialcraft.client.ICBlockRenderHandler;
+import industrialcraft.client.ICScreenRenderHandler;
+import industrialcraft.registry.ICBlockEntityTypes;
+import industrialcraft.registry.ICBlockItems;
+import industrialcraft.registry.ICBlocks;
+import industrialcraft.registry.ICContainers;
+import industrialcraft.registry.ICEntities;
+import industrialcraft.registry.ICFeatures;
+import industrialcraft.registry.ICItems;
+import industrialcraft.registry.ICSoundEvents;
 
 @Mod(IndustrialCraft.MOD_ID)
 public class IndustrialCraft {
