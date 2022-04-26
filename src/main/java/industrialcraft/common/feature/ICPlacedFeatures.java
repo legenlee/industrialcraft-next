@@ -1,4 +1,4 @@
-package industrialcraft.common.generation;
+package industrialcraft.common.feature;
 
 import industrialcraft.IndustrialCraft;
 import industrialcraft.common.registries.BlockRegistries;

@@ -3,7 +3,7 @@ package industrialcraft.common.world.vegetation;
 import java.util.List;
 
 import industrialcraft.IndustrialCraft;
-import industrialcraft.common.generation.ICPlacedFeatures;
+import industrialcraft.common.feature.ICPlacedFeatures;
 import net.minecraft.core.Holder;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;

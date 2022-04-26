@@ -8,7 +8,7 @@ import com.google.common.collect.ImmutableMap;
 
 import industrialcraft.IndustrialCraft;
 import industrialcraft.common.block.misc.RubberLogBlock;
-import industrialcraft.common.generation.vegetation.rubber.RubberTreeGrower;
+import industrialcraft.common.feature.vegetation.rubber.RubberTreeGrower;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;

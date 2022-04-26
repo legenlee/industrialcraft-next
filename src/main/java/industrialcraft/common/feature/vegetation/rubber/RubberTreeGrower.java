@@ -1,10 +1,10 @@
-package industrialcraft.common.generation.vegetation.rubber;
+package industrialcraft.common.feature.vegetation.rubber;
 
 import java.util.Random;
 
 import javax.annotation.Nullable;
 
-import industrialcraft.common.generation.ICConfiguredFeatures;
+import industrialcraft.common.feature.ICConfiguredFeatures;
 import net.minecraft.core.Holder;
 import net.minecraft.world.level.block.grower.AbstractTreeGrower;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
