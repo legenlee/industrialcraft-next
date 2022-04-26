@@ -1,9 +1,9 @@
 package industrialcraft.datagen;
 
-import industrialcraft.ICTags;
 import industrialcraft.IndustrialCraft;
-import industrialcraft.registry.ICBlockItems;
-import industrialcraft.registry.ICItems;
+import industrialcraft.common.registries.BlockItemRegistries;
+import industrialcraft.common.registries.ItemRegistries;
+import industrialcraft.common.tags.ICTags;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -35,47 +35,47 @@ public class ICItemTagsProvider extends ItemTagsProvider {
         copy(ICTags.Blocks.STORAGE_BLOCKS_BRONZE, ICTags.Items.STORAGE_BLOCKS_BRONZE);
         copy(ICTags.Blocks.STORAGE_BLOCKS_STEEL, ICTags.Items.STORAGE_BLOCKS_STEEL);
 
-        tag(ICTags.Items.RAW_MATERIALS_TIN).add(ICItems.RAW_TIN.get());
-        tag(ICTags.Items.RAW_MATERIALS_LEAD).add(ICItems.RAW_LEAD.get());
-        tag(ICTags.Items.RAW_MATERIALS_ALUMINUM).add(ICItems.RAW_BAUXITE.get());
+        tag(ICTags.Items.RAW_MATERIALS_TIN).add(ItemRegistries.RAW_TIN.get());
+        tag(ICTags.Items.RAW_MATERIALS_LEAD).add(ItemRegistries.RAW_LEAD.get());
+        tag(ICTags.Items.RAW_MATERIALS_ALUMINUM).add(ItemRegistries.RAW_BAUXITE.get());
 
-        tag(ICTags.Items.INGOTS_TIN).add(ICItems.TIN_INGOT.get());
-        tag(ICTags.Items.INGOTS_LEAD).add(ICItems.LEAD_INGOT.get());
-        tag(ICTags.Items.INGOTS_ALUMINUM).add(ICItems.ALUMINUM_INGOT.get());
-        tag(ICTags.Items.INGOTS_BRONZE).add(ICItems.BRONZE_INGOT.get());
-        tag(ICTags.Items.INGOTS_STEEL).add(ICItems.STEEL_INGOT.get());
+        tag(ICTags.Items.INGOTS_TIN).add(ItemRegistries.TIN_INGOT.get());
+        tag(ICTags.Items.INGOTS_LEAD).add(ItemRegistries.LEAD_INGOT.get());
+        tag(ICTags.Items.INGOTS_ALUMINUM).add(ItemRegistries.ALUMINUM_INGOT.get());
+        tag(ICTags.Items.INGOTS_BRONZE).add(ItemRegistries.BRONZE_INGOT.get());
+        tag(ICTags.Items.INGOTS_STEEL).add(ItemRegistries.STEEL_INGOT.get());
 
-        tag(ICTags.Items.NUGGETS_TIN).add(ICItems.TIN_NUGGET.get());
-        tag(ICTags.Items.NUGGETS_LEAD).add(ICItems.LEAD_NUGGET.get());
-        tag(ICTags.Items.NUGGETS_ALUMINUM).add(ICItems.ALUMINUM_NUGGET.get());
-        tag(ICTags.Items.NUGGETS_BRONZE).add(ICItems.BRONZE_NUGGET.get());
-        tag(ICTags.Items.NUGGETS_STEEL).add(ICItems.STEEL_NUGGET.get());
+        tag(ICTags.Items.NUGGETS_TIN).add(ItemRegistries.TIN_NUGGET.get());
+        tag(ICTags.Items.NUGGETS_LEAD).add(ItemRegistries.LEAD_NUGGET.get());
+        tag(ICTags.Items.NUGGETS_ALUMINUM).add(ItemRegistries.ALUMINUM_NUGGET.get());
+        tag(ICTags.Items.NUGGETS_BRONZE).add(ItemRegistries.BRONZE_NUGGET.get());
+        tag(ICTags.Items.NUGGETS_STEEL).add(ItemRegistries.STEEL_NUGGET.get());
 
-        tag(ICTags.Items.DUSTS_TIN).add(ICItems.TIN_DUST.get());
-        tag(ICTags.Items.DUSTS_LEAD).add(ICItems.LEAD_DUST.get());
-        tag(ICTags.Items.DUSTS_ALUMINUM).add(ICItems.ALUMINUM_DUST.get());
-        tag(ICTags.Items.DUSTS_BRONZE).add(ICItems.BRONZE_DUST.get());
-        tag(ICTags.Items.DUSTS_STEEL).add(ICItems.STEEL_DUST.get());
+        tag(ICTags.Items.DUSTS_TIN).add(ItemRegistries.TIN_DUST.get());
+        tag(ICTags.Items.DUSTS_LEAD).add(ItemRegistries.LEAD_DUST.get());
+        tag(ICTags.Items.DUSTS_ALUMINUM).add(ItemRegistries.ALUMINUM_DUST.get());
+        tag(ICTags.Items.DUSTS_BRONZE).add(ItemRegistries.BRONZE_DUST.get());
+        tag(ICTags.Items.DUSTS_STEEL).add(ItemRegistries.STEEL_DUST.get());
 
         copy(ICTags.Blocks.RUBBER_LOGS, ICTags.Items.RUBBER_LOGS);
 
-        tag(ICTags.Items.RUBBER).add(ICItems.RUBBER.get());
+        tag(ICTags.Items.RUBBER).add(ItemRegistries.RUBBER.get());
 
         // Vanilla
         tag(ItemTags.LOGS).addTag(ICTags.Items.RUBBER_LOGS);
         tag(ItemTags.LOGS_THAT_BURN).addTag(ICTags.Items.RUBBER_LOGS);
-        tag(ItemTags.SAPLINGS).add(ICBlockItems.RUBBER_SAPLING.get());
-        tag(ItemTags.LEAVES).add(ICBlockItems.RUBBER_LEAVES.get());
-        tag(ItemTags.PLANKS).add(ICBlockItems.RUBBER_PLANKS.get());
-        tag(ItemTags.STAIRS).add(ICBlockItems.RUBBER_STAIRS.get());
-        tag(ItemTags.SLABS).add(ICBlockItems.RUBBER_SLAB.get());
-        tag(ItemTags.FENCES).add(ICBlockItems.RUBBER_FENCE.get());
-        tag(ItemTags.BUTTONS).add(ICBlockItems.RUBBER_BUTTON.get());
-        tag(ItemTags.WOODEN_STAIRS).add(ICBlockItems.RUBBER_STAIRS.get());
-        tag(ItemTags.WOODEN_SLABS).add(ICBlockItems.RUBBER_SLAB.get());
-        tag(ItemTags.WOODEN_FENCES).add(ICBlockItems.RUBBER_FENCE_GATE.get());
-        tag(ItemTags.WOODEN_BUTTONS).add(ICBlockItems.RUBBER_BUTTON.get());
-        tag(ItemTags.WOODEN_PRESSURE_PLATES).add(ICBlockItems.RUBBER_PRESSURE_PLATE.get());
+        tag(ItemTags.SAPLINGS).add(BlockItemRegistries.RUBBER_SAPLING.get());
+        tag(ItemTags.LEAVES).add(BlockItemRegistries.RUBBER_LEAVES.get());
+        tag(ItemTags.PLANKS).add(BlockItemRegistries.RUBBER_PLANKS.get());
+        tag(ItemTags.STAIRS).add(BlockItemRegistries.RUBBER_STAIRS.get());
+        tag(ItemTags.SLABS).add(BlockItemRegistries.RUBBER_SLAB.get());
+        tag(ItemTags.FENCES).add(BlockItemRegistries.RUBBER_FENCE.get());
+        tag(ItemTags.BUTTONS).add(BlockItemRegistries.RUBBER_BUTTON.get());
+        tag(ItemTags.WOODEN_STAIRS).add(BlockItemRegistries.RUBBER_STAIRS.get());
+        tag(ItemTags.WOODEN_SLABS).add(BlockItemRegistries.RUBBER_SLAB.get());
+        tag(ItemTags.WOODEN_FENCES).add(BlockItemRegistries.RUBBER_FENCE_GATE.get());
+        tag(ItemTags.WOODEN_BUTTONS).add(BlockItemRegistries.RUBBER_BUTTON.get());
+        tag(ItemTags.WOODEN_PRESSURE_PLATES).add(BlockItemRegistries.RUBBER_PRESSURE_PLATE.get());
 
         // Forge
         copy(Tags.Blocks.ORES, Tags.Items.ORES);

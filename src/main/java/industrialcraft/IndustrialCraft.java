@@ -13,16 +13,16 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import industrialcraft.client.ICBlockRenderHandler;
-import industrialcraft.client.ICScreenRenderHandler;
-import industrialcraft.registry.ICBlockEntityTypes;
-import industrialcraft.registry.ICBlockItems;
-import industrialcraft.registry.ICBlocks;
-import industrialcraft.registry.ICContainers;
-import industrialcraft.registry.ICEntities;
-import industrialcraft.registry.ICFeatures;
-import industrialcraft.registry.ICItems;
-import industrialcraft.registry.ICSoundEvents;
+import industrialcraft.client.BlockRenderHandler;
+import industrialcraft.client.ScreenRenderHandler;
+import industrialcraft.common.registries.BlockEntityTypeRegistries;
+import industrialcraft.common.registries.BlockItemRegistries;
+import industrialcraft.common.registries.BlockRegistries;
+import industrialcraft.common.registries.ContainerRegistries;
+import industrialcraft.common.registries.EntityRegistries;
+import industrialcraft.common.registries.FeatureRegistries;
+import industrialcraft.common.registries.ItemRegistries;
+import industrialcraft.common.registries.SoundEventRegistries;
 
 @Mod(IndustrialCraft.MOD_ID)
 public class IndustrialCraft {
@@ -35,34 +35,34 @@ public class IndustrialCraft {
         bus.addListener(this::commonSetup);
         bus.addListener(this::clientSetup);
 
-        ICSoundEvents.setup(bus);
-        ICBlocks.setup(bus);
-        ICBlockItems.setup(bus);
-        ICItems.setup(bus);
-        ICEntities.setup(bus);
-        ICBlockEntityTypes.setup(bus);
-        ICContainers.setup(bus);
-        ICFeatures.setup(bus);
+        SoundEventRegistries.setup(bus);
+        BlockRegistries.setup(bus);
+        BlockItemRegistries.setup(bus);
+        ItemRegistries.setup(bus);
+        EntityRegistries.setup(bus);
+        BlockEntityTypeRegistries.setup(bus);
+        ContainerRegistries.setup(bus);
+        FeatureRegistries.setup(bus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        WoodType.register(ICBlocks.RUBBER);
+        WoodType.register(BlockRegistries.RUBBER);
 
         event.enqueueWork(() -> {
-            ICBlocks.setupPots();
-            ICBlocks.setupFlammables();
-            ICBlocks.setupStrippables();
+            BlockRegistries.setupPots();
+            BlockRegistries.setupFlammables();
+            BlockRegistries.setupStrippables();
         });
     }
 
     @OnlyIn(Dist.CLIENT)
     private void clientSetup(final FMLClientSetupEvent event) {
-        ICBlockRenderHandler.setup();
+        BlockRenderHandler.setup();
 
         event.enqueueWork(() -> {
-            ICScreenRenderHandler.setup();
+            ScreenRenderHandler.setup();
         });
     }
 

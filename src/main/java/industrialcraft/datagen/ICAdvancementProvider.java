@@ -3,7 +3,7 @@ package industrialcraft.datagen;
 import java.util.function.Consumer;
 
 import industrialcraft.IndustrialCraft;
-import industrialcraft.registry.ICBlocks;
+import industrialcraft.common.registries.BlockRegistries;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.FrameType;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
@@ -20,20 +20,22 @@ public class ICAdvancementProvider extends AdvancementProvider {
 
     @Override
     protected void registerAdvancements(Consumer<Advancement> consumer, ExistingFileHelper helper) {
-        Advancement root = Advancement.Builder.advancement().display(ICBlocks.RUBBER_LOG.get(),
+        Advancement root = Advancement.Builder.advancement().display(BlockRegistries.RUBBER_LOG.get(),
                 new TranslatableComponent("advancements.icnext.root.title"),
                 new TranslatableComponent("advancements.icnext.root.description"),
                 IndustrialCraft.mcPrefix("textures/gui/advancements/backgrounds/stone.png"),
                 FrameType.TASK, false, false, false)
-                .addCriterion("rubber_log", InventoryChangeTrigger.TriggerInstance.hasItems(ICBlocks.RUBBER_LOG.get()))
+                .addCriterion("rubber_log",
+                        InventoryChangeTrigger.TriggerInstance.hasItems(BlockRegistries.RUBBER_LOG.get()))
                 .save(consumer, "icnext/root");
 
-        Advancement rtfm = Advancement.Builder.advancement().parent(root).display(ICBlocks.RUBBER_LOG.get(),
+        Advancement rtfm = Advancement.Builder.advancement().parent(root).display(BlockRegistries.RUBBER_LOG.get(),
                 new TranslatableComponent("advancements.icnext.rtfm.title"),
                 new TranslatableComponent("advancements.icnext.rtfm.description"),
                 (ResourceLocation) null,
                 FrameType.TASK, true, true, false)
-                .addCriterion("rubber_log", InventoryChangeTrigger.TriggerInstance.hasItems(ICBlocks.RUBBER_LOG.get()))
+                .addCriterion("rubber_log",
+                        InventoryChangeTrigger.TriggerInstance.hasItems(BlockRegistries.RUBBER_LOG.get()))
                 .save(consumer, "icnext/rtfm");
     }
 
