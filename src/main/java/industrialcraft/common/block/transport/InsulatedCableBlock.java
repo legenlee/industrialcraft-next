@@ -1,10 +1,14 @@
 package industrialcraft.common.block.transport;
 
-import industrialcraft.common.block.TransportBlock;
-import net.minecraft.world.level.block.state.BlockBehaviour;
+import industrialcraft.common.tier.CableTier;
 
-public class InsulatedCableBlock extends TransportBlock {
-    public InsulatedCableBlock(BlockBehaviour.Properties properties) {
-        super(properties);
+public class InsulatedCableBlock extends AbstractCableTier {
+    public InsulatedCableBlock(CableTier tier) {
+        super(tier);
+    }
+
+    @Override
+    public boolean canDamageNearbyEntity() {
+        return false;
     }
 }

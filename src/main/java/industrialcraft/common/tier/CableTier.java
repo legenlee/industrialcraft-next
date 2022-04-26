@@ -1,15 +1,11 @@
 package industrialcraft.common.tier;
 
 public enum CableTier {
-    TIN("tin"),
-    COPPER("copper"),
-    GOLD("gold"),
-    IRON("iron"),
-    FIBRE("fibre");
+    TIN,
+    COPPER,
+    GOLD,
+    IRON,
+    FIBRE;
 
-    private final String name;
-
-    CableTier(String name) {
-        this.name = name;
-    }
+    private static final CableTier[] TIERS = values();
 }
