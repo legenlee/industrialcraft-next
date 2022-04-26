@@ -12,5 +12,6 @@
   "files.associations": {
     "*.mcmeta": "json"
   },
-  "java.configuration.updateBuildConfiguration": "interactive"
+  "files.eol": "\n",
+  "java.configuration.updateBuildConfiguration": "interactive",
 }
