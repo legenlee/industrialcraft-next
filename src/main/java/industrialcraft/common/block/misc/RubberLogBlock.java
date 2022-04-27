@@ -4,7 +4,7 @@ import java.util.Random;
 
 import javax.annotation.Nullable;
 
-import industrialcraft.common.ICProperties;
+import industrialcraft.common.ICBlockProperties;
 import industrialcraft.common.registries.BlockRegistries;
 import industrialcraft.common.registries.ItemRegistries;
 import net.minecraft.core.BlockPos;
@@ -28,8 +28,8 @@ import net.minecraft.world.phys.BlockHitResult;
 
 public class RubberLogBlock extends RotatedPillarBlock {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
-    public static final BooleanProperty HAS_SAP = ICProperties.HAS_SAP;
-    public static final BooleanProperty CAN_CREATE_SAP = ICProperties.CAN_CREATE_SAP;
+    public static final BooleanProperty HAS_SAP = ICBlockProperties.HAS_SAP;
+    public static final BooleanProperty CAN_CREATE_SAP = ICBlockProperties.CAN_CREATE_SAP;
 
     public RubberLogBlock(BlockBehaviour.Properties properties) {
         super(properties);
@@ -79,7 +79,7 @@ public class RubberLogBlock extends RotatedPillarBlock {
             if (player.getItemInHand(hand).is(ItemRegistries.TREETAP.get()) && result.getDirection() == direction) {
                 int dropStack = 1 + level.random.nextInt(2);
                 popResource(level, pos.relative(direction), new ItemStack(ItemRegistries.SAP.get(), dropStack));
-                level.setBlock(pos, state.setValue(ICProperties.HAS_SAP, Boolean.valueOf(false)), 2);
+                level.setBlock(pos, state.setValue(ICBlockProperties.HAS_SAP, Boolean.valueOf(false)), 2);
 
                 if (player != null) {
                     player.getItemInHand(hand).hurtAndBreak(1, player, (target) -> {
