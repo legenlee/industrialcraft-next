@@ -2,7 +2,6 @@ package industrialcraft.common.registries;
 
 import java.util.Collection;
 import java.util.function.Supplier;
-import java.util.function.ToIntFunction;
 
 import com.google.common.collect.ImmutableMap;
 
