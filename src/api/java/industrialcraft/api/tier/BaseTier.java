@@ -1,25 +1,30 @@
 package industrialcraft.api.tier;
 
-import java.util.Locale;
-
 import net.minecraft.util.StringRepresentable;
 
 public enum BaseTier implements StringRepresentable {
-    LV("LV"),
-    MV("MV"),
-    HV("HV"),
-    EV("EV");
+    LV("LV", 32),
+    MV("MV", 128),
+    HV("HV", 512),
+    EV("EV", 2048),
+    IV("IV", 8192);
 
     private static final BaseTier[] TIERS = values();
 
     private final String name;
+    private final int maxCapacity;
 
-    BaseTier(String name) {
+    BaseTier(String name, int maxCapacity) {
         this.name = name;
+        this.maxCapacity = maxCapacity;
     }
 
     @Override
     public String getSerializedName() {
-        return name.toLowerCase(Locale.ROOT);
+        return name.toLowerCase();
+    }
+
+    public int getMaxCapacity() {
+        return maxCapacity;
     }
 }
