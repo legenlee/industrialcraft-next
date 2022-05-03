@@ -87,6 +87,24 @@ public interface IEnergyContainer extends INBTSerializable<CompoundTag> {
     }
 
     /**
+     * Checks if this {@link IEnergyContainer} can receive energy.
+     * 
+     * @return True if this container can receive energy.
+     */
+    default boolean canReceive() {
+        return true;
+    }
+
+    /**
+     * Checks if energy can be extracted from this {@link IEnergyContainer}.
+     * 
+     * @return True if energy can be extracted from this container.
+     */
+    default boolean canExtract() {
+        return true;
+    }
+
+    /**
      * Checks if this container is empty.
      * 
      * @return True if this container has no energy. false otherwise.
