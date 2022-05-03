@@ -1,21 +1,27 @@
 package industrialcraft.common.tier;
 
+import industrialcraft.api.tier.BaseTier;
+
 public enum CableTier {
-    TIN(32),
-    COPPER(128),
-    GOLD(512),
-    IRON(2048),
-    FIBRE(8192);
+    TIN(BaseTier.LV, 0.2f),
+    COPPER(BaseTier.MV, 0.2f),
+    GOLD(BaseTier.HV, 0.4f),
+    IRON(BaseTier.EV, 0.8f),
+    FIBRE(BaseTier.IV, 0.025f);
 
-    private final long maxCapacity;
+    private final BaseTier tier;
+    private final float loseRate;
 
-    CableTier(long maxCapacity) {
-        this.maxCapacity = maxCapacity;
+    CableTier(BaseTier tier, float loseRate) {
+        this.tier = tier;
+        this.loseRate = loseRate;
     }
 
-    private static final CableTier[] TIERS = values();
+    public BaseTier getBaseTier() {
+        return tier;
+    }
 
-    public long getMaxCapacity() {
-        return maxCapacity;
+    public float getLoseRate() {
+        return loseRate;
     }
 }
