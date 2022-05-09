@@ -5,10 +5,10 @@ import javax.annotation.Nonnull;
 import industrialcraft.common.block.TransportBlock;
 import industrialcraft.common.tier.CableTier;
 
-public abstract class AbstractCableTier extends TransportBlock {
+public abstract class AbstractCableBlock extends TransportBlock {
     private final CableTier tier;
 
-    protected AbstractCableTier(CableTier tier) {
+    protected AbstractCableBlock(CableTier tier) {
         this.tier = tier;
     }
 
