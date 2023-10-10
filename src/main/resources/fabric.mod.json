@@ -1,18 +1,18 @@
 {
 	"schemaVersion": 1,
-	"id": "template-mod",
+	"id": "icnext",
 	"version": "${version}",
-	"name": "Template Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "IndustrialCraft-Next",
+	"description": "Old things to next generation. IndustrialCraft-Next.",
 	"authors": [
-		"Me!"
+		"LegenLee"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/legenlee/industrialcraft-next",
+		"sources": "https://github.com/legenlee/industrialcraft-next"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/template-mod/icon.png",
+	"icon": "assets/icnext/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -26,9 +26,9 @@
 		]
 	},
 	"mixins": [
-		"template-mod.mixins.json",
+		"icnext.mixins.json",
 		{
-			"config": "template-mod.client.mixins.json",
+			"config": "icnext.client.mixins.json",
 			"environment": "client"
 		}
 	],
