@@ -22,7 +22,7 @@ loom {
     splitEnvironmentSourceSets()
 
 	mods {
-		"template-mod" {
+		"icnext" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
@@ -34,7 +34,7 @@ loom {
 			name "Data Generation"
 			vmArg "-Dfabric-api.datagen"
 			vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
-			vmArg "-Dfabric-api.datagen.modid=template-mod"
+			vmArg "-Dfabric-api.datagen.modid=icnext"
  
 			runDir "build/datagen"
 		}
